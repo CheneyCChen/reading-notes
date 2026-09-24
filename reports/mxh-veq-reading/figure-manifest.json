@@ -1,0 +1,287 @@
+[
+  {
+    "id": "a-fig-1",
+    "label": "Figure 1",
+    "page": 4,
+    "bbox": [
+      55,
+      53,
+      550,
+      359
+    ],
+    "anchor": "a-fig-1",
+    "source_id": "2601.02942v1",
+    "original_number": "Figure 1",
+    "image": "assets/a-fig-1.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "a-fig-2",
+    "label": "Figure 2",
+    "page": 6,
+    "bbox": [
+      55,
+      53,
+      550,
+      354
+    ],
+    "anchor": "a-fig-2",
+    "source_id": "2601.02942v1",
+    "original_number": "Figure 2",
+    "image": "assets/a-fig-2.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "a-fig-3",
+    "label": "Figure 3",
+    "page": 8,
+    "bbox": [
+      55,
+      53,
+      550,
+      357
+    ],
+    "anchor": "a-fig-3",
+    "source_id": "2601.02942v1",
+    "original_number": "Figure 3",
+    "image": "assets/a-fig-3.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "a-fig-4",
+    "label": "Figure 4",
+    "page": 9,
+    "bbox": [
+      55,
+      53,
+      562,
+      381
+    ],
+    "anchor": "a-fig-4",
+    "source_id": "2601.02942v1",
+    "original_number": "Figure 4",
+    "image": "assets/a-fig-4.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "a-fig-5",
+    "label": "Figure 5",
+    "page": 10,
+    "bbox": [
+      55,
+      53,
+      562,
+      381
+    ],
+    "anchor": "a-fig-5",
+    "source_id": "2601.02942v1",
+    "original_number": "Figure 5",
+    "image": "assets/a-fig-5.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-1",
+    "label": "Figure 1",
+    "page": 5,
+    "bbox": [
+      60,
+      105,
+      536,
+      400
+    ],
+    "anchor": "b-fig-1",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 1",
+    "image": "assets/b-fig-1.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-2",
+    "label": "Figure 2",
+    "page": 12,
+    "bbox": [
+      140,
+      105,
+      451,
+      298
+    ],
+    "anchor": "b-fig-2",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 2",
+    "image": "assets/b-fig-2.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-3",
+    "label": "Figure 3",
+    "page": 13,
+    "bbox": [
+      177,
+      105,
+      417,
+      308
+    ],
+    "anchor": "b-fig-3",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 3",
+    "image": "assets/b-fig-3.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-4",
+    "label": "Figure 4",
+    "page": 15,
+    "bbox": [
+      62,
+      105,
+      289,
+      331
+    ],
+    "anchor": "b-fig-4",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 4",
+    "image": "assets/b-fig-4.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-5",
+    "label": "Figure 5",
+    "page": 15,
+    "bbox": [
+      306,
+      105,
+      533,
+      331
+    ],
+    "anchor": "b-fig-5",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 5",
+    "image": "assets/b-fig-5.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-6",
+    "label": "Figure 6",
+    "page": 17,
+    "bbox": [
+      60,
+      190,
+      536,
+      486
+    ],
+    "anchor": "b-fig-6",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 6",
+    "image": "assets/b-fig-6.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-7",
+    "label": "Figure 7",
+    "page": 19,
+    "bbox": [
+      65,
+      105,
+      533,
+      401
+    ],
+    "anchor": "b-fig-7",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 7",
+    "image": "assets/b-fig-7.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-8",
+    "label": "Figure 8",
+    "page": 20,
+    "bbox": [
+      65,
+      105,
+      533,
+      354
+    ],
+    "anchor": "b-fig-8",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 8",
+    "image": "assets/b-fig-8.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-9",
+    "label": "Figure 9",
+    "page": 22,
+    "bbox": [
+      65,
+      105,
+      533,
+      408
+    ],
+    "anchor": "b-fig-9",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure 9",
+    "image": "assets/b-fig-9.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  },
+  {
+    "id": "b-fig-B10",
+    "label": "Figure B.10",
+    "page": 29,
+    "bbox": [
+      182,
+      105,
+      414,
+      329
+    ],
+    "anchor": "b-fig-B10",
+    "source_id": "2606.11821v1",
+    "original_number": "Figure B.10",
+    "image": "assets/b-fig-B10.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页建立清单；完整渲染裁剪后视觉检查；包含全部面板、图例、坐标与色条；图注另以中文解释。"
+  }
+]

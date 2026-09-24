@@ -1,0 +1,187 @@
+{
+  "source_id": "main-published-upload",
+  "source_sha256": "635dd21b1bb2d8b68ebe6ce4d67d9de0fb117f60357404fe7a5c795de0d540f3",
+  "page_numbering": "one-based PDF pages; printed page = PDF page - 1",
+  "figures": [
+    {
+      "id": "fig-1",
+      "label": "Figure 1",
+      "page": 4,
+      "bbox": [
+        314,
+        60,
+        537,
+        260
+      ],
+      "anchor": "fig-1",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 1",
+      "image": "assets/fig-1.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-2",
+      "label": "Figure 2",
+      "page": 5,
+      "bbox": [
+        65,
+        58,
+        285,
+        257
+      ],
+      "anchor": "fig-2",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 2",
+      "image": "assets/fig-2.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-3",
+      "label": "Figure 3",
+      "page": 6,
+      "bbox": [
+        91,
+        59,
+        508,
+        252
+      ],
+      "anchor": "fig-3",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 3",
+      "image": "assets/fig-3.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-4",
+      "label": "Figure 4",
+      "page": 6,
+      "bbox": [
+        91,
+        303,
+        508,
+        494
+      ],
+      "anchor": "fig-4",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 4",
+      "image": "assets/fig-4.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-5",
+      "label": "Figure 5",
+      "page": 7,
+      "bbox": [
+        91,
+        59,
+        508,
+        250
+      ],
+      "anchor": "fig-5",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 5",
+      "image": "assets/fig-5.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-6",
+      "label": "Figure 6",
+      "page": 7,
+      "bbox": [
+        91,
+        303,
+        508,
+        493
+      ],
+      "anchor": "fig-6",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 6",
+      "image": "assets/fig-6.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-7",
+      "label": "Figure 7",
+      "page": 8,
+      "bbox": [
+        45,
+        58,
+        563,
+        453
+      ],
+      "anchor": "fig-7",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 7",
+      "image": "assets/fig-7.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-8",
+      "label": "Figure 8",
+      "page": 9,
+      "bbox": [
+        78,
+        59,
+        276,
+        325
+      ],
+      "anchor": "fig-8",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 8",
+      "image": "assets/fig-8.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    },
+    {
+      "id": "fig-9",
+      "label": "Figure 9",
+      "page": 9,
+      "bbox": [
+        315,
+        58,
+        540,
+        258
+      ],
+      "anchor": "fig-9",
+      "source_id": "main-published-upload",
+      "source": "Sato_2021_Nucl._Fusion_61_116012.pdf",
+      "original_figure": "Figure 9",
+      "image": "assets/fig-9.png",
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "complete_for_acquired_source",
+      "verification_notes": "与整页及裁图核对，保留全部面板、轴标与图例；解释覆盖全部子图。"
+    }
+  ]
+}
