@@ -1,0 +1,142 @@
+[
+  {
+    "id": "fig-1",
+    "label": "Figure 1",
+    "page": 13,
+    "bbox": [
+      65,
+      105,
+      531,
+      282
+    ],
+    "anchor": "fig-1",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 1",
+    "image": "assets/fig-1.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  },
+  {
+    "id": "fig-2",
+    "label": "Figure 2",
+    "page": 14,
+    "bbox": [
+      149,
+      100,
+      437,
+      316
+    ],
+    "anchor": "fig-2",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 2",
+    "image": "assets/fig-2.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  },
+  {
+    "id": "fig-3",
+    "label": "Figure 3",
+    "page": 15,
+    "bbox": [
+      142,
+      234,
+      461,
+      566
+    ],
+    "anchor": "fig-3",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 3",
+    "image": "assets/fig-3.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  },
+  {
+    "id": "fig-4",
+    "label": "Figure 4",
+    "page": 16,
+    "bbox": [
+      70,
+      165,
+      526,
+      565
+    ],
+    "anchor": "fig-4",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 4",
+    "image": "assets/fig-4.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  },
+  {
+    "id": "fig-5",
+    "label": "Figure 5",
+    "page": 17,
+    "bbox": [
+      124,
+      125,
+      465,
+      408
+    ],
+    "anchor": "fig-5",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 5",
+    "image": "assets/fig-5.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  },
+  {
+    "id": "fig-6",
+    "label": "Figure 6",
+    "page": 17,
+    "bbox": [
+      66,
+      490,
+      523,
+      674
+    ],
+    "anchor": "fig-6",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 6",
+    "image": "assets/fig-6.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  },
+  {
+    "id": "fig-7",
+    "label": "Figure 7",
+    "page": 18,
+    "bbox": [
+      58,
+      103,
+      523,
+      290
+    ],
+    "anchor": "fig-7",
+    "source_id": "uploaded-arxiv-v2",
+    "source_file": "A Hybrid Gyrokinetic Ion and Isothermal Electron Fluid Code for Astrophysical Plasma.pdf",
+    "original_figure": "Figure 7",
+    "image": "assets/fig-7.png",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "逐页识图；保留全部面板、坐标轴、图例与色条；裁图视觉核查；图注在报告中译述。"
+  }
+]
