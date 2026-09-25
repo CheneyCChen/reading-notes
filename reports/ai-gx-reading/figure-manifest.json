@@ -1,0 +1,218 @@
+[
+  {
+    "id": "fig-1",
+    "label": "Figure 1",
+    "page": 3,
+    "bbox": [
+      190,
+      450,
+      420,
+      605
+    ],
+    "anchor": "fig-1",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-1.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-2",
+    "label": "Figure 2",
+    "page": 7,
+    "bbox": [
+      65,
+      120,
+      550,
+      325
+    ],
+    "anchor": "fig-2",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-2.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-3",
+    "label": "Figure 3",
+    "page": 8,
+    "bbox": [
+      65,
+      70,
+      565,
+      360
+    ],
+    "anchor": "fig-3",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-3.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-4",
+    "label": "Figure 4",
+    "page": 8,
+    "bbox": [
+      90,
+      440,
+      520,
+      637
+    ],
+    "anchor": "fig-4",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-4.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-5",
+    "label": "Figure 5",
+    "page": 9,
+    "bbox": [
+      195,
+      65,
+      420,
+      222
+    ],
+    "anchor": "fig-5",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-5.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-6",
+    "label": "Figure 6",
+    "page": 11,
+    "bbox": [
+      65,
+      68,
+      550,
+      253
+    ],
+    "anchor": "fig-6",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-6.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-7",
+    "label": "Figure 7",
+    "page": 12,
+    "bbox": [
+      125,
+      68,
+      490,
+      208
+    ],
+    "anchor": "fig-7",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-7.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-8",
+    "label": "Figure 8",
+    "page": 13,
+    "bbox": [
+      65,
+      254,
+      550,
+      484
+    ],
+    "anchor": "fig-8",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-8.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-9",
+    "label": "Figure 9",
+    "page": 14,
+    "bbox": [
+      120,
+      156,
+      493,
+      530
+    ],
+    "anchor": "fig-9",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-9.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-10",
+    "label": "Figure 10",
+    "page": 15,
+    "bbox": [
+      65,
+      66,
+      550,
+      278
+    ],
+    "anchor": "fig-10",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-10.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-11",
+    "label": "Figure 11",
+    "page": 16,
+    "bbox": [
+      130,
+      67,
+      489,
+      287
+    ],
+    "anchor": "fig-11",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-11.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  },
+  {
+    "id": "fig-12",
+    "label": "Figure 12",
+    "page": 17,
+    "bbox": [
+      110,
+      269,
+      505,
+      520
+    ],
+    "anchor": "fig-12",
+    "source_id": "main-v1",
+    "source": "2609.28730v1.pdf",
+    "image": "assets/fig-12.png",
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页识别并查看裁图；所有面板保留。图7原始截图细字有限；图10部分纵轴无数值。"
+  }
+]
