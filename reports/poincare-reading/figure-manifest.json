@@ -1,0 +1,128 @@
+[
+  {
+    "id": "fig-1",
+    "label": "Figure 1",
+    "page": 6,
+    "bbox": [
+      58,
+      55,
+      446,
+      313
+    ],
+    "anchor": "fig-1",
+    "source_id": "main-v1",
+    "source": "Elmacioglu2026_2609.36183v1.pdf",
+    "image": "assets/fig-1.png",
+    "dpi": 300,
+    "original_figure": "Figure 1",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "原页与裁图视觉核对；全部面板、坐标、图例与色条保留。图1图注配色、图3角度图注、力误差措辞差异在报告标明。"
+  },
+  {
+    "id": "fig-2",
+    "label": "Figure 2",
+    "page": 7,
+    "bbox": [
+      58,
+      55,
+      446,
+      314
+    ],
+    "anchor": "fig-2",
+    "source_id": "main-v1",
+    "source": "Elmacioglu2026_2609.36183v1.pdf",
+    "image": "assets/fig-2.png",
+    "dpi": 300,
+    "original_figure": "Figure 2",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "原页与裁图视觉核对；全部面板、坐标、图例与色条保留。图1图注配色、图3角度图注、力误差措辞差异在报告标明。"
+  },
+  {
+    "id": "fig-3",
+    "label": "Figure 3",
+    "page": 9,
+    "bbox": [
+      58,
+      55,
+      446,
+      453
+    ],
+    "anchor": "fig-3",
+    "source_id": "main-v1",
+    "source": "Elmacioglu2026_2609.36183v1.pdf",
+    "image": "assets/fig-3.png",
+    "dpi": 300,
+    "original_figure": "Figure 3",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "原页与裁图视觉核对；全部面板、坐标、图例与色条保留。图1图注配色、图3角度图注、力误差措辞差异在报告标明。"
+  },
+  {
+    "id": "fig-4",
+    "label": "Figure 4",
+    "page": 11,
+    "bbox": [
+      58,
+      55,
+      446,
+      285
+    ],
+    "anchor": "fig-4",
+    "source_id": "main-v1",
+    "source": "Elmacioglu2026_2609.36183v1.pdf",
+    "image": "assets/fig-4.png",
+    "dpi": 300,
+    "original_figure": "Figure 4",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "原页与裁图视觉核对；全部面板、坐标、图例与色条保留。图1图注配色、图3角度图注、力误差措辞差异在报告标明。"
+  },
+  {
+    "id": "fig-5",
+    "label": "Figure 5",
+    "page": 15,
+    "bbox": [
+      58,
+      214,
+      446,
+      476
+    ],
+    "anchor": "fig-5",
+    "source_id": "main-v1",
+    "source": "Elmacioglu2026_2609.36183v1.pdf",
+    "image": "assets/fig-5.png",
+    "dpi": 300,
+    "original_figure": "Figure 5",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "原页与裁图视觉核对；全部面板、坐标、图例与色条保留。图1图注配色、图3角度图注、力误差措辞差异在报告标明。"
+  },
+  {
+    "id": "fig-6",
+    "label": "Figure 6",
+    "page": 16,
+    "bbox": [
+      58,
+      55,
+      446,
+      340
+    ],
+    "anchor": "fig-6",
+    "source_id": "main-v1",
+    "source": "Elmacioglu2026_2609.36183v1.pdf",
+    "image": "assets/fig-6.png",
+    "dpi": 300,
+    "original_figure": "Figure 6",
+    "embedded": true,
+    "explained": true,
+    "coverage_status": "complete",
+    "verification_notes": "原页与裁图视觉核对；全部面板、坐标、图例与色条保留。图1图注配色、图3角度图注、力误差措辞差异在报告标明。"
+  }
+]
