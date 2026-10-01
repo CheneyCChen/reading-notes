@@ -1,0 +1,511 @@
+{
+  "source_id": "main-v1",
+  "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+  "pdf_pages": 26,
+  "numbered_figures": 25,
+  "unique_original_figure_contents": 24,
+  "numbered_tables": 10,
+  "figures": [
+    {
+      "id": "fig-1",
+      "label": "Figure 1",
+      "page": 1,
+      "bbox": [
+        327.4,
+        564.98,
+        541.99,
+        687.92
+      ],
+      "anchor": "fig-1",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-1.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 1,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-2",
+      "label": "Figure 2",
+      "page": 7,
+      "bbox": [
+        70,
+        539.44,
+        542,
+        662.09
+      ],
+      "anchor": "fig-2",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-2.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 2,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-3",
+      "label": "Figure 3",
+      "page": 8,
+      "bbox": [
+        70,
+        80.25,
+        542,
+        202.9
+      ],
+      "anchor": "fig-3",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-3.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 3,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-4",
+      "label": "Figure 4",
+      "page": 8,
+      "bbox": [
+        70,
+        245.25,
+        541.99,
+        351.01
+      ],
+      "anchor": "fig-4",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-4.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 4,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-5",
+      "label": "Figure 5",
+      "page": 8,
+      "bbox": [
+        96.83,
+        393.36,
+        515.16,
+        489.54
+      ],
+      "anchor": "fig-5",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-5.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 5,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-6",
+      "label": "Figure 6",
+      "page": 8,
+      "bbox": [
+        70,
+        532.36,
+        541.98,
+        693.87
+      ],
+      "anchor": "fig-6",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-6.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 6,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-7",
+      "label": "Figure 7",
+      "page": 19,
+      "bbox": [
+        163.6,
+        536.38,
+        448.41,
+        702.76
+      ],
+      "anchor": "fig-7",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-7.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 7,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-8",
+      "label": "Figure 8",
+      "page": 20,
+      "bbox": [
+        70,
+        578.69,
+        542,
+        701.34
+      ],
+      "anchor": "fig-8",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-8.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 8,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-9",
+      "label": "Figure 9",
+      "page": 21,
+      "bbox": [
+        70,
+        612.35,
+        541.98,
+        694.61
+      ],
+      "anchor": "fig-9",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-9.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 9,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-10",
+      "label": "Figure 10",
+      "page": 22,
+      "bbox": [
+        70,
+        612.35,
+        541.98,
+        694.61
+      ],
+      "anchor": "fig-10",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-10.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 10,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-11",
+      "label": "Figure 11",
+      "page": 23,
+      "bbox": [
+        70,
+        398,
+        542.01,
+        499.72
+      ],
+      "anchor": "fig-11",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-11.png",
+      "verification_notes": "高分辨率裁图与原页核对，包含全部面板、坐标和色条；与Figure 12复用同一原图；图内标题及色条为E field error，与本图电场图注一致。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 11,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-12",
+      "label": "Figure 12",
+      "page": 23,
+      "bbox": [
+        70,
+        575.46,
+        542.01,
+        677.17
+      ],
+      "anchor": "fig-12",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-12.png",
+      "verification_notes": "高分辨率裁图与原页核对，边界完整；与Figure 11复用同一原图；图内标题及色条为E field error，磁场图注疑似错配，独立磁场差图无法确认。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 12,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified",
+      "reuses_original_content_of": "fig-11"
+    },
+    {
+      "id": "fig-13",
+      "label": "Figure 13",
+      "page": 24,
+      "bbox": [
+        163.6,
+        84.38,
+        448.41,
+        250.76
+      ],
+      "anchor": "fig-13",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-13.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 13,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-14",
+      "label": "Figure 14",
+      "page": 24,
+      "bbox": [
+        70,
+        301.36,
+        542,
+        424.01
+      ],
+      "anchor": "fig-14",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-14.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 14,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-15",
+      "label": "Figure 15",
+      "page": 24,
+      "bbox": [
+        70,
+        474.62,
+        541.98,
+        556.88
+      ],
+      "anchor": "fig-15",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-15.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 15,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-16",
+      "label": "Figure 16",
+      "page": 24,
+      "bbox": [
+        70,
+        607.48,
+        541.98,
+        689.74
+      ],
+      "anchor": "fig-16",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-16.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 16,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-17",
+      "label": "Figure 17",
+      "page": 25,
+      "bbox": [
+        70,
+        75.42,
+        542.01,
+        177.14
+      ],
+      "anchor": "fig-17",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-17.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 17,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-18",
+      "label": "Figure 18",
+      "page": 25,
+      "bbox": [
+        70,
+        209.83,
+        542.01,
+        311.55
+      ],
+      "anchor": "fig-18",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-18.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 18,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-19",
+      "label": "Figure 19",
+      "page": 25,
+      "bbox": [
+        163.6,
+        344.24,
+        448.41,
+        510.62
+      ],
+      "anchor": "fig-19",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-19.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。图注称FNO快速增长/发散，图内主要快速增长为紫色CNO；时间窗未展示发散。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 19,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-20",
+      "label": "Figure 20",
+      "page": 25,
+      "bbox": [
+        70,
+        565.14,
+        542,
+        687.79
+      ],
+      "anchor": "fig-20",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-20.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 20,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-21",
+      "label": "Figure 21",
+      "page": 26,
+      "bbox": [
+        70,
+        70.15,
+        541.98,
+        152.41
+      ],
+      "anchor": "fig-21",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-21.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 21,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-22",
+      "label": "Figure 22",
+      "page": 26,
+      "bbox": [
+        70,
+        174.56,
+        541.98,
+        256.82
+      ],
+      "anchor": "fig-22",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-22.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 22,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-23",
+      "label": "Figure 23",
+      "page": 26,
+      "bbox": [
+        81.7,
+        278.97,
+        530.31,
+        433.94
+      ],
+      "anchor": "fig-23",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-23.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 23,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-24",
+      "label": "Figure 24",
+      "page": 26,
+      "bbox": [
+        70,
+        467.48,
+        542.01,
+        569.19
+      ],
+      "anchor": "fig-24",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-24.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 24,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    },
+    {
+      "id": "fig-25",
+      "label": "Figure 25",
+      "page": 26,
+      "bbox": [
+        70,
+        591.34,
+        542.01,
+        693.06
+      ],
+      "anchor": "fig-25",
+      "source_id": "main-v1",
+      "source_file": "Symplectic Neural Operators for Learning Infinite Dimensional Hamiltonian Systems.pdf",
+      "image": "assets/fig-25.png",
+      "verification_notes": "整页预览已视觉核对，包含全部面板、坐标、图例/色条；裁剪建议依据PDF point原图边界外加2 point余量。 最终裁图已与原页视觉比对，HTML展示与解释按图号逐项核对。",
+      "original_number": 25,
+      "embedded": true,
+      "explained": true,
+      "coverage_status": "verified"
+    }
+  ]
+}
