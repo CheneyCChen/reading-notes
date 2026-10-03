@@ -1,0 +1,98 @@
+[
+  {
+    "id": "algorithm-1",
+    "label": "Algorithm 1",
+    "page": 6,
+    "bbox": [
+      107.0,
+      253.0,
+      497.0,
+      524.0
+    ],
+    "anchor": "algorithm-1",
+    "source": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "image": "assets/algorithm-1.png",
+    "dpi": 300,
+    "embedded": false,
+    "explained": true,
+    "verification_notes": "Original crop visually verified; HTML links to full-resolution original. Numerical values or algorithm steps transcribed and interpreted in corresponding report anchor.",
+    "source_id": "user-uploaded-main",
+    "source_pdf": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "crop_visually_verified": true,
+    "kind": "algorithm",
+    "linked_in_report": true,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "table-1",
+    "label": "Table 1",
+    "page": 6,
+    "bbox": [
+      107.0,
+      629.0,
+      497.0,
+      709.0
+    ],
+    "anchor": "table-1",
+    "source": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "image": "assets/table-1.png",
+    "dpi": 300,
+    "embedded": false,
+    "explained": true,
+    "verification_notes": "Original crop visually verified; HTML links to full-resolution original. Numerical values or algorithm steps transcribed and interpreted in corresponding report anchor.",
+    "source_id": "user-uploaded-main",
+    "source_pdf": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "crop_visually_verified": true,
+    "kind": "table",
+    "linked_in_report": true,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "table-2",
+    "label": "Table 2",
+    "page": 8,
+    "bbox": [
+      119.0,
+      363.0,
+      485.0,
+      446.0
+    ],
+    "anchor": "table-2",
+    "source": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "image": "assets/table-2.png",
+    "dpi": 300,
+    "embedded": false,
+    "explained": true,
+    "verification_notes": "Original crop visually verified; HTML links to full-resolution original. Numerical values or algorithm steps transcribed and interpreted in corresponding report anchor.",
+    "source_id": "user-uploaded-main",
+    "source_pdf": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "crop_visually_verified": true,
+    "kind": "table",
+    "linked_in_report": true,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "table-3",
+    "label": "Table 3",
+    "page": 8,
+    "bbox": [
+      53.0,
+      564.0,
+      285.0,
+      654.0
+    ],
+    "anchor": "table-3",
+    "source": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "image": "assets/table-3.png",
+    "dpi": 300,
+    "embedded": false,
+    "explained": true,
+    "verification_notes": "Original crop visually verified; HTML links to full-resolution original. Numerical values or algorithm steps transcribed and interpreted in corresponding report anchor.",
+    "source_id": "user-uploaded-main",
+    "source_pdf": "Modified PINN approach integrating conservation laws for efficient multi-stage training of coupled nonlinear systems.pdf",
+    "crop_visually_verified": true,
+    "kind": "table",
+    "linked_in_report": true,
+    "coverage_status": "complete"
+  }
+]
