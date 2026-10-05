@@ -1,0 +1,112 @@
+[
+  {
+    "id": "figure-1",
+    "label": "Figure 1",
+    "page": 2,
+    "bbox": [
+      100.0,
+      82.0,
+      525.0,
+      335.0
+    ],
+    "anchor": "figure-1",
+    "source": "1708848.pdf",
+    "image": "assets/figure-1.png",
+    "dpi": 300,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页视觉核对；最终300 DPI整页渲染裁剪；全部面板、坐标、图例完整；独立锚点和逐面板解析。",
+    "source_id": "uploaded-accepted-manuscript",
+    "source_file": "1708848.pdf",
+    "original_figure": "Figure 1",
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-2",
+    "label": "Figure 2",
+    "page": 3,
+    "bbox": [
+      56.0,
+      240.0,
+      268.0,
+      580.0
+    ],
+    "anchor": "figure-2",
+    "source": "1708848.pdf",
+    "image": "assets/figure-2.png",
+    "dpi": 300,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页视觉核对；最终300 DPI整页渲染裁剪；全部面板、坐标、图例完整；独立锚点和逐面板解析。",
+    "source_id": "uploaded-accepted-manuscript",
+    "source_file": "1708848.pdf",
+    "original_figure": "Figure 2",
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-3",
+    "label": "Figure 3",
+    "page": 3,
+    "bbox": [
+      325.0,
+      250.0,
+      524.0,
+      544.0
+    ],
+    "anchor": "figure-3",
+    "source": "1708848.pdf",
+    "image": "assets/figure-3.png",
+    "dpi": 300,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页视觉核对；最终300 DPI整页渲染裁剪；全部面板、坐标、图例完整；独立锚点和逐面板解析。",
+    "source_id": "uploaded-accepted-manuscript",
+    "source_file": "1708848.pdf",
+    "original_figure": "Figure 3",
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-4",
+    "label": "Figure 4",
+    "page": 4,
+    "bbox": [
+      324.0,
+      80.0,
+      540.0,
+      265.0
+    ],
+    "anchor": "figure-4",
+    "source": "1708848.pdf",
+    "image": "assets/figure-4.png",
+    "dpi": 300,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页视觉核对；最终300 DPI整页渲染裁剪；全部面板、坐标、图例完整；独立锚点和逐面板解析。",
+    "source_id": "uploaded-accepted-manuscript",
+    "source_file": "1708848.pdf",
+    "original_figure": "Figure 4",
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-5",
+    "label": "Figure 5",
+    "page": 5,
+    "bbox": [
+      40.0,
+      220.0,
+      273.0,
+      565.0
+    ],
+    "anchor": "figure-5",
+    "source": "1708848.pdf",
+    "image": "assets/figure-5.png",
+    "dpi": 300,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "逐页视觉核对；最终300 DPI整页渲染裁剪；全部面板、坐标、图例完整；独立锚点和逐面板解析。",
+    "source_id": "uploaded-accepted-manuscript",
+    "source_file": "1708848.pdf",
+    "original_figure": "Figure 5",
+    "coverage_status": "complete"
+  }
+]
