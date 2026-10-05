@@ -1,0 +1,58 @@
+{
+  "reading_date": "2026-10-05",
+  "main": {
+    "id": "main-vor",
+    "filename": "063906_1_5.0145001.pdf",
+    "sha256": "a6fefaf2813199bbad05c4e3f479e28a7a8b9a62f16d9e0fcaaeb712b5a066ea",
+    "pdf_pages": 13,
+    "printed_pages": 12,
+    "version": "Version of Record with publisher cover",
+    "doi": "10.1063/5.0145001",
+    "publication_date_in_pdf": "2023-06-14",
+    "read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "sections": [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "Appendix A",
+      "Appendix B",
+      "Appendix C"
+    ],
+    "figures": 10,
+    "tables": 1
+  },
+  "supplement": {
+    "status": "No separately referenced file found; publisher landing page unavailable; independent supplementary files not excluded"
+  },
+  "code": {
+    "url": "https://github.com/gsnoep/megpy",
+    "commit": "b5d5687f0ed0adf1b7b5fca4b782e354f467b7e7",
+    "metadata_version": "2.0.9",
+    "scope": "Static inspection of metadata, residual, solver call and examples; not historical 2023 implementation"
+  },
+  "data": {
+    "status": "Not obtained; paper states available on reasonable request"
+  },
+  "numerical_reproduction": false,
+  "browser_validation": false,
+  "browser_validation_reason": "Omitted per explicit user request",
+  "content_coverage": "All acquired article content covered; no claim about unacquired data or supplements"
+}

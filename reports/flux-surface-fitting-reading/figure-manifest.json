@@ -1,0 +1,266 @@
+[
+  {
+    "id": "figure-01",
+    "label": "Figure 1",
+    "page": 5,
+    "bbox": [
+      316.0,
+      94.0,
+      553.0,
+      650.0
+    ],
+    "anchor": "figure-1",
+    "panels": [
+      "a: JET #83164, two radii",
+      "b: JET #95473, two radii"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-01.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 1,
+    "printed_page": 4,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-02",
+    "label": "Figure 2",
+    "page": 6,
+    "bbox": [
+      48.0,
+      382.0,
+      298.0,
+      672.0
+    ],
+    "anchor": "figure-2",
+    "panels": [
+      "R0",
+      "kappa",
+      "Z0",
+      "delta",
+      "r",
+      "zeta"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-02.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 2,
+    "printed_page": 5,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-03",
+    "label": "Figure 3",
+    "page": 6,
+    "bbox": [
+      305.0,
+      95.0,
+      557.0,
+      279.0
+    ],
+    "anchor": "figure-3",
+    "panels": [
+      "poloidal Bp profile"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-03.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 3,
+    "printed_page": 5,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-04",
+    "label": "Figure 4",
+    "page": 6,
+    "bbox": [
+      304.0,
+      491.0,
+      557.0,
+      670.0
+    ],
+    "anchor": "figure-4",
+    "panels": [
+      "relative error of contour-average B squared"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-04.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 4,
+    "printed_page": 5,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-05",
+    "label": "Figure 5",
+    "page": 8,
+    "bbox": [
+      52.0,
+      94.0,
+      407.0,
+      601.0
+    ],
+    "anchor": "figure-5",
+    "panels": [
+      "a: #83164, rho 0.85",
+      "b: #95473, rho 0.85",
+      "c: #83164, rho 0.95",
+      "d: #95473, rho 0.95",
+      "each: growth rate and frequency"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-05.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 5,
+    "printed_page": 7,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-06",
+    "label": "Figure 6",
+    "page": 9,
+    "bbox": [
+      48.0,
+      155.0,
+      296.0,
+      651.0
+    ],
+    "anchor": "figure-6",
+    "panels": [
+      "a: contour",
+      "b: Bp"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-06.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 6,
+    "printed_page": 8,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-07",
+    "label": "Figure 7",
+    "page": 9,
+    "bbox": [
+      304.0,
+      242.0,
+      559.0,
+      639.0
+    ],
+    "anchor": "figure-7",
+    "panels": [
+      "a: B squared",
+      "b: Bp"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-07.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 7,
+    "printed_page": 8,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-08",
+    "label": "Figure 8",
+    "page": 10,
+    "bbox": [
+      53.0,
+      448.0,
+      407.0,
+      701.0
+    ],
+    "anchor": "figure-8",
+    "panels": [
+      "a: #83164",
+      "b: #95473",
+      "each: growth rate and frequency"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-08.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 8,
+    "printed_page": 9,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-09",
+    "label": "Figure 9",
+    "page": 12,
+    "bbox": [
+      342.0,
+      406.0,
+      531.0,
+      660.0
+    ],
+    "anchor": "figure-9",
+    "panels": [
+      "tilted CHEASE contour"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-09.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 9,
+    "printed_page": 11,
+    "coverage_status": "complete"
+  },
+  {
+    "id": "figure-10",
+    "label": "Figure 10",
+    "page": 13,
+    "bbox": [
+      73.0,
+      96.0,
+      279.0,
+      355.0
+    ],
+    "anchor": "figure-10",
+    "panels": [
+      "complex asymmetric CHEASE contour"
+    ],
+    "source": "063906_1_5.0145001.pdf",
+    "image": "assets/figure-10.png",
+    "dpi": 260,
+    "embedded": true,
+    "explained": true,
+    "verification_notes": "Original PDF page and final crop visually checked; axes, legends and all panels retained; browser review omitted at user request.",
+    "source_id": "main-vor",
+    "original_figure_number": 10,
+    "printed_page": 12,
+    "coverage_status": "complete"
+  }
+]
