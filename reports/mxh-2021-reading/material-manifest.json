@@ -1,0 +1,59 @@
+{
+  "reading_date": "2026-10-05",
+  "title": "Rapidly-convergent flux-surface shape parameterization",
+  "authors": [
+    "R. Arbon",
+    "J. Candy",
+    "E. A. Belli"
+  ],
+  "doi": "10.1088/1361-6587/abc63b",
+  "journal": "Plasma Physics and Controlled Fusion 63 (2021) 012001",
+  "sources": [
+    {
+      "source_id": "uploaded-accepted-manuscript",
+      "file": "1708848.pdf",
+      "sha256": "d0e6ea360c9786bf4cc1959309b7a10186ea0b2d7717e6e7e360e9cc66e48930",
+      "pages": 6,
+      "manuscript_date": "2020-11-09",
+      "read_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "numbered_figures": 5,
+      "tables": 0,
+      "appendices": 0,
+      "unnumbered_substantive_figures": 0,
+      "origin_url": "https://www.osti.gov/servlets/purl/1708848"
+    },
+    {
+      "source_id": "osti-metadata",
+      "url": "https://www.osti.gov/api/v1/records/1708848",
+      "coverage": "bibliographic metadata only"
+    },
+    {
+      "source_id": "gacode-current-docs",
+      "url": "https://gafusion.github.io/doc/geometry.html",
+      "coverage": "geometry conventions and MXH3 input interface; not historical reproduction"
+    },
+    {
+      "source_id": "gacode-references",
+      "url": "https://gafusion.github.io/doc/zreferences.html",
+      "coverage": "ACB21 bibliographic entry"
+    },
+    {
+      "source_id": "later-implementation-readme",
+      "url": "https://github.com/ProjectTorreyPines/MXHEquilibrium.jl",
+      "coverage": "README only; no source audit or execution"
+    }
+  ],
+  "limitations": [
+    "Journal-formatted full text not obtained; no version-to-version comparison",
+    "No supplement listed in provided manuscript or acquired OSTI record; publisher supplement inventory unverified",
+    "Original equilibrium, transport inputs, numerical data and historical code version not obtained",
+    "No EFIT/NEO/CGYRO calculation performed"
+  ]
+}
