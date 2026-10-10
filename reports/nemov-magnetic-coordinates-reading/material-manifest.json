@@ -1,0 +1,53 @@
+{
+  "main": {
+    "source_id": "main-published",
+    "filename": "NF_45_22.pdf",
+    "version": "Published journal PDF uploaded by user",
+    "sha256": "8859c38c4a2f508b3390eeeabeca5428c34476e1061faf34d439652d98a8d52c",
+    "pages": 8,
+    "printed_pages": [
+      22,
+      29
+    ],
+    "read_pdf_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "all_pages_visually_reviewed": true,
+    "figures": 11,
+    "tables": 0,
+    "appendices": 0,
+    "doi": "10.1088/0029-5515/45/1/003",
+    "title": "Calculation of magnetic coordinates for stellarator fields including islands and the Scrape-Off Layer",
+    "authors": [
+      "X. Bonnin",
+      "A. Mutzke",
+      "C. Nührenberg",
+      "J. Nührenberg",
+      "R. Schneider"
+    ],
+    "journal_year": 2005,
+    "published_online": "2004-12-31"
+  },
+  "supplementary_material": {
+    "status": "not_identified",
+    "note": "No supplement link in uploaded PDF; search did not confirm additional materials. No claim of absence."
+  },
+  "code_and_data": {
+    "status": "not_obtained",
+    "note": "aam10 named in paper; no repository or field-data link in uploaded version."
+  },
+  "external_sources": {
+    "doi_page_read": false,
+    "early_eps_version_incorporated": false,
+    "access_date": "2026-10-10"
+  },
+  "coverage": "complete_for_uploaded_material_only",
+  "numerical_reproduction": false
+}
