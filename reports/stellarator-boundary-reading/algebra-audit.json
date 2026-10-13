@@ -1,0 +1,36 @@
+{
+  "scope": "Reader algebra check only; not paper optimization reproduction",
+  "equations": "4.8-4.11; m>=1; center=0; b_n=0 for negative n; full shifted bandwidth retained",
+  "coefficient_checks": [
+    {
+      "alpha": 0.5,
+      "grid_points": 713,
+      "max_abs_difference": 6.661338147750939e-16
+    },
+    {
+      "alpha": 1.0,
+      "grid_points": 713,
+      "max_abs_difference": 6.661338147750939e-16
+    },
+    {
+      "alpha": 2.5,
+      "grid_points": 713,
+      "max_abs_difference": 1.3877787807814457e-15
+    }
+  ],
+  "equation_4_4": {
+    "printed": "n Z_0n=-a_n; Z_1n=b_|n|/2",
+    "test_one_sided_m0": {
+      "a_2": 1,
+      "printed_Z_02": -0.5,
+      "resulting_sin2phi_amplitude": 0.5,
+      "expected_amplitude": 1
+    },
+    "zero_mode_b": {
+      "b_0": 1,
+      "printed_Z_10": 0.5,
+      "expected_Z_10": 1
+    }
+  },
+  "figure1_caption": "Printed twice the total extent contradicts b=(zmax-zmin)/2; half is consistent"
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "claim": "极向角重参数化保持几何集合",
+    "section": "2",
+    "pdf_pages": [
+      2,
+      3
+    ],
+    "locator": "2.1-2.3",
+    "conditions_or_limits": "连续双周期；一一性另需单调条件",
+    "judgment_type": "作者推导",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "有限截断主要形成近似冗余",
+    "section": "2",
+    "pdf_pages": [
+      3
+    ],
+    "locator": "",
+    "conditions_or_limits": "复合一般产生更高模式",
+    "judgment_type": "作者讨论",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "谱凝聚消除部分切向自由度",
+    "section": "3",
+    "pdf_pages": [
+      3,
+      4
+    ],
+    "locator": "3.1-3.4",
+    "conditions_or_limits": "谱宽定义和零模约定；驻点不保证全局最优",
+    "judgment_type": "作者方法与读者限定",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "最终表示在旋转高度中固定正弦",
+    "section": "4",
+    "pdf_pages": [
+      5,
+      6,
+      7
+    ],
+    "locator": "4.8-4.11; Figures 1-2",
+    "conditions_or_limits": "单一高度极值、中心与分支规范",
+    "judgment_type": "作者构造",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "四变量圆模型有重复圆和退化局部极小",
+    "section": "5.1",
+    "pdf_pages": [
+      8,
+      9
+    ],
+    "locator": "Figures 5-6",
+    "conditions_or_limits": "Q约0.133；重复绕行不是一一坐标",
+    "judgment_type": "作者结果与读者判断",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "局部返回的值函数存在分支跳转",
+    "section": "5.1",
+    "pdf_pages": [
+      9,
+      10,
+      11
+    ],
+    "locator": "Figures 7-9",
+    "conditions_or_limits": "内层算法误差不能等同原始目标不连续",
+    "judgment_type": "作者警示与读者限定",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "新表示低阶仍有浅局部极小",
+    "section": "5.1",
+    "pdf_pages": [
+      10,
+      12
+    ],
+    "locator": "Figures 10-11",
+    "conditions_or_limits": "增横向阶数后消失；无全局凸性证明",
+    "judgment_type": "作者结果",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "W7-X可用有限模式重建",
+    "section": "5.2",
+    "pdf_pages": [
+      12,
+      13
+    ],
+    "locator": "Figure 13",
+    "conditions_or_limits": "m<=5, |n|<=3；无定量几何误差",
+    "judgment_type": "作者结果",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "三维同权重目标通常下降两个数量级",
+    "section": "5.3",
+    "pdf_pages": [
+      14,
+      15
+    ],
+    "locator": "5.7; Figures 14-15",
+    "conditions_or_limits": "无计时、多初猜或目标分项表",
+    "judgment_type": "作者报告",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "式4.4与展开存在疑似排印不一致",
+    "section": "4",
+    "pdf_pages": [
+      4
+    ],
+    "locator": "4.1-4.4",
+    "conditions_or_limits": "单边m0、常数b0的最小反例",
+    "judgment_type": "读者代数检查",
+    "source_id": "main-vor"
+  },
+  {
+    "claim": "最终系数映射数值等价",
+    "section": "4",
+    "pdf_pages": [
+      6
+    ],
+    "locator": "4.8-4.11",
+    "conditions_or_limits": "固定中心、m>=1、单边b_n、完整带宽；不含物理优化",
+    "judgment_type": "读者有限核查",
+    "source_id": "main-vor"
+  }
+]

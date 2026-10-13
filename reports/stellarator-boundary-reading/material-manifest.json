@@ -1,0 +1,69 @@
+{
+  "reading_date": "2026-10-13",
+  "main": {
+    "id": "main-vor",
+    "filename": "representing-the-boundary-of-stellarator-plasmas (1).pdf",
+    "sha256": "d58094fdf3e5561284df0c6882ef042fb58d7da84af56954b1255846c2194362",
+    "version": "Version of Record",
+    "doi": "https://doi.org/10.1017/S0022377821000891",
+    "pdf_pages": 16,
+    "printed_pages": 16,
+    "read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "sections": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.1",
+      "5.2",
+      "5.3",
+      "6",
+      "Footnotes",
+      "Acknowledgements",
+      "Funding",
+      "Declaration of interests",
+      "References"
+    ],
+    "figures": 15,
+    "tables": 0,
+    "appendices": 0
+  },
+  "supplement": {
+    "status": "No article-specific supplement linked or referenced in acquired PDF and publisher article page"
+  },
+  "code_and_data": {
+    "status": "No article-specific repository link supplied; complete numerical inputs and logs not acquired"
+  },
+  "other_version": {
+    "url": "https://arxiv.org/abs/2105.00768",
+    "read_as_main": false
+  },
+  "publisher_metadata": {
+    "url": "https://www.cambridge.org/core/journals/journal-of-plasma-physics/article/representing-the-boundary-of-stellarator-plasmas/095F0ECEBBA368D9FE5AA5233F792DA2",
+    "online_publication_date": "2021-09-17",
+    "access_date": "2026-10-13"
+  },
+  "original_numerical_reproduction": false,
+  "reader_algebra_check": true,
+  "browser_validation": false,
+  "browser_validation_reason": "Omitted per explicit user request",
+  "license": "CC BY 4.0",
+  "coverage": "All acquired Version-of-Record content; no claim of numerical replication or browser visual acceptance"
+}
