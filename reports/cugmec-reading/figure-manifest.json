@@ -1,0 +1,290 @@
+[
+  {
+    "figure": 1,
+    "page": 4,
+    "crop_pdf_points": [
+      310,
+      52,
+      555,
+      426
+    ],
+    "dimensions_px": [
+      980,
+      1496
+    ],
+    "dpi": 288,
+    "file": "assets/fig01.png",
+    "includes_original_caption": true,
+    "explanation_zh": "同位网格中的平行方向棋盘格振荡，与交错网格消除该数值不稳定后的平滑电势结构对照。"
+  },
+  {
+    "figure": 2,
+    "page": 5,
+    "crop_pdf_points": [
+      51,
+      53,
+      276,
+      320
+    ],
+    "dimensions_px": [
+      900,
+      1068
+    ],
+    "dpi": 288,
+    "file": "assets/fig02.png",
+    "includes_original_caption": true,
+    "explanation_zh": "CUDA 的设备、网格、线程块与线程层级，以及二维网格、三维线程块的组织方式。"
+  },
+  {
+    "figure": 3,
+    "page": 6,
+    "crop_pdf_points": [
+      53,
+      52,
+      544,
+      384
+    ],
+    "dimensions_px": [
+      1964,
+      1328
+    ],
+    "dpi": 288,
+    "file": "assets/fig03.png",
+    "includes_original_caption": true,
+    "explanation_zh": "系数压缩与 warp shuffle 指令在不同 GPU、网格规模和单／双精度下带来的加速比。"
+  },
+  {
+    "figure": 4,
+    "page": 7,
+    "crop_pdf_points": [
+      53,
+      52,
+      544,
+      403
+    ],
+    "dimensions_px": [
+      1964,
+      1404
+    ],
+    "dpi": 288,
+    "file": "assets/fig04.png",
+    "includes_original_caption": true,
+    "explanation_zh": "场数据重排与基数排序对 PIC 的加速效果，比较 A800、RTX 4090、粒子数和回旋平均点数。"
+  },
+  {
+    "figure": 5,
+    "page": 8,
+    "crop_pdf_points": [
+      56,
+      52,
+      277,
+      343
+    ],
+    "dimensions_px": [
+      884,
+      1164
+    ],
+    "dpi": 288,
+    "file": "assets/fig05.png",
+    "includes_original_caption": true,
+    "explanation_zh": "cuGMEC 的完整模拟流程：输入与初始化、MHD 推进、场量通信、PIC 推进、压力反馈、诊断、排序与输出。"
+  },
+  {
+    "figure": 6,
+    "page": 8,
+    "crop_pdf_points": [
+      323,
+      52,
+      544,
+      589
+    ],
+    "dimensions_px": [
+      884,
+      2148
+    ],
+    "dpi": 288,
+    "file": "assets/fig06.png",
+    "includes_original_caption": true,
+    "explanation_zh": "m/n=2/1 撕裂模的二维电势结构、极向谐波及增长率对电阻率的标度，验证约 γ∝η^(3/5)。"
+  },
+  {
+    "figure": 7,
+    "page": 9,
+    "crop_pdf_points": [
+      37,
+      52,
+      293,
+      390
+    ],
+    "dimensions_px": [
+      1024,
+      1352
+    ],
+    "dpi": 288,
+    "file": "assets/fig07.png",
+    "includes_original_caption": true,
+    "explanation_zh": "快离子温度扫描中的 TAE 增长率，比较不含和包含有限拉莫尔半径效应的结果；灰带表示其他代码的基准范围。"
+  },
+  {
+    "figure": 8,
+    "page": 9,
+    "crop_pdf_points": [
+      321,
+      52,
+      544,
+      423
+    ],
+    "dimensions_px": [
+      892,
+      1484
+    ],
+    "dpi": 288,
+    "file": "assets/fig08.png",
+    "includes_original_caption": true,
+    "explanation_zh": "n=6 环形 Alfvén 本征模的二维电势结构及极向 Fourier 谐波，主要由相邻 m=10、11 谐波构成。"
+  },
+  {
+    "figure": 9,
+    "page": 10,
+    "crop_pdf_points": [
+      53,
+      52,
+      273,
+      586
+    ],
+    "dimensions_px": [
+      880,
+      2136
+    ],
+    "dpi": 288,
+    "file": "assets/fig09.png",
+    "includes_original_caption": true,
+    "explanation_zh": "有限拉莫尔半径效应引入的短波结构，以及辐射阻尼率随 a/ρ_i 的变化，并与理论标度比较。"
+  },
+  {
+    "figure": 10,
+    "page": 10,
+    "crop_pdf_points": [
+      319,
+      52,
+      547,
+      576
+    ],
+    "dimensions_px": [
+      912,
+      2096
+    ],
+    "dpi": 288,
+    "file": "assets/fig10.png",
+    "includes_original_caption": true,
+    "explanation_zh": "TAE 的时间演化：高 n 单模线性稳定；多模粒子非线性耦合激发高次谐波；加入 MHD 非线性后改变饱和幅值。"
+  },
+  {
+    "figure": 11,
+    "page": 11,
+    "crop_pdf_points": [
+      39,
+      52,
+      557,
+      389
+    ],
+    "dimensions_px": [
+      2072,
+      1348
+    ],
+    "dpi": 288,
+    "file": "assets/fig11.png",
+    "includes_original_caption": true,
+    "explanation_zh": "非线性 TAE 的总电势二维结构，以及 n=0、6、12、18、24 各环向分量的空间形态。"
+  },
+  {
+    "figure": 12,
+    "page": 12,
+    "crop_pdf_points": [
+      54,
+      52,
+      274,
+      389
+    ],
+    "dimensions_px": [
+      880,
+      1348
+    ],
+    "dpi": 288,
+    "file": "assets/fig12.png",
+    "includes_original_caption": true,
+    "explanation_zh": "DIII-D #159243 放电在 805 ms 的平衡压力、安全因子，以及电子、热离子和快离子的密度与温度剖面。"
+  },
+  {
+    "figure": 13,
+    "page": 12,
+    "crop_pdf_points": [
+      319,
+      52,
+      547,
+      647
+    ],
+    "dimensions_px": [
+      912,
+      2380
+    ],
+    "dpi": 288,
+    "file": "assets/fig13.png",
+    "includes_original_caption": true,
+    "explanation_zh": "反剪切 Alfvén 本征模的频率、增长率多代码对照，以及 n=4 模的二维电势和极向谐波结构。"
+  },
+  {
+    "figure": 14,
+    "page": 13,
+    "crop_pdf_points": [
+      54,
+      52,
+      274,
+      367
+    ],
+    "dimensions_px": [
+      880,
+      1260
+    ],
+    "dpi": 288,
+    "file": "assets/fig14.png",
+    "includes_original_caption": true,
+    "explanation_zh": "扫描电子 β 时各代码的增长率和实频率，展示由 ITG 经 TEM 区域向 KBM 的分支变化。"
+  },
+  {
+    "figure": 15,
+    "page": 13,
+    "crop_pdf_points": [
+      321,
+      52,
+      544,
+      469
+    ],
+    "dimensions_px": [
+      892,
+      1668
+    ],
+    "dpi": 288,
+    "file": "assets/fig15.png",
+    "includes_original_caption": true,
+    "explanation_zh": "β_e=1.5% 时电势 δφ 与平行矢势 δA∥ 的二维模结构，比较其内外侧分布及气球模特征。"
+  },
+  {
+    "figure": 16,
+    "page": 14,
+    "crop_pdf_points": [
+      54,
+      52,
+      273,
+      548
+    ],
+    "dimensions_px": [
+      876,
+      1984
+    ],
+    "dpi": 288,
+    "file": "assets/fig16.png",
+    "includes_original_caption": true,
+    "explanation_zh": "分别增加径向、极向和环向网格数时的运行时间，双对数曲线显示近似线性规模增长。"
+  }
+]
