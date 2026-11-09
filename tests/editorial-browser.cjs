@@ -37,7 +37,7 @@ const base=process.env.BASE_URL||'http://localhost:8766';
   formulas+=await page.locator('.katex,math').count();figures+=await page.locator('figure').count();
   assert(await page.locator('.reading-masthead a,.reading-course .brand').count()>0);
   if(url.includes('plasma-lectures')){
-   assert.equal(await page.locator('.study-visual').count(),89);
+   assert.equal(await page.locator('.study-visual,canvas,#plasma-visual-coverage').count(),0);
    const originalSize=await page.evaluate(()=>getComputedStyle(document.body).fontSize);await page.locator('#larger').click();assert.notEqual(await page.evaluate(()=>getComputedStyle(document.body).fontSize),originalSize);await page.locator('#smaller').click();
    await page.locator('#theme').click();assert.equal(await page.locator('html').getAttribute('data-theme'),'dark');await page.locator('#theme').click();
    await page.locator('#menu').click();assert(await page.locator('.sidebar').isVisible());await page.locator('.sidebar #search').fill('Debye');assert(await page.locator('.study-section:visible').count()>0);

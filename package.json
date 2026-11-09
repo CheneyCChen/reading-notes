@@ -2,9 +2,10 @@
   "name": "reading-club",
   "private": true,
   "scripts": {
-    "test:content": "python3 tests/editorial-content.py && python3 tests/plasma-content.py",
-    "test:visuals": "node tests/plasma-l12.cjs && node tests/plasma-l34.cjs && node tests/plasma-l5.cjs && node tests/plasma-l6.cjs",
-    "test:browser": "node tests/editorial-browser.cjs"
+    "test:content": "python3 tests/editorial-content.py && python3 tests/plasma-content.py && python3 tests/plasma-l7-content.py",
+    "test:browser": "node tests/editorial-browser.cjs && node tests/plasma-browser.cjs"
   },
-  "devDependencies": { "playwright": "1.56.1" }
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
 }

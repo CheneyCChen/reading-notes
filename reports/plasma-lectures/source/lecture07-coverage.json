@@ -1,0 +1,303 @@
+{
+  "lecture": 7,
+  "source": "originals/Lecture07.pdf",
+  "original_pages": 12,
+  "pages": [
+    {
+      "page": 1,
+      "sections": [
+        "1 基本方程",
+        "2 粗略的有碰撞闭合：弱电离等离子体"
+      ],
+      "equation_tags": [
+        "L7-1",
+        "L7-2",
+        "L7-3",
+        "L7-4",
+        "L7-5",
+        "L7-6"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 0,
+      "notes": [
+        "逐页图像已检查，无图。式(4)的R保留原稿并校注应为R/n。"
+      ],
+      "translation_file": "chapters/lecture07-part1.tex"
+    },
+    {
+      "page": 2,
+      "sections": [
+        "2 弱电离模型续",
+        "2.1 密度方程"
+      ],
+      "equation_tags": [
+        "L7-7",
+        "L7-8",
+        "L7-9",
+        "L7-10",
+        "L7-11"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 1,
+      "quiz_items": 0,
+      "references": 0,
+      "notes": [
+        "全部行内式与矩阵、下括注已保留。原文将电场粒子通量直接写作σE，随第3页校注说明应有1/qs。"
+      ],
+      "translation_file": "chapters/lecture07-part1.tex"
+    },
+    {
+      "page": 3,
+      "sections": [
+        "2.1 密度方程续",
+        "2.2 扩散系数"
+      ],
+      "equation_tags": [
+        "L7-12",
+        "L7-13",
+        "L7-14",
+        "L7-15",
+        "L7-16"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 1,
+      "quiz_items": 0,
+      "references": 0,
+      "notes": [
+        "Hall定义重复yx，式(15)缺B且ln与梯度次序颠倒，原文扩散方程误引(12)，L²/D称速率，以及ρ⊥未定义均保留并明确校注。"
+      ],
+      "translation_file": "chapters/lecture07-part1.tex"
+    },
+    {
+      "page": 4,
+      "sections": [
+        "2.2 适用条件续",
+        "2.3 双极扩散",
+        "2.3.1 未磁化等离子体"
+      ],
+      "equation_tags": [
+        "L7-17",
+        "L7-18",
+        "L7-19",
+        "L7-20",
+        "L7-21",
+        "L7-22",
+        "L7-23"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 0,
+      "notes": [
+        "式(21)后Γe=ZiΓe的原稿笔误及有符号迁移率μe≫μi表述保留并校注。"
+      ],
+      "translation_file": "chapters/lecture07-part1.tex"
+    },
+    {
+      "page": 5,
+      "sections": [
+        "2.3.2 磁化等离子体",
+        "3 渐近有碰撞闭合",
+        "3.1 引言",
+        "3.2 以标量方程替代压强张量方程"
+      ],
+      "equation_tags": [
+        "L7-24",
+        "L7-25"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 2,
+      "quiz_items": 0,
+      "references": 0,
+      "notes": [
+        "脚注3完整保留Dodin2022及附录E和C.3的文献引用；该页无参考文献条目。脚注4完整保留。"
+      ],
+      "translation_file": "chapters/lecture07-part1.tex"
+    },
+    {
+      "page": 6,
+      "sections": [
+        "3.2 标量方程续",
+        "3.3 Chapman–Enskog 展开"
+      ],
+      "equation_tags": [
+        "L7-26",
+        "L7-27",
+        "L7-28",
+        "L7-29",
+        "L7-30",
+        "L7-31a",
+        "L7-31b"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 0,
+      "notes": [
+        "tr(P∇U)中的P/D、式(26)的1/D、式(28)–(30)中的−2Π、式(30)括注−σ全部依原稿保留并校注。标量热源粗体S与碰撞矩花体S区分。式31a,b环境在本部分闭合；31c由part2接续。"
+      ],
+      "translation_file": "chapters/lecture07-part1.tex"
+    },
+    {
+      "page": 7,
+      "sections": [
+        "3.3 Chapman–Enskog 展开（续）"
+      ],
+      "equation_tags": [
+        "L7-31c",
+        "L7-32",
+        "L7-33",
+        "L7-34",
+        "L7-35a",
+        "L7-35b",
+        "L7-35c",
+        "L7-36"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 0,
+      "translation_file": "chapters/lecture07-part2.tex",
+      "notes": [
+        "已查看实际页面图像和提取文本；无编号或未编号插图。",
+        "原文把 3T/2 称为局部能量密度；保留原话并校注其应为每粒子随机动能，内能密度为 3nT/2。",
+        "采用不同的 C 与书法 C 区分线性碰撞算符和包含回旋项的组合算符。"
+      ]
+    },
+    {
+      "page": 8,
+      "sections": [
+        "3.4 一个简单例子"
+      ],
+      "equation_tags": [
+        "L7-37",
+        "L7-38",
+        "L7-39",
+        "L7-40",
+        "L7-41",
+        "L7-42",
+        "L7-43"
+      ],
+      "unnumbered_equations": 2,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 0,
+      "translation_file": "chapters/lecture07-part2.tex",
+      "notes": [
+        "已查看实际页面图像和提取文本；两组未编号显示式分别为 D ln g0 的展开和含黏滞项的动量方程。无插图。",
+        "原式41末项遗漏单位张量、随后未编号动量式黏滞项缺 1/n，均保留并附校注；提及空间变化输运系数的梯度。",
+        "原式43后原文保留 -2 Pi:grad U，与前文能量式校注关联，并指出除以 n 后该项也须除以 n。"
+      ]
+    },
+    {
+      "page": 9,
+      "sections": [
+        "3.4 一个简单例子（续）",
+        "3.5 金标准：Braginskii 方程"
+      ],
+      "equation_tags": [
+        "L7-44",
+        "L7-45",
+        "L7-46",
+        "L7-47",
+        "L7-48",
+        "L7-49",
+        "L7-50"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 1,
+      "quiz_items": 0,
+      "references": 0,
+      "translation_file": "chapters/lecture07-part2.tex",
+      "notes": [
+        "已查看实际页面图像和提取文本；无插图。保留原脚注5的完整 Parra 教程链接。",
+        "原式45热速度质量指数 +1/2 保留，并明确校注正确标度应为 -1/2。"
+      ]
+    },
+    {
+      "page": 10,
+      "sections": [
+        "3.5 金标准：Braginskii 方程（续）"
+      ],
+      "equation_tags": [
+        "L7-51a",
+        "L7-51b",
+        "L7-51c",
+        "L7-51d",
+        "L7-51e",
+        "L7-51f",
+        "L7-51g",
+        "L7-51h",
+        "L7-52a",
+        "L7-52b",
+        "L7-52c",
+        "L7-52d",
+        "L7-52e",
+        "L7-52f",
+        "L7-52g",
+        "L7-52h",
+        "L7-52i",
+        "L7-52j"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 0,
+      "translation_file": "chapters/lecture07-part2.tex",
+      "notes": [
+        "已查看实际页面图像和提取文本；无插图。电子和离子每个子编号均为可编辑公式。",
+        "在接续的原页11校注原式51奇次电子回旋频率的正频率约定，以及原式52e与所引 Parra 教程不符的离子垂直导热系数；原公式未默改。"
+      ]
+    },
+    {
+      "page": 11,
+      "sections": [
+        "3.5 金标准：Braginskii 方程（续）",
+        "自测题"
+      ],
+      "equation_tags": [
+        "L7-52k"
+      ],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 14,
+      "references": 0,
+      "translation_file": "chapters/lecture07-part2.tex",
+      "notes": [
+        "已查看实际页面图像和提取文本；无插图。14道自测题全部译出。",
+        "依 Parra 2019-04-18 原讲义所引教程 p7,15,16核验：Omega_e为正，离子垂直热流系数为2且碰撞频率定义相同。",
+        "原文焦耳加热句 and to for Ti 为明显排字错误，译为不进入 Ti 方程并显式说明依据。",
+        "原文 Q/n 直接称为温度扩散系数，保留断言并校注应指热导率/n，标准温度扩散方程另有比热因子。"
+      ]
+    },
+    {
+      "page": 12,
+      "sections": [
+        "参考文献"
+      ],
+      "equation_tags": [],
+      "unnumbered_equations": 0,
+      "figures": [],
+      "footnotes": 0,
+      "quiz_items": 0,
+      "references": 2,
+      "translation_file": "chapters/lecture07-part2.tex",
+      "notes": [
+        "已查看实际页面图像和提取文本；仅两条参考文献，无插图。作者、年份、英文题名、期刊/丛书名、卷、页码/文章号和 arXiv 标识均保留。"
+      ]
+    }
+  ]
+}

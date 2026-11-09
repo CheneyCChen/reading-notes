@@ -1,0 +1,295 @@
+\sourcepage{7}{7}
+\begin{equation}
+\nabla_{\boldsymbol v}f=\nabla_{\boldsymbol w}g.
+\tag{L7-31c}\label{eq:L7:31c}
+\end{equation}
+由此得到
+\begin{equation}
+\begin{aligned}
+&\partial_tg-(\partial_t\boldsymbol U)\cdot\nabla_{\boldsymbol w}g
+ +(\boldsymbol U+\boldsymbol w)\cdot\nabla g
+ -(\boldsymbol U+\boldsymbol w)\cdot(\nabla\boldsymbol U)\cdot\nabla_{\boldsymbol w}g\\
+&\qquad+\frac qm\left(\boldsymbol E+\frac{\boldsymbol U}c\times\boldsymbol B
+ +\frac{\boldsymbol w}c\times\boldsymbol B\right)\cdot\nabla_{\boldsymbol w}g=C,
+\end{aligned}\tag{L7-32}\label{eq:L7:32}
+\end{equation}
+或等价地，
+\begin{equation}
+\begin{aligned}
+&\partial_tg+(\boldsymbol U+\boldsymbol w)\cdot\nabla g
+ -\boldsymbol w\cdot(\nabla\boldsymbol U)\cdot\nabla_{\boldsymbol w}g\\
+&\qquad+\left[\frac qm\left(\boldsymbol E+\frac{\boldsymbol U}c\times\boldsymbol B\right)
+ -\frac{\mathrm d\boldsymbol U}{\mathrm dt}\right]\cdot\nabla_{\boldsymbol w}g
+ =C-\boldsymbol w\times\boldsymbol\Omega\cdot\nabla_{\boldsymbol w}g,
+\end{aligned}\tag{L7-33}\label{eq:L7:33}
+\end{equation}
+其中方括号内的表达式还可利用动量方程进一步化简：
+\begin{equation}
+\frac qm\left(\boldsymbol E+\frac{\boldsymbol U}c\times\boldsymbol B\right)
+-\frac{\mathrm d\boldsymbol U}{\mathrm dt}
+=\frac{\nabla\cdot\boldsymbol P-\boldsymbol R}{mn}\equiv\boldsymbol a.
+\tag{L7-34}\label{eq:L7:34}
+\end{equation}
+同一种类粒子之间的碰撞不能改变该种粒子自身的流体动量，因此，进入式~(L7-33) 的摩擦力 $\boldsymbol R$ 只含有与其他种类粒子相互作用产生的贡献。由能量守恒，式~(L7-29) 中的 $\boldsymbol S$ 也有相同性质。为简单起见，暂且假设与其他种类粒子的相互作用很弱或可以忽略。还像弱电离等离子体的情形一样，假设 $\partial_t$ 与 $\nabla$ 也很小。如果寻找形如 $g=g_0+\widetilde g$ 的解，其中 $g_0$ 是 Maxwell 分布，那么在最低阶上，式~(L7-33) 原文第一行中的所有 $g$ 都可替换成 $g_0$。还要注意，当 $\widetilde g\to0$ 时，原文第二行的整个表达式都消失。因此，式~(L7-33) 可近似写成
+\begin{align}
+&g_0\widehat D\ln g_0
+ =\left(\widehat C-\boldsymbol w\times\boldsymbol\Omega\cdot\nabla_{\boldsymbol w}\right)\widetilde g
+ \equiv\widehat{\mathcal C}\widetilde g,
+ \tag{L7-35a}\label{eq:L7:35a}\\
+&\widehat D\doteq\partial_t+(\boldsymbol U+\boldsymbol w)\cdot\nabla
+ -\boldsymbol w\cdot(\nabla\boldsymbol U)\cdot\nabla_{\boldsymbol w}
+ +\boldsymbol a\cdot\nabla_{\boldsymbol w},
+ \tag{L7-35b}\label{eq:L7:35b}\\
+&\ln g_0=\ln n-\frac32\ln T-\frac{mw^2}{2T}+\mathrm{const}.
+ \tag{L7-35c}\label{eq:L7:35c}
+\end{align}
+这里使用了 $C[g_0+\widetilde g]\approx C_0+\widehat C\widetilde g\approx\widehat C\widetilde g$，其中 $\widehat C$ 是某个线性算符。
+
+现在只需对算符 $\widehat{\mathcal C}$ 求逆。求逆时必须记住，该算符具有非平凡的核，因此并不完全可逆。不过可以证明，只要施加以下约束，式~(L7-35) 就能唯一确定 $\widetilde g$；这里假定 $\widehat C$ 如其应有的那样保持粒子数、动量和能量守恒：
+\begin{equation}
+\int\widetilde g\,\mathrm d\boldsymbol w=0,\qquad
+\int\boldsymbol w\widetilde g\,\mathrm d\boldsymbol w=0,\qquad
+\int w^2\widetilde g\,\mathrm d\boldsymbol w=0.
+\tag{L7-36}\label{eq:L7:36}
+\end{equation}
+这些约束的含义很简单：Maxwell 分布式~(L7-24) 中的 $n$、$\boldsymbol U$ 和 $3T/2$，确实分别是完整分布函数 $f$ 的真实局部密度、真实局部流速和真实局部能量密度。然后，只要有一些耐心，并且 $\widehat C$ 不太复杂，就可以显式求解式~(L7-35)。下面讨论两个例子：一个简单的玩具模型，以及一个复杂但实用的结果。
+\begin{correction}{译者校注：每粒子能量与能量密度}
+原文称 $3T/2$ 为“局部能量密度”。按本讲 $T$ 的定义，$3T/2$ 是随流参考系中每个粒子的平均随机动能；相应的单位体积内能为 $3nT/2$。上文保留原文的称谓，以免把原文的量纲问题隐藏在翻译中。
+\end{correction}
+
+\sourcepage{7}{8}
+\subsection{一个简单例子}\label{sec:L7:example}
+假设只存在同种粒子之间的碰撞，因而 $\boldsymbol R=0$ 且 $\boldsymbol S=0$。于是，
+\begin{equation*}
+\begin{aligned}
+\widehat D\ln g_0
+&=\left[\frac{\mathrm d}{\mathrm dt}+\boldsymbol w\cdot\nabla
+ +\left(\frac{\nabla P}{mn}-\boldsymbol w\cdot\nabla\boldsymbol U\right)\cdot\nabla_{\boldsymbol w}\right]\ln g_0\\
+&=\left(\frac{\mathrm d}{\mathrm dt}+\boldsymbol w\cdot\nabla\right)\ln n
+ +\left(\frac{w^2}{2v_T^2}-\frac32\right)
+ \left(\frac{\mathrm d}{\mathrm dt}+\boldsymbol w\cdot\nabla\right)\ln T\\
+&\qquad+\left(\frac{\nabla P}{mn}-\boldsymbol w\cdot\nabla\boldsymbol U\right)
+ \cdot\left(-\frac{\boldsymbol w}{v_T^2}\right).
+\end{aligned}
+\end{equation*}
+由式~(L7-27) 与式~(L7-29)，有
+\begin{equation}
+\frac{\mathrm d\ln n}{\mathrm dt}=-\nabla\cdot\boldsymbol U,\qquad
+\frac{\mathrm d\ln T}{\mathrm dt}+\frac23\nabla\cdot\boldsymbol U=0,
+\tag{L7-37}\label{eq:L7:37}
+\end{equation}
+这里忽略了 $\widetilde g$ 的影响，因为我们只关心最低阶项。于是，
+\begin{equation}
+\begin{aligned}
+\widehat D\ln g_0
+&=-\nabla\cdot\boldsymbol U+\boldsymbol w\cdot\frac{\nabla n}{n}
+ +\left(\frac{w^2}{2v_T^2}-\frac32\right)
+ \left(-\frac23\nabla\cdot\boldsymbol U+\boldsymbol w\cdot\frac{\nabla T}{T}\right)\\
+&\qquad+\left(\frac{T\nabla\ln n}{m}+\frac{\nabla T}{m}
+ -\boldsymbol w\cdot\nabla\boldsymbol U\right)\cdot\left(-\frac{m\boldsymbol w}{T}\right),
+\end{aligned}\tag{L7-38}\label{eq:L7:38}
+\end{equation}
+或等价地，
+\begin{equation}
+\widehat D\ln g_0
+=\left(\frac{w^2}{2v_T^2}-\frac52\right)\boldsymbol w\cdot\frac{\nabla T}{T}
+ +\left(\frac{\boldsymbol w\boldsymbol w}{v_T^2}
+ -\frac{w^2}{3v_T^2}\boldsymbol1\right):\nabla\boldsymbol U.
+\tag{L7-39}\label{eq:L7:39}
+\end{equation}
+再假设 $\widehat C=-\nu$ 且 $\boldsymbol B=0$，于是 $\widehat{\mathcal C}=-\nu$。这给出
+\begin{equation}
+\widetilde g=-\nu^{-1}g_0\widehat D\ln g_0.
+\tag{L7-40}\label{eq:L7:40}
+\end{equation}
+利用式~(L7-39) 与式~(L7-40)，经过繁琐但直接的计算，可得
+\begin{equation}
+\begin{aligned}
+\boldsymbol\Pi
+&\doteq\int m\left(\boldsymbol w\boldsymbol w-\boldsymbol1\frac{w^2}{3}\right)
+ \widetilde g\,\mathrm d\boldsymbol w\\
+&=-\frac P\nu\left[\nabla\boldsymbol U+(\nabla\boldsymbol U)^{\mathsf T}
+ -\frac23(\nabla\cdot\boldsymbol U)\right],
+\end{aligned}\tag{L7-41}\label{eq:L7:41}
+\end{equation}
+\begin{equation}
+\boldsymbol Q\doteq\int\frac{mw^2}{2}\boldsymbol w\widetilde g\,\mathrm d\boldsymbol w
+=-\frac{5P}{2m\nu}\nabla T.
+\tag{L7-42}\label{eq:L7:42}
+\end{equation}
+前者在动量方程~(L7-4) 中贡献一个黏滞项：
+\begin{equation*}
+\begin{aligned}
+m\left[\frac{\partial\boldsymbol U}{\partial t}
+ +(\boldsymbol U\cdot\nabla)\boldsymbol U\right]
+&=q\left(\boldsymbol E+\frac{\boldsymbol U}c\times\boldsymbol B\right)-\frac{\nabla P}{n}\\
+&\qquad+\frac P\nu\left[\nabla^2\boldsymbol U
+ +\frac13\nabla(\nabla\cdot\boldsymbol U)\right]+\ldots
+\end{aligned}
+\end{equation*}
+此外，$-\nabla\cdot\boldsymbol Q$ 在式~(L7-29) 中贡献一个扩散项：
+\begin{equation}
+\frac32\frac{\mathrm dT}{\mathrm dt}+T\nabla\cdot\boldsymbol U
+=\frac1n\nabla\cdot\left(\frac{5v_T^2}{2\nu}n\nabla T\right)+\ldots
+\tag{L7-43}\label{eq:L7:43}
+\end{equation}
+（这里用省略号代替的剩余项 $-2\boldsymbol\Pi:\nabla\boldsymbol U$，在所假定的定标下也应保留。）注意，温度的扩散系数为 $\sim v_T^2/\nu$。
+\begin{correction}{译者校注：黏滞项中的张量与密度因子}
+式~(L7-41) 最后一项按原文保留为 $-\tfrac23(\nabla\cdot\boldsymbol U)$；作为二阶张量，该项应理解为 $-\tfrac23(\nabla\cdot\boldsymbol U)\boldsymbol1$。上面的未编号动量方程也按原文保留，但在该每粒子形式的方程中，黏滞力是 $-(\nabla\cdot\boldsymbol\Pi)/n$；若 $P/\nu$ 的空间变化可忽略，方括号前应为 $P/(n\nu)$，而非 $P/\nu$。若输运系数变化不可忽略，还须保留其梯度项。式~(L7-43) 后文字中的 $-2\boldsymbol\Pi:\nabla\boldsymbol U$ 沿用了原式~(L7-29) 的系数，相关能量方程问题见前面的校注；把式~(L7-29) 除以 $n$ 后，该项还应同时除以 $n$。
+\end{correction}
+
+\sourcepage{7}{9}
+在 Fokker--Planck 的思路下，这很容易理解。同种粒子之间的碰撞会使单个粒子的能量发生 $O(1)$ 量级的相对变化，因此可以把这些碰撞想象成一团团能量之间的碰撞。在碰撞时间尺度 $\Delta t\sim\nu^{-1}$ 内，能量传播的距离为 $\Delta x\sim\lambda_{\mathrm{mfp}}$。因此，扩散系数应为 $\sim(\Delta x)^2/\Delta t\sim\lambda_{\mathrm{mfp}}^2\nu$，这恰好就是式~(L7-43) 的预言。与弱电离等离子体的情形一样，现在也能清楚看出我们所依据的展开小参数是什么：式~(L7-43) 预言 $\partial_t\sim(\lambda_{\mathrm{mfp}}/L)^2\nu$，而我们假设了 $\partial_t\ll\nu$，所以此时的小参数是所谓的 Knudsen 数，
+\begin{equation}
+\mathrm{Kn}\doteq\lambda_{\mathrm{mfp}}/L\ll1.
+\tag{L7-44}\label{eq:L7:44}
+\end{equation}
+还要注意，假设 $T_e\sim T_i$，电子与离子碰撞的平均自由程 $\lambda_{ss'}\doteq v_{Ts}/\nu_{ss'}$ 满足 $\lambda_{ee}\sim\lambda_{ei}\sim\lambda_{ii}$，因为
+\begin{equation}
+\nu_{ee}\sim\nu_{ei}\propto m_e^{-1/2},\qquad
+\nu_i\sim\nu_{ii}\propto m_i^{-1/2},\qquad
+v_{Ts}\propto m_s^{1/2}.
+\tag{L7-45}\label{eq:L7:45}
+\end{equation}
+这意味着，在完全电离等离子体中，各种粒子的 $\mathrm{Kn}$ 具有可比的大小。
+\begin{correction}{译者校注：热速度的质量标度}
+式~(L7-45) 最后一项的指数 $+1/2$ 按原文保留。在相同量级温度下，$v_{Ts}=\sqrt{T_s/m_s}$ 应满足 $v_{Ts}\propto m_s^{-1/2}$。用这一正确标度与前两项相除，才得到原文所述的电子和离子平均自由程同量级的结论。
+\end{correction}
+\subsection{金标准：Braginskii 方程}
+Braginskii（1965）使用 Landau 碰撞算符完成了一个更实用的计算。计算过程很繁复，因此这里不详细讨论。\footnote{\raggedright 关于 Braginskii 方程的完整教程，见 \url{https://www-thphys.physics.ox.ac.uk/people/FelixParra/CollisionalPlasmaPhysics/notes/lecIV_braginskii.pdf}。}不过，Braginskii 方程在实际中应用广泛，因此我们概述一下模型及其结果。主要假设为
+\begin{equation}
+\frac{\rho_i}{L}\ll\frac{\lambda_{ii}}L\sim\sqrt{\frac{m_e}{m_i}}\ll1
+\tag{L7-46}\label{eq:L7:46}
+\end{equation}
+以及“高流速”定标 $\boldsymbol U_i\sim\boldsymbol U_e\sim v_{Ti}$。（另一种“低场”定标假设流体速度与抗磁漂移速度~(L7-15) 同阶，会得到不同的结果。）另外还假设 $Z_i=1$，并且
+\begin{align}
+&E_\perp\sim\frac{v_{Ti}}cB\sim\frac L{\rho_i}\frac T{eL}
+ \gg E_\parallel\sim\frac T{eL},
+ \tag{L7-47}\label{eq:L7:47}\\
+&\frac\partial{\partial t}\sim\boldsymbol U_s\cdot\nabla\sim\frac{v_{Ti}}L,
+ \tag{L7-48}\label{eq:L7:48}\\
+&U_{i,\parallel}-U_{e,\parallel}
+ \gg\boldsymbol U_{i,\perp}-\boldsymbol U_{e,\perp}
+ \sim\frac{\rho_i}L v_{Ti}.
+ \tag{L7-49}\label{eq:L7:49}
+\end{align}
+于是，摩擦力的标度为
+\begin{equation}
+R_{ei}\sim R_{ie}\sim n_em_e\nu_{ei}v_{Ti}
+\sim\sqrt{\frac{m_e}{m_i}}\frac L{\lambda_{ei}}\frac{P_e}L
+\sim\frac{P_e}L,
+\tag{L7-50}\label{eq:L7:50}
+\end{equation}
+\sourcepage{7}{10}
+因此可将其视为微扰。这给出以下电子方程：
+\begin{align}
+&\nu_{ei}\approx\nu_{ee}=\frac{4\sqrt{2\pi}}3
+ \frac{n_ee^4}{m_e^{1/2}T_e^{3/2}}\ln\Lambda_{ee},
+ \tag{L7-51a}\label{eq:L7:51a}\\
+&\boldsymbol Q_e=Q_{e\parallel}\boldsymbol b+\boldsymbol Q_{e\times}+\boldsymbol Q_{e\perp},
+ \tag{L7-51b}\label{eq:L7:51b}\\
+&Q_{e\parallel}=-\frac{3.16P_e}{m_e\nu_{ee}}\boldsymbol b\cdot\nabla T_e
+ -0.71P_e(U_{i\parallel}-U_{e\parallel}),
+ \tag{L7-51c}\label{eq:L7:51c}\\
+&\boldsymbol Q_{e\times}=-\frac{5P_e}{2m_e\Omega_e}\boldsymbol b\times\nabla T_e,
+ \tag{L7-51d}\label{eq:L7:51d}\\
+&\boldsymbol Q_{e\perp}=-\left(\sqrt2+\frac{13}4\right)
+ \frac{P_e\nu_{ee}}{m_e\Omega_e^2}\nabla_\perp T_e
+ -\frac{3P_e\nu_{ei}}{2\Omega_e}\boldsymbol b\times(\boldsymbol U_i-\boldsymbol U_e),
+ \tag{L7-51e}\label{eq:L7:51e}\\
+&R_{ei,\parallel}=0.51n_em_e\nu_{ei}(U_{i\parallel}-U_{e\parallel})
+ -0.71n_e\boldsymbol b\cdot\nabla T_e,
+ \tag{L7-51f}\label{eq:L7:51f}\\
+&\boldsymbol R_{ei,\perp}=n_em_e\nu_{ei}(\boldsymbol U_{i\perp}-\boldsymbol U_{e\perp})
+ -\frac{3n_e\nu_{ei}}{2\Omega_e}\boldsymbol b\times\nabla T_e,
+ \tag{L7-51g}\label{eq:L7:51g}\\
+&\boldsymbol S_{ei}=-\boldsymbol S_{ie}+\boldsymbol R_{ei}\cdot(\boldsymbol U_i-\boldsymbol U_e),
+ \tag{L7-51h}\label{eq:L7:51h}
+\end{align}
+而电子黏性可以忽略，即 $\boldsymbol\Pi_e\approx0$。对于离子，有
+\begin{align}
+&\nu_{ii}=\frac{4\sqrt\pi}3\frac{n_ie^4}{m_i^{1/2}T_i^{3/2}}\ln\Lambda_{ii},
+ \tag{L7-52a}\label{eq:L7:52a}\\
+&\boldsymbol Q_i=Q_{i\parallel}\boldsymbol b+\boldsymbol Q_{i\times}+\boldsymbol Q_{i\perp},
+ \tag{L7-52b}\label{eq:L7:52b}\\
+&Q_{i\parallel}=-\frac{3.91P_i}{m_i\nu_{ii}}\boldsymbol b\cdot\nabla T_i,
+ \tag{L7-52c}\label{eq:L7:52c}\\
+&\boldsymbol Q_{i\times}=\frac{5P_i}{2m_i\Omega_i}\boldsymbol b\times\nabla T_i,
+ \tag{L7-52d}\label{eq:L7:52d}\\
+&\boldsymbol Q_{i\perp}=-\left(\sqrt2+\frac{13}4\right)
+ \frac{P_i\nu_{ii}}{m_i\Omega_i^2}\nabla_\perp T_i,
+ \tag{L7-52e}\label{eq:L7:52e}\\
+&\boldsymbol R_{ie}=-\boldsymbol R_{ei},
+ \tag{L7-52f}\label{eq:L7:52f}\\
+&\boldsymbol S_{ie}=\frac{3m_e}{m_i}n_e\nu_{ei}(T_e-T_i),
+ \tag{L7-52g}\label{eq:L7:52g}
+\end{align}
+离子黏性则由下式给出：
+\begin{align}
+&\boldsymbol\Pi_i=\Pi_{i\parallel}\left(\boldsymbol b\boldsymbol b-\frac{\boldsymbol1}3\right)
+ +\boldsymbol\Pi_{i\times}+\boldsymbol\Pi_{i\perp},
+ \tag{L7-52h}\label{eq:L7:52h}\\
+&\Pi_{i\parallel}=-\frac{0.96P_i}{\nu_{ii}}
+ \left(3\boldsymbol b\cdot\nabla\boldsymbol U_i\cdot\boldsymbol b-\nabla\cdot\boldsymbol U_i\right),
+ \tag{L7-52i}\label{eq:L7:52i}\\
+&\begin{aligned}
+\boldsymbol\Pi_{i\times}
+=\frac{P_i}{4\Omega_i}\Bigl[&\boldsymbol b\times
+ \bigl(\nabla\boldsymbol U_i+(\nabla\boldsymbol U_i)^{\mathsf T}\bigr)
+ \cdot(\boldsymbol1+3\boldsymbol b\boldsymbol b)\\
+&-(\boldsymbol1+3\boldsymbol b\boldsymbol b)\cdot
+ \bigl(\nabla\boldsymbol U_i+(\nabla\boldsymbol U_i)^{\mathsf T}\bigr)\times\boldsymbol b\Bigr],
+\end{aligned}\tag{L7-52j}\label{eq:L7:52j}
+\end{align}
+\sourcepage{7}{11}
+\begin{equation}
+\begin{aligned}
+\boldsymbol\Pi_{i\perp}=-\frac{3P_i\nu_{ii}}{10\Omega_i^2}\Bigl[&
+ (\boldsymbol1-\boldsymbol b\boldsymbol b)\cdot
+ \bigl(\nabla\boldsymbol U_i+(\nabla\boldsymbol U_i)^{\mathsf T}\bigr)
+ \cdot(\boldsymbol1-\boldsymbol b\boldsymbol b)\\
+&+\bigl(\boldsymbol b\cdot\nabla\boldsymbol U_i\cdot\boldsymbol b
+ -\nabla\cdot\boldsymbol U_i\bigr)(\boldsymbol1-\boldsymbol b\boldsymbol b)\\
+&+4\bigl[(\boldsymbol1-\boldsymbol b\boldsymbol b)\cdot
+ \bigl(\nabla\boldsymbol U_i+(\nabla\boldsymbol U_i)^{\mathsf T}\bigr)\cdot\boldsymbol b\boldsymbol b\\
+&\qquad+\boldsymbol b\boldsymbol b\cdot
+ \bigl(\nabla\boldsymbol U_i+(\nabla\boldsymbol U_i)^{\mathsf T}\bigr)
+ \cdot(\boldsymbol1-\boldsymbol b\boldsymbol b)\bigr]\Bigr].
+\end{aligned}\tag{L7-52k}\label{eq:L7:52k}
+\end{equation}
+\begin{correction}{译者校注：Braginskii 公式的回旋频率约定与离子热流系数}
+以上各式保留原文。脚注所引 Felix I. Parra 的 \emph{Braginskii fluid equations}（2019 年 4 月 18 日版）在第 7 页明确采用正的电子回旋频率 $\Omega_e=eB/m_e$（SI 制）；换成本讲的高斯单位制，即 $\Omega_e=eB/(m_ec)>0$。原讲义前文则采用带电荷符号的 $\Omega_s=q_sB/(m_sc)$。式~(L7-51d)、式~(L7-51e) 的第二项和式~(L7-51g) 的第二项与 Parra 文中的正频率约定相符；应用时必须在这些奇次 $\Omega_e$ 项中使用正的频率大小，或在统一改用带符号频率时相应改变这些项的显式符号，不能混用两种约定。
+
+此外，原式~(L7-52e) 的系数 $\sqrt2+13/4$ 与电子式相同。Parra 第 15 页式~(4.7) 给出的离子结果为 $\boldsymbol Q_{i\perp}=-2P_i\nu_{ii}\nabla_\perp T_i/(m_i\Omega_i^2)$；其第 16 页式~(4.8) 对 $\nu_{ii}$ 的定义与本讲式~(L7-52a) 相符。因此此处不能用碰撞频率定义不同来解释，原文该系数疑为误抄，按上述定义应采用系数 $2$。以上核对均依据原讲义脚注所链接的教程。
+\end{correction}
+这里的碰撞频率与前面得到的碰撞频率相同，差别只在量级为 $1$ 的数值系数。由 $\boldsymbol S_{ie}$ 描述的电子与离子之间的碰撞能量交换受到 $\sim m_e/m_i$ 因子的抑制，也符合预期。$\boldsymbol R_{ei}\cdot(\boldsymbol U_i-\boldsymbol U_e)$ 项是焦耳加热。由于质量比的关系，它进入 $T_e$ 的方程而不进入 $T_i$ 的方程：电子--离子碰撞使电子发生角散射，从而加热电子而非离子。$\boldsymbol R_{ie}=-\boldsymbol R_{ei}$ 这一事实就是牛顿第三定律。热流系数的解释与第~\ref{sec:L7:example}~节（原文第 3.4 节）相同：$\boldsymbol Q_{s,\perp}/n_s$ 与 $Q_{s,\parallel}/n_s$ 分别是垂直和平行于 $\boldsymbol B$ 的温度扩散系数，因此它们分别按 $\rho_s^2\nu_s$ 与 $\lambda_{\mathrm{mfp},s}^2\nu_s$ 定标。热流 $\boldsymbol Q_{s,\times}$ 则来源于温度梯度使平均 $\rho_s$ 随空间位置变化，从而沿 $\boldsymbol b\times\nabla T_s$ 产生能量流；这与 $\nabla B$ 漂移使粒子沿 $\boldsymbol b\times\nabla B$ 流动很相似。
+\begin{correction}{译者校注：焦耳加热句的笔误及扩散系数的含义}
+关于焦耳加热，原句写作“and to for $T_i$”，语法不通；结合紧接着的“加热电子而非离子”以及式~(L7-51h)、式~(L7-52g)，上文按“而不进入 $T_i$ 的方程”译出，这是所采用近似下的说法。原文另将 $\boldsymbol Q_{s,\perp}/n_s$ 和 $Q_{s,\parallel}/n_s$ 直接称为温度扩散系数，量纲并不匹配。准确地说，若导热部分写成 $\boldsymbol Q=-\boldsymbol\kappa\cdot\nabla T$，则 $\kappa_\perp/n$ 和 $\kappa_\parallel/n$ 才具有所述扩散系数的量纲和标度；将三维温度方程写成标准扩散形式时，还需考虑左侧比热因子 $3/2$。
+\end{correction}
+Braginskii 方程假设平均自由程很短，因此不适用于聚变反应堆的高温等离子体芯部。不过，在温度较低、密度较高、碰撞较强的边缘等离子体建模中，它们仍是标准选择。此外，作为现有唯一一般性的解析碰撞闭合，Braginskii 方程也经常用作与其他输运模型比较的基准。
+\Needspace{8\baselineskip}
+\section*{自测题}
+\addcontentsline{toc}{section}{自测题}
+\begin{itemize}
+\item 什么是粒子迁移率？
+\item 推导弱电离等离子体的电导率。
+\item 什么是 Fick 通量？
+\item 推导弱电离等离子体的密度扩散方程。
+\item 估算平行和垂直于磁场方向的扩散系数。
+\item 什么是双极电场？
+\item 什么是双极扩散？
+\item 推导双极扩散系数。
+\item 估算与中性粒子碰撞时电子迁移率与离子迁移率之比。
+\item 解释 Chapman--Enskog 展开的思路。
+\item 什么是 Knudsen 数？
+\item 电子--电子、电子--离子和离子--离子碰撞的平均自由程之间有什么关系？
+\item 定性地说，Braginskii 方程能够描述什么样的等离子体？
+\item 估算电子--电子、电子--离子和离子--离子碰撞产生的热流。
+\end{itemize}
+\sourcepage{7}{12}
+\section*{参考文献}
+\addcontentsline{toc}{section}{参考文献}
+\begin{description}
+\item[Braginskii, S. I. 1965] Transport processes in a plasma. \emph{Reviews of Plasma Physics} \textbf{1}, 205.
+\item[Dodin, I. Y. 2022] Quasilinear theory for inhomogeneous plasma. \emph{Journal of Plasma Physics} \textbf{88}, 905880407, arXiv:2201.08562.
+\end{description}

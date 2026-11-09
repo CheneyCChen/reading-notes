@@ -1,0 +1,269 @@
+\chapter{有碰撞流体力学}
+\noindent 原讲义最后更新：2026年11月3日。
+\sourcepage{7}{1}
+\section{基本方程}
+本讲利用\emph{包含碰撞}的动理学方程来建立等离子体流体力学：
+\begin{equation}
+\frac{\partial f}{\partial t}+\nabla\cdot(\boldsymbol vf)
++\nabla_{\boldsymbol v}\cdot\left[\frac qm\left(\boldsymbol E+\frac{\boldsymbol v}{c}\times\boldsymbol B\right)f\right]=C.
+\tag{L7-1}\label{eq:L7:1}
+\end{equation}
+流体方程仍按通常的方法导出。假定不存在电离和复合，碰撞就保持粒子数守恒，因此连续性方程不变。动量方程和压强方程则获得附加项
+\begin{equation}
+\boldsymbol R=\int m\boldsymbol vC\,\mathrm d\boldsymbol v
+=\int m\boldsymbol wC\,\mathrm d\boldsymbol v,
+\qquad
+\boldsymbol{\mathcal S}=\int m\boldsymbol w\boldsymbol wC\,\mathrm d\boldsymbol v.
+\tag{L7-2}\label{eq:L7:2}
+\end{equation}
+由此得到
+\begin{align}
+&\partial_t n+\nabla\cdot(n\boldsymbol U)=0,
+\tag{L7-3}\label{eq:L7:3}\\
+&m\bigl[\partial_t\boldsymbol U+(\boldsymbol U\cdot\nabla)\boldsymbol U\bigr]
+=q\bigl(\boldsymbol E+\boldsymbol U\times\boldsymbol B/c\bigr)
+-(\nabla\cdot\boldsymbol P)/n+\boldsymbol R,
+\tag{L7-4}\label{eq:L7:4}\\
+&\begin{aligned}
+\partial_tP_{ab}+\boldsymbol U\cdot\nabla P_{ab}+P_{ab}\nabla\cdot\boldsymbol U
++P_{bc}\partial_cU_a+P_{ac}\partial_cU_b+\partial_cQ_{abc}
+\\{}=\epsilon_{ade}\Omega_eP_{bd}+\epsilon_{bde}\Omega_eP_{ad}+\mathcal S_{ab}.
+\end{aligned}
+\tag{L7-5}\label{eq:L7:5}
+\end{align}
+\begin{correction}{译者校注：碰撞动量源的归一化}
+式~(L7-4) 按原稿保留了末项 $\boldsymbol R$。由式~(L7-2)，$\boldsymbol R$ 是单位体积的碰撞力，而式~(L7-4) 是单粒子的动量方程，故该项应为 $\boldsymbol R/n$。下文式~(L7-8) 以及式~(L7-34) 实际采用了这一归一化。
+\end{correction}
+这些方程存在与上一讲所研究的无碰撞流体方程相同的问题：它们不是一个闭合系统，因此必须构造闭合关系，才能求解。弱碰撞不会显著改变闭合问题。不过，如果碰撞\emph{足够强}，碰撞频率的倒数就可以作为额外的小参数，从而构造新的闭合关系。根据所采用的量级排序和碰撞类型，这类闭合关系可以具有不同形式。这里将概述其中几种常见形式，并勾勒构造其他有碰撞闭合关系的一般步骤。
+
+\section{粗略的有碰撞闭合：弱电离等离子体}
+首先考虑弱电离等离子体中的强碰撞，因为这种情形可以作特别简单的处理。此时可用 BGK 算子描述碰撞：
+\begin{equation}
+C_s=-\nu_s(f_s-f_{s0}),
+\tag{L7-6}\label{eq:L7:6}
+\end{equation}
+其中 $\nu_s$ 为常数，$f_{s0}$ 是密度为 $\int f_s\,\mathrm d\boldsymbol v$ 的局域 Maxwell 分布。我们假定带电粒子主要与中性粒子碰撞，而且中性粒子足够重，可以视为
+\sourcepage{7}{2}
+静止。只要碰撞频率 $\nu_s$ 足够大，就可以预期离子与中性粒子大体处于局域热力学平衡。这意味着 $\boldsymbol P_i$ 为对角张量，且离子温度始终接近周围中性气体的温度 $T_n$，因而可将离子视为等温的。对于电子，与中性粒子的能量交换受到因子 $m_e/m_n$ 的抑制，所以 $T_e$ 趋近 $T_n$ 所需的时间比 $T_i$ 趋近 $T_n$ 更长。不过，经过足够长时间，这种弛豫仍然能够发生。我们就假定它确实发生了，因为由此得到的模型特别富有启发性，值得研究。
+
+\subsection{密度方程}
+既然我们以前已经使用过等温闭合，也许会问：这里还有什么可研究的呢？以前没有碰撞，我们用 $T=\mathrm{const}$ 替代 $\partial_t\boldsymbol P$ 的方程。现在，只要碰撞足够强，我们甚至不必求解 $\partial_t\boldsymbol U$。理由如下。根据式~(L7-6) 的假设，摩擦力为
+\begin{equation}
+\begin{aligned}
+\boldsymbol R_s
+&=-\int m_s\boldsymbol w\nu_s(f_s-f_{s0})\,\mathrm d\boldsymbol v\\
+&=-m_s\nu_s\int\boldsymbol v(f_s-f_{s0})\,\mathrm d\boldsymbol v
+=-m_s\nu_sn_s\boldsymbol U_s.
+\end{aligned}
+\tag{L7-7}\label{eq:L7:7}
+\end{equation}
+假定所关心的动力学是缓慢的，即 $\partial_t\ll\nu_s$ 且 $\boldsymbol U_s\cdot\nabla\ll\nu_s$，就可以忽略式~(L7-4) 的左侧。于是，式~(L7-4) 可约化为
+\begin{equation}
+\underbrace{\nu_s\boldsymbol U_s-\boldsymbol U_s\times\boldsymbol\Omega_s}_{\boldsymbol N_s\boldsymbol U_s}
+\approx\frac{q_s}{m_s}\boldsymbol E-v_{Ts}^{2}\nabla\ln n_s,
+\tag{L7-8}\label{eq:L7:8}
+\end{equation}
+其中 $\boldsymbol N_s$ 是如下矩阵：
+\begin{equation}
+\boldsymbol N_s=
+\begin{pmatrix}
+\nu_s&-\Omega_s&0\\
+\Omega_s&\nu_s&0\\
+0&0&\nu_s
+\end{pmatrix},\qquad
+\boldsymbol N_s^{-1}=
+\begin{pmatrix}
+\dfrac{\nu_s}{\nu_s^2+\Omega_s^2}&\dfrac{\Omega_s}{\nu_s^2+\Omega_s^2}&0\\[4pt]
+-\dfrac{\Omega_s}{\nu_s^2+\Omega_s^2}&\dfrac{\nu_s}{\nu_s^2+\Omega_s^2}&0\\[4pt]
+0&0&\dfrac1{\nu_s}
+\end{pmatrix}.
+\tag{L7-9}\label{eq:L7:9}
+\end{equation}
+于是得到 $\boldsymbol U_s=\boldsymbol\mu_s\boldsymbol E-v_{Ts}^{2}\boldsymbol N_s^{-1}\nabla\ln n_s$，其中 $\boldsymbol\mu_s=(q_s/m_s)\boldsymbol N_s^{-1}$ 称为\emph{粒子迁移率}。\footnote{不要把迁移率与同样记作 $\mu$ 的磁矩混淆。另外，一些作者将迁移率定义为 $\boldsymbol\mu_s=(|q_s|/m_s)\boldsymbol N_s^{-1}$；对于电子，这一定义的符号与这里相反。}相应地，通量密度 $\boldsymbol\Gamma_s\doteq n_s\boldsymbol U_s$ 为
+\begin{equation}
+\boldsymbol\Gamma_s=
+\underbrace{\frac{n_sq_s}{m_s}\boldsymbol N_s^{-1}}_{\boldsymbol\sigma_s/q_s}\boldsymbol E
+-\underbrace{v_{Ts}^{2}\boldsymbol N_s^{-1}}_{\boldsymbol D_s}\nabla n_s.
+\tag{L7-10}\label{eq:L7:10}
+\end{equation}
+将其代入连续性方程~(L7-3)，得到
+\begin{equation}
+\partial_tn_s=\nabla\cdot\bigl(\boldsymbol D_s\nabla n_s-q_s^{-1}\boldsymbol\sigma_s\boldsymbol E\bigr).
+\tag{L7-11}\label{eq:L7:11}
+\end{equation}
+通量 $\boldsymbol\Gamma_s$ 中与电场成正比的部分为 $\boldsymbol\sigma_s\boldsymbol E$，它产生传导电流 $\boldsymbol\sigma_s\boldsymbol E$，所以 $\boldsymbol\sigma_s$ 可理解为\emph{电导率}。其中 $\sigma_{P,s}\equiv\sigma_{s,xx}=\sigma_{s,yy}$
+\sourcepage{7}{3}
+和 $\sigma_{H,s}\equiv\sigma_{s,yx}=-\sigma_{s,yx}$（因此 $\sigma_{H,e}>0$）分别称为\emph{Pedersen 电导率}和\emph{Hall 电导率}，其表达式为
+\begin{equation}
+\sigma_{P,s}=\frac{n_sq_s^2}{m_s}\frac{\nu_s}{\nu_s^2+\Omega_s^2},
+\qquad
+\sigma_{H,s}=-\frac{n_sq_s^2}{m_s}\frac{\Omega_s}{\nu_s^2+\Omega_s^2}.
+\tag{L7-12}\label{eq:L7:12}
+\end{equation}
+（在 $\nu_s/\Omega_s\ll1$ 时，电流 $\sigma_{xy}E_y$ 和 $\sigma_{yx}E_x$ 显然就是 $\boldsymbol E\times\boldsymbol B$ 电流。）另一项 $-\boldsymbol D_s\nabla n_s$ 称为\emph{扩散通量}，或\emph{Fick 通量}，\footnote{当式~(L7-10) 中的 $\boldsymbol\sigma_s\boldsymbol E$ 可忽略时，公式 $\boldsymbol\Gamma_s=-\boldsymbol D_s\nabla n_s$ 称为 Fick 定律。}它使式~(L7-12) 成为扩散方程。下面详细讨论。
+\begin{correction}{译者校注：电流、Hall 分量与扩散方程的原文笔误}
+以上保留了原文表述。由式~(L7-10)，粒子通量中与电场成正比的部分应为 $q_s^{-1}\boldsymbol\sigma_s\boldsymbol E$，乘以电荷 $q_s$ 后才是电流 $\boldsymbol\sigma_s\boldsymbol E$。Hall 电导率定义中的重复下标应改为 $\sigma_{H,s}\equiv\sigma_{s,yx}=-\sigma_{s,xy}$，与式~(L7-9)、(L7-12) 一致。此外，这里及下一小节中讨论密度扩散时对式~(L7-12) 的引用，应指密度演化方程~(L7-11)。
+\end{correction}
+
+\subsection{扩散系数}
+能否预先判断 $n_s$ 满足扩散方程呢？为回答这个问题，让我们从平行运动开始，考察碰撞如何起作用。一个典型粒子以速度 $\sim v_{Ts}$ 沿 $\boldsymbol B$ 自由运动，因此在两次碰撞之间移动的距离与平均自由程 $\lambda_{\mathrm{mfp},s}=v_{Ts}/\nu_s$ 同量级。碰撞时间 $\nu_s^{-1}$ 定义为碰撞使自由运动随机化的时间尺度；换言之，碰撞后粒子可以向任一方向运动。于是，沿 $\boldsymbol B$ 的粒子运动可视为一系列随机跳跃，在时间 $\Delta t\sim\nu_s^{-1}$ 内，典型位移满足 $\langle(\Delta z)^2\rangle\sim\lambda_{\mathrm{mfp},s}^{2}$。这一过程可用 Fokker--Planck 方程描述，其相应扩散系数为
+\begin{equation}
+D_{\parallel,s}\sim\lambda_{\mathrm{mfp},s}^{2}\nu_s\sim v_{Ts}^{2}/\nu_s.
+\tag{L7-13}\label{eq:L7:13}
+\end{equation}
+这与式~(L7-12) 中支配密度沿 $z$ 轴弛豫的 $D_{zz,s}$ 一致。
+
+现在考虑横向动力学。在两次碰撞之间，粒子以频率 $\Omega_s$ 作回旋运动。假设一次碰撞使粒子的横向速度反向。这不会使粒子位置瞬间改变，却会把粒子放到另一条 Larmor 轨道上，新轨道中心相对原轨道中心偏移两个回旋半径 $\rho_s\equiv v_{Ts}/\Omega_s$。假设 $\nu_s\ll\Omega_s$，则下一次碰撞发生时，粒子可以处于第二条轨道上的任意位置。这意味着粒子每隔一个碰撞时间 $\nu_s^{-1}$ 就随机跳跃距离 $\sim\rho_s$。因此，根据 Fokker--Planck 方程，粒子应以如下扩散系数横越磁场扩散：
+\begin{equation}
+D_{\perp,s}\sim\rho_s^2\nu_s\sim v_{Ts}^{2}\nu_s/\Omega_s^2.
+\tag{L7-14}\label{eq:L7:14}
+\end{equation}
+这与式~(L7-12) 中支配密度沿 $x$、$y$ 轴弛豫的 $D_{xx,s}$ 和 $D_{yy,s}$（在 $\nu_s\ll\Omega_s$ 时）一致。系数 $D_{xy,s}=-D_{yx,s}$ 描述的则是具有如下速度的抗磁流：
+\begin{equation}
+\boldsymbol U_{D,s}
+=\frac{\Omega_s^2}{\nu_s^2+\Omega_s^2}\frac{v_{Ts}^{2}}{\Omega_s}\boldsymbol b\times\nabla\ln n_s
+=\frac1{1+(\nu_s/\Omega_s)^2}\frac{cT}{q_s}\boldsymbol b\times\ln\nabla n_s.
+\tag{L7-15}\label{eq:L7:15}
+\end{equation}
+还记得关于等离子体抗磁性的讨论吗？这些流实际上并不产生扩散。
+\begin{correction}{译者校注：抗磁流第二个表达式}
+式~(L7-15) 的第二个表达式按原稿保留。由 $v_{Ts}^{2}=T/m_s$ 和 $\Omega_s=q_sB/(m_sc)$，其中 $cT/q_s$ 应为 $cT/(q_sB)$，且原稿的 $\ln\nabla n_s$ 应为 $\nabla\ln n_s$；第一个表达式已给出正确的梯度次序。
+\end{correction}
+还要注意，Fick 项使 $n_s$ 以 $L_\parallel^2/D_{\parallel,s}\sim(L_\parallel/\lambda_{\mathrm{mfp},s})^2/\nu_s$ 和 $L_\perp^2/D_{\perp,s}\sim(L_\perp/\rho_\perp)^2/\nu_s$ 的速率演化；这可通过在式~(L7-12) 中取 $\nabla_\parallel\sim1/L_\parallel$ 和 $\nabla_\perp\sim1/L_\perp$ 看出。由于已经假定 $\partial_t\ll\nu_s$，这就意味着上述描述仅在以下条件下成立：
+\begin{equation}
+\lambda_{\mathrm{mfp},s}\ll L_\parallel,\qquad \rho_s\ll L_\perp.
+\tag{L7-16}\label{eq:L7:16}
+\end{equation}
+\begin{correction}{译者校注：扩散时间与扩散速率}
+上一段保留原文称呼及 $\rho_\perp$ 下标。$L^2/D$ 的量纲是时间，应称为扩散时间尺度；相应速率为 $D/L^2$。横向估算中的 $\rho_\perp$ 在本节没有另行定义，结合式~(L7-14)、(L7-16)，此处应为该物种的回旋半径 $\rho_s$。这些修正不改变式~(L7-16) 的适用条件。
+\end{correction}
+\sourcepage{7}{4}
+这些假设隐含在摩擦力表达式 $\boldsymbol R_s=-m_s\nu_sn_s\boldsymbol U_s$ 中，或者等价地，隐含在碰撞算子~(L7-6) 中。对于非局域输运，不能用如此简单的公式描述摩擦力。
+
+\subsection{双极扩散}
+考虑只含一种离子的电子--离子等离子体。显然，电子与离子的扩散系数不同。于是，即使电子密度和离子密度近似相等，相应的 Fick 通量仍然不同。结果是电荷积累，$\boldsymbol E$ 随之增大，直到系统达到平衡。下面考察这一过程。
+
+\subsubsection{未磁化等离子体}
+在未磁化等离子体中（$\Omega_s=0$），通量简化为
+\begin{equation}
+\boldsymbol\Gamma_s=n_s\mu_s\boldsymbol E-D_s\nabla n_s.
+\tag{L7-17}\label{eq:L7:17}
+\end{equation}
+要求总电流为零，即 $q_e\boldsymbol\Gamma_e+q_i\boldsymbol\Gamma_i\approx0$，得到
+\begin{equation}
+(q_en_e)\mu_e\boldsymbol E-D_e\nabla(q_en_e)
++(q_in_i)\mu_i\boldsymbol E-D_i\nabla(q_in_i)\approx0.
+\tag{L7-18}\label{eq:L7:18}
+\end{equation}
+假定等离子体是准中性的，则 $q_en_e\approx-q_in_i$。将式~(L7-18) 除以 $q_en_e$，得到
+\begin{equation}
+\mu_e\boldsymbol E-D_e\nabla\ln n-\mu_i\boldsymbol E+D_i\nabla\ln n\approx0,
+\tag{L7-19}\label{eq:L7:19}
+\end{equation}
+其中 $n$ 可以取两种密度中的任一种。由此得到
+\begin{equation}
+\boldsymbol E=\frac{D_i-D_e}{\mu_i-\mu_e}\nabla\ln n,
+\tag{L7-20}\label{eq:L7:20}
+\end{equation}
+这称为\emph{双极电场}。于是通量密度为
+\begin{equation}
+\boldsymbol\Gamma_i
+=\mu_i\frac{D_i-D_e}{\mu_i-\mu_e}\nabla n_i-D_i\nabla n_i
+=-\frac{\mu_iD_e-\mu_eD_i}{\mu_i-\mu_e}\nabla n_i
+\tag{L7-21}\label{eq:L7:21}
+\end{equation}
+以及 $\boldsymbol\Gamma_e=Z_i\boldsymbol\Gamma_e$。因此，概括起来，
+\begin{equation}
+\boldsymbol\Gamma_s=-D_a\nabla n_s,\qquad
+D_a=\frac{\mu_iD_e-\mu_eD_i}{\mu_i-\mu_e},
+\tag{L7-22}\label{eq:L7:22}
+\end{equation}
+即两种粒子以相同的扩散系数 $D_a$ 扩散。这称为\emph{双极扩散}，$D_a$ 称为\emph{双极扩散系数}。对于与中性粒子的碰撞，截面大致为常数，所以碰撞频率按 $\nu_s\propto v_{Ts}\propto m_s^{-1/2}$ 标度变化。这意味着 $\mu_s=q_s/(m_s\nu_s)\propto m_s^{-1/2}$，因此 $\mu_e\gg\mu_i$。利用这一关系及 $D_s=T\mu_s/q_s$，容易得到
+\begin{equation}
+D_a=(1+Z_i^{-1})\frac Te\frac{\mu_i|\mu_e|}{\mu_i+|\mu_e|}
+\approx(Z_i+1)\frac{T\mu_i}{q_i}
+=(Z_i+1)D_i\sim D_i\ll D_e.
+\tag{L7-23}\label{eq:L7:23}
+\end{equation}
+换言之，电子和离子之间的静电相互作用使离子扩散加快 $Z_i+1$ 倍，并使电子扩散减慢一个很大的因子 $\sim\sqrt{m_i/m_e}$，从而使两种粒子以相同的速率扩散。
+\begin{correction}{译者校注：双极通量关系与迁移率的符号}
+式~(L7-21) 后的原稿写作 $\boldsymbol\Gamma_e=Z_i\boldsymbol\Gamma_e$，这里照录。由零总电流及 $q_i=Z_ie$、$q_e=-e$，应为 $\boldsymbol\Gamma_e=Z_i\boldsymbol\Gamma_i$。本讲采用有符号的迁移率定义，所以 $\mu_e<0$；上述大小比较 $\mu_e\gg\mu_i$ 应理解为 $|\mu_e|\gg\mu_i$，式~(L7-23) 已显式使用绝对值。
+\end{correction}
+
+\sourcepage{7}{5}
+\subsubsection{磁化等离子体}
+在磁化等离子体中，扩散更加复杂。与未磁化等离子体一样，电子的平行扩散更强，但离子的横向扩散更强。因此，各方向的通量不一定都具有双极性：离子可以沿径向向外扩散，带出正电流，而电子则可以沿磁力线向外扩散，带出负电流。如果系统例如通过壁面短路，总通量仍保持双极性，即离开系统的总电流为零，但垂直扩散和平行扩散不必各自满足双极性。此时应求解的正确方程不是上面假定的 $\boldsymbol j=0$，而是 $\nabla\cdot\boldsymbol j=0$。其解取决于具体几何结构，在这种情形下不存在简单而普适的解。
+
+\section{渐近有碰撞闭合}
+\subsection{引言}
+上一节把所有流体方程约化为仅关于密度的一个流体方程，这样做的优点是得到的模型非常简单。遗憾的是，这个模型的适用范围非常有限。要描述更广泛的等离子体动力学，不仅必须考虑 $n$ 的流体方程，还必须考虑 $\boldsymbol U$ 和 $\boldsymbol P$ 的方程。这与无碰撞流体力学的情况相似。不过，不同之处在于，我们现在有了一个新参数：碰撞频率 $\nu$。
+
+假定碰撞很强，使分布接近 Maxwell 分布：\footnote{可以\emph{证明}，存在 Balescu--Lenard 碰撞时，Maxwell 分布（或者对于一般 Hamilton 系统，Boltzmann--Gibbs 分布）是唯一的局域平衡分布（Dodin，2022，附录 E 和 C.3）。不过，这一点也可以从统计力学预见，所以这里略去形式证明。}
+\begin{equation}
+f_0(t,\boldsymbol x,\boldsymbol v)
+=n\left(\frac m{2\pi T}\right)^{3/2}
+\exp\left[-\frac{m(\boldsymbol v-\boldsymbol U)^2}{2T}\right],
+\tag{L7-24}\label{eq:L7:24}
+\end{equation}
+其中 $n$、$\boldsymbol U$ 和 $T$ 可以依赖于 $(t,\boldsymbol x)$。此时压强主要表现为标量，因此可以将压强张量的无迹部分和热流视为微扰。这样，放弃压强张量方程，转而采用较简单的标量压强方程就是合理的。其推导如下。
+
+\subsection{以标量方程替代压强张量方程}
+假定分解 $P_{ab}=P\delta_{ab}+\Pi_{ab}$，其中 $\boldsymbol\Pi$ 是压强张量的无迹部分，并考虑标量压强 $P\doteq\operatorname{tr}\boldsymbol P/D$ 的演化，这里 $D$ 是维数。\footnote{对于大体呈回旋对称、但 $P_\perp$ 和 $P_\parallel$ 不同的弱碰撞等离子体，可以分别考虑 $P_\perp$ 和 $P_\parallel$ 的类似方程。这样会得到一个概念上相似、但更复杂的模型。}对式~(L7-5) 取迹，得到
+\begin{equation}
+\begin{aligned}
+D\bigl(\partial_tP+\boldsymbol U\cdot\nabla P+P\nabla\cdot\boldsymbol U\bigr)
++2\operatorname{tr}(\boldsymbol P\nabla\boldsymbol U)+2\nabla\cdot\boldsymbol Q
+\\{}=2\epsilon_{ade}P_{ad}\Omega_e+\operatorname{tr}\boldsymbol{\mathcal S},
+\end{aligned}
+\tag{L7-25}\label{eq:L7:25}
+\end{equation}
+\sourcepage{7}{6}
+其中 $\boldsymbol Q\doteq\int\boldsymbol w(mw^2/2)f\,\mathrm d\boldsymbol v$ 是热通量密度。由于 $\boldsymbol\epsilon$ 是反对称的，而 $\boldsymbol P$ 是对称的，所以 $\epsilon_{ade}P_{ad}=0$，因此式~(L7-25) 右侧的第一项实际上为零。此外，$\operatorname{tr}(\boldsymbol P\nabla\boldsymbol U)=(P/D)\nabla\cdot\boldsymbol U+\boldsymbol\Pi:\nabla\boldsymbol U$。由此得到
+\begin{equation}
+\underbrace{\frac{\partial P}{\partial t}+\boldsymbol U\cdot\nabla P}_{\mathrm dP/\mathrm dt}
++\underbrace{\frac{D+2}{D}}_{\gamma}P\nabla\cdot\boldsymbol U
++\frac2D\nabla\cdot\boldsymbol Q+\frac1D\boldsymbol\Pi:\nabla\boldsymbol U
+=\frac2D\boldsymbol S,
+\tag{L7-26}\label{eq:L7:26}
+\end{equation}
+其中引入了碰撞热源 $\boldsymbol S\doteq\int(mw^2/2)C\,\mathrm d\boldsymbol v$，$\gamma$ 则可识别为单原子气体绝热过程的多方指数。此外，$\nabla\cdot\boldsymbol U$ 可由连续性方程表示：
+\begin{equation}
+\underbrace{\frac{\partial n}{\partial t}+\boldsymbol U\cdot\nabla n}_{\mathrm dn/\mathrm dt}
++n\nabla\cdot\boldsymbol U=0,
+\qquad
+\nabla\cdot\boldsymbol U=-\frac{\mathrm d\ln n}{\mathrm dt}.
+\tag{L7-27}\label{eq:L7:27}
+\end{equation}
+于是得到
+\begin{equation}
+P\frac{\mathrm d\ln(P/n^\gamma)}{\mathrm dt}
+=\frac2D\bigl(\boldsymbol S-\nabla\cdot\boldsymbol Q-2\boldsymbol\Pi:\nabla\boldsymbol U\bigr).
+\tag{L7-28}\label{eq:L7:28}
+\end{equation}
+这通常也写成如下等离子体温度方程：
+\begin{equation}
+n\left(\frac D2\frac{\mathrm dT}{\mathrm dt}+T\nabla\cdot\boldsymbol U\right)
+=\boldsymbol S-\nabla\cdot\boldsymbol Q-2\boldsymbol\Pi:\nabla\boldsymbol U,
+\tag{L7-29}\label{eq:L7:29}
+\end{equation}
+或者等价地，写成
+\begin{equation}
+P\frac{\mathrm d}{\mathrm dt}\underbrace{\left(\frac D2\ln\frac P{n^\gamma}\right)}_{-\sigma}
+=\boldsymbol S-\nabla\cdot\boldsymbol Q-2\boldsymbol\Pi:\nabla\boldsymbol U.
+\tag{L7-30}\label{eq:L7:30}
+\end{equation}
+这里，$\sigma$ 可识别为处于平衡的理想单原子气体的每粒子熵，因此式~(L7-30) 可视为熵方程。下文照例取 $D=3$。
+\begin{correction}{译者校注：标量压强方程中的系数与熵的符号}
+本段及式~(L7-26)、(L7-28)--(L7-30) 均按原稿保留。由 $P_{ab}=P\delta_{ab}+\Pi_{ab}$，正确的迹恒等式为 $\operatorname{tr}(\boldsymbol P\nabla\boldsymbol U)=P\nabla\cdot\boldsymbol U+\boldsymbol\Pi:\nabla\boldsymbol U$，其中不应有 $P/D$。结合式~(L7-25)，式~(L7-26) 的 $\boldsymbol\Pi:\nabla\boldsymbol U$ 系数应为 $2/D$，而式~(L7-28)--(L7-30) 右侧的 $-2\boldsymbol\Pi:\nabla\boldsymbol U$ 应为 $-\boldsymbol\Pi:\nabla\boldsymbol U$。此外，原稿式~(L7-30) 下括注印为 $-\sigma$；若 $\sigma$ 指下文所说的每粒子熵，则应为 $\sigma$（相差的加法常数不影响其演化）。这里的粗体 $\boldsymbol S$ 按原稿记号保留，但由其定义可知它是标量热源，区别于式~(L7-2) 的碰撞矩张量 $\boldsymbol{\mathcal S}$。
+\end{correction}
+
+\subsection{Chapman--Enskog 展开}
+导出标量压强和温度的方程并没有完全解决问题：我们仍需要 $\boldsymbol S$、$\boldsymbol Q$、$\boldsymbol\Pi$ 和 $\boldsymbol R$ 的方程。如何得到它们呢？答案是微扰理论。直接求解动理学方程会过于复杂，因此可以寻找形如 $f=f_0+\widetilde f$ 的近似解，其中 $\widetilde f\ll f_0$。随后在最低阶求出作为 $f_0$ 泛函的 $\widetilde f$，并显式计算其余泛函。这就是（广义）Chapman--Enskog 展开。
+
+首先，用 $f(t,\boldsymbol x,\boldsymbol v)=g(t,\boldsymbol x,\boldsymbol v-\boldsymbol U)$ 定义的 $g$ 改写动理学方程。采用通常的定义 $\boldsymbol w\doteq\boldsymbol v-\boldsymbol U$，得到
+\begin{align}
+\partial_tf&=\partial_tg-(\partial_t\boldsymbol U)\cdot\nabla_{\boldsymbol w}g,
+\tag{L7-31a}\label{eq:L7:31a}\\
+\nabla f&=\nabla g-(\nabla\boldsymbol U)\cdot\nabla_{\boldsymbol w}g,
+\tag{L7-31b}\label{eq:L7:31b}
+\end{align}

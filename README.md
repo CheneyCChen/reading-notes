@@ -8,7 +8,7 @@
 
 ## 内容
 
-- [等离子体物理 Lectures 1–6 自学手册](reports/plasma-lectures/index.html)：69页原讲义、89个学习单元、逐步推导、49道带答案自测、原稿勘误核对；更新 Lecture 5 碰撞算子与屏蔽原图，新增 Lecture 6 无碰撞流体、Langmuir波、离子声和CGL双绝热；单文件内嵌公式、字体与6份原PDF，可离线阅读（2026-10-28）。
+- [等离子体物理 Lectures 1–7 自学手册](reports/plasma-lectures/index.html)：81 页原讲义、108 个学习单元、63 道带答案自测；新增第七讲迁移率、双极扩散、Chapman–Enskog 展开和 Braginskii 输运，保留 73 个编号公式标签、5 条脚注及原稿校注；七份原 PDF 与离线公式完整内嵌（2026-11-09）。
 
 - cuGMEC / CUDA 回旋动理学–MHD：Liu–Jiang–Fu 2026 CPC 正式版，全部 16 页、16 幅原图、3 张原表；解析压力耦合、δf PIC、电子闭合与 GPU 加速，固定源码版本核查顺序耦合，评估模型局限和可验证研究路线；离线公式与资源静态检查通过，浏览器渲染检查未完成（2026-10-19）。
 
@@ -50,6 +50,6 @@
 
 - 共享样式与主题逻辑：`assets/editorial.css`、`assets/theme.js`。
 - 修改后运行 `python3 scripts/sync-editorial.py`，将主题内嵌到全部报告。报告仍可单独离线阅读，缺少站点字体时使用系统衬线字体。
-- 内容与数值回归：`npm run test:content`、`npm run test:visuals`。
+- 内容完整性回归：`npm run test:content`。
 - 浏览器回归：`npm ci`、`npx playwright install chromium`，启动 `python3 -m http.server 8766` 后运行 `npm run test:browser`。
-- GitHub Actions 检查桌面与 390/320 像素布局、筛选收藏、主题切换、原图公式、课程控件及 89 个交互图示。
+- GitHub Actions 检查桌面与 390/320 像素布局、筛选收藏、主题切换、原图公式、课程导航、自测、阅读进度与原 PDF；确认已移除交互可视化及其专用资源。

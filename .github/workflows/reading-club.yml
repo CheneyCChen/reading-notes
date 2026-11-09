@@ -19,17 +19,15 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Check content and interactive physics
+      - name: Check content preservation
         run: |
           node --check assets/library.js
           node --check assets/theme.js
           npm run test:content
-          npm run test:visuals
       - name: Check browser interactions and responsive layouts
         run: |
           python3 -m http.server 8766 > /tmp/reading-club-server.log 2>&1 &
           npm run test:browser
-          CHROMIUM_PATH=$(node -p "require('playwright').chromium.executablePath()") BASE_URL=http://localhost:8766/reports/plasma-lectures/index.html node tests/plasma-browser.cjs
       - name: Retain screenshots
         if: always()
         uses: actions/upload-artifact@v4
