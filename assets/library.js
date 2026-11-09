@@ -16,8 +16,36 @@ const reports = [
 {id:'fishbone',title:'鱼骨模中的热离子动理学效应与 Landau 阻尼',authors:'Chang Liu et al. / 2022 · arXiv v1',year:2022,category:'论文精读',topic:'kinetic',tags:['M3D-C1-K','Fishbone','Landau damping'],description:'从离子声波基准到 DIII-D 与 NSTX，梳理热离子对模态频率、稳定边界与非线性饱和的影响。',url:'reports/fishbone-reading/report.html'},
 {id:'mega',title:'热离子为何能帮助 LHD 维持高 beta？',authors:'M. Sato & Y. Todo / 2021 · Nuclear Fusion',year:2021,category:'论文精读',topic:'kinetic',tags:['MEGA','LHD','Mercier','热离子'],description:'被俘获热离子的进动漂移如何改变压力驱动响应？区分高压维持、外围不稳定与非线性耦合的证据。',url:'reports/hybrid-comparison/mega/report.html'}
 ];
-const key='reading-notes-v1';let saved={};try{saved=JSON.parse(localStorage.getItem(key)||'{}')||{}}catch{}let view='all',topic='all';
+const key='reading-notes-v1';
+let saved={};
+try{const parsed=JSON.parse(localStorage.getItem(key)||'{}');if(parsed&&typeof parsed==='object'&&!Array.isArray(parsed))saved=parsed}catch{}
+let view='all',topic='all',storageWarning=false;
 const cards=document.querySelector('#cards'),search=document.querySelector('#search');
-function save(){try{localStorage.setItem(key,JSON.stringify(saved))}catch{document.querySelector('#result-count').textContent='浏览器无法保存标记；本次会话仍可使用。'}}
-function render(){let list=reports.filter(r=>(topic==='all'||r.topic===topic)&&(view==='all'||(view==='starred'?saved[r.id]?.star:saved[r.id]?.status==='reading'))&&[r.title,r.authors,r.description,...r.tags].join(' ').toLowerCase().includes(search.value.trim().toLowerCase()));const sort=document.querySelector('#sort').value;if(sort==='title')list.sort((a,b)=>a.title.localeCompare(b.title,'zh-CN'));if(sort==='year')list.sort((a,b)=>b.year-a.year);cards.replaceChildren();for(const r of list){const state=saved[r.id]||{};const card=document.createElement('article');card.className='card';card.dataset.kind=r.topic;card.innerHTML=`<div class="card-top"><span class="category">${r.category}</span><button class="star" aria-label="收藏：${r.title}" aria-pressed="${!!state.star}">${state.star?'★':'☆'}</button></div><h2><a href="${r.url}">${r.title}</a></h2><p class="authors">${r.authors}</p><div class="card-bottom"><select class="status" aria-label="${r.title}：阅读状态"><option value="unread">未读</option><option value="reading">在读</option><option value="done">已读</option></select><a href="${r.url}" aria-label="阅读：${r.title}" title="阅读报告">↗</a></div>`;card.querySelector('.star').onclick=()=>{saved[r.id]={...saved[r.id],star:!saved[r.id]?.star};save();render()};const select=card.querySelector('select');select.value=state.status||'unread';select.onchange=()=>{saved[r.id]={...saved[r.id],status:select.value};save();render()};cards.append(card)}document.querySelector('#empty').hidden=list.length>0;document.querySelector('#result-count').textContent=`${list.length} 篇报告`}
-document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b)});document.querySelector('#view-title').textContent={all:'阅读报告',starred:'收藏',reading:'在读'}[view];render()});document.querySelectorAll('[data-topic]').forEach(b=>b.onclick=()=>{topic=b.dataset.topic;document.querySelectorAll('[data-topic]').forEach(x=>{x.classList.toggle('selected',x===b);x.setAttribute('aria-pressed',x===b)});render()});search.oninput=render;document.querySelector('#sort').onchange=render;document.querySelector('#reset').onclick=()=>{search.value='';document.querySelector('[data-view=all]').click();document.querySelector('[data-topic=all]').click()};document.addEventListener('keydown',e=>{if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();search.focus()}});render();
+function save(){try{localStorage.setItem(key,JSON.stringify(saved));storageWarning=false}catch{storageWarning=true}}
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}
+function render(focus){
+  const query=search.value.trim().toLowerCase();
+  let list=reports.filter(r=>(topic==='all'||r.topic===topic)&&(view==='all'||(view==='starred'?saved[r.id]?.star:saved[r.id]?.status==='reading'))&&[r.title,r.authors,r.description,...r.tags].join(' ').toLowerCase().includes(query));
+  const sort=document.querySelector('#sort').value;
+  if(sort==='title')list.sort((a,b)=>a.title.localeCompare(b.title,'zh-CN'));
+  if(sort==='year')list.sort((a,b)=>b.year-a.year);
+  cards.replaceChildren();
+  for(const r of list){
+    const state=saved[r.id]||{},card=document.createElement('article');
+    card.className='card';card.dataset.kind=r.topic;card.dataset.id=r.id;
+    card.innerHTML=`<div class="card-top"><span class="category">${escapeHTML(r.category)} · ${r.year}</span><button class="star" aria-label="收藏：${escapeHTML(r.title)}" aria-pressed="${!!state.star}"><span class="star-icon" aria-hidden="true">${state.star?'★':'☆'}</span><span>${state.star?'已收藏':'收藏'}</span></button></div><h2><a href="${escapeHTML(r.url)}">${escapeHTML(r.title)}</a></h2><p class="authors">${escapeHTML(r.authors)}</p><p class="description">${escapeHTML(r.description)}</p><div class="card-bottom"><select class="status" aria-label="${escapeHTML(r.title)}：阅读状态"><option value="unread">未读</option><option value="reading">在读</option><option value="done">已读</option></select><a href="${escapeHTML(r.url)}" aria-label="阅读：${escapeHTML(r.title)}">阅读报告 ↗</a></div>`;
+    card.querySelector('.star').onclick=()=>{saved[r.id]={...saved[r.id],star:!saved[r.id]?.star};save();render({id:r.id,control:'.star'})};
+    const select=card.querySelector('select');select.value=state.status||'unread';
+    select.onchange=()=>{saved[r.id]={...saved[r.id],status:select.value};save();render({id:r.id,control:'.status'})};
+    cards.append(card);
+  }
+  document.querySelector('#empty').hidden=list.length>0;
+  document.querySelector('#result-count').textContent=`${list.length} 篇报告${storageWarning?' · 浏览器无法保存标记，本次会话仍可使用。':''}`;
+  if(focus){const row=[...cards.children].find(card=>card.dataset.id===focus.id);(row?.querySelector(focus.control)||document.querySelector(`.nav[data-view="${view}"]`)).focus({preventScroll:true})}
+}
+document.querySelectorAll('[data-view]').forEach(button=>button.onclick=()=>{view=button.dataset.view;document.querySelectorAll('[data-view]').forEach(x=>{x.classList.toggle('active',x===button);x.setAttribute('aria-pressed',String(x===button))});document.querySelector('#view-title').textContent={all:'阅读报告',starred:'收藏',reading:'在读'}[view];render()});
+document.querySelectorAll('[data-topic]').forEach(button=>button.onclick=()=>{topic=button.dataset.topic;document.querySelectorAll('[data-topic]').forEach(x=>{x.classList.toggle('selected',x===button);x.setAttribute('aria-pressed',String(x===button))});render()});
+search.oninput=()=>render();document.querySelector('#sort').onchange=()=>render();
+document.querySelector('#reset').onclick=()=>{search.value='';document.querySelector('#sort').value='recent';document.querySelector('[data-view=all]').click();document.querySelector('[data-topic=all]').click();search.focus()};
+document.addEventListener('keydown',event=>{if(event.key==='/'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&!document.activeElement.isContentEditable){event.preventDefault();search.focus()}});
+render();

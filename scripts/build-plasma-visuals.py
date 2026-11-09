@@ -26,3 +26,7 @@ for name in ['plasma-l12.js','plasma-l34.js','plasma-l5.js','plasma-l6.js','plas
 text=text.replace('</body>','<!-- PLASMA-VISUALS:scripts -->'+script+'<!-- /PLASMA-VISUALS --></body>')
 page.write_text(text)
 print('Built 89 section visuals with inline offline assets.')
+
+# Refresh the presentation layer after the visual layer has been regenerated.
+import runpy
+runpy.run_path(str(ROOT/'scripts/sync-editorial.py'))

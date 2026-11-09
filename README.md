@@ -43,3 +43,13 @@
 网站随 `main` 分支更新，通过 GitHub Pages 构建与部署。报告与资源使用相对路径，兼容 `/reading-notes/` 项目地址，也可直接本地打开。更改仓库可见性或访问权限应单独决定。
 
 原文插图及论文内容的权利归原作者／出版方所有；阅读分析以各报告声明的原文版本与证据边界为准。
+
+## 阅读样式与检查
+
+首页采用暖米白底、Newsreader 衬线与窄栏文字目录，保留搜索、主题筛选、排序、收藏和阅读状态。右上角开关可切换深浅色，选择保存在当前浏览器并在报告间沿用。Newsreader 字体随站点提供，许可见 `assets/fonts/OFL-Newsreader.txt`；中文采用设备上的宋体或衬线字体。
+
+- 共享样式与主题逻辑：`assets/editorial.css`、`assets/theme.js`。
+- 修改后运行 `python3 scripts/sync-editorial.py`，将主题内嵌到全部报告。报告仍可单独离线阅读，缺少站点字体时使用系统衬线字体。
+- 内容与数值回归：`npm run test:content`、`npm run test:visuals`。
+- 浏览器回归：`npm ci`、`npx playwright install chromium`，启动 `python3 -m http.server 8766` 后运行 `npm run test:browser`。
+- GitHub Actions 检查桌面与 390/320 像素布局、筛选收藏、主题切换、原图公式、课程控件及 89 个交互图示。
