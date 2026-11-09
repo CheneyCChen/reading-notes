@@ -12,7 +12,11 @@ const courseUrl=base.endsWith('.html')?base:base.replace(/\/$/,'')+'/reports/pla
  assert.equal(await page.locator('details').count(),63);
  assert.equal(await page.locator('.katex').count(),1853);
  const brokenImages=await page.locator('img').evaluateAll(async images=>{
-   await Promise.all(images.map(img=>img.decode().catch(()=>{})));
+   images.forEach(img=>img.loading='eager');
+   await Promise.race([
+     Promise.all(images.map(img=>img.decode().catch(()=>{}))),
+     new Promise((_,reject)=>setTimeout(()=>reject(new Error('Course image decode timed out')),15000))
+   ]);
    return images.filter(img=>!img.complete||!img.naturalWidth).map(img=>img.getAttribute('src'));
  });assert.deepEqual(brokenImages,[]);
  // All seven PDFs are still embedded and every PDF button opens its own source.
