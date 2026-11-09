@@ -28,6 +28,7 @@ jobs:
       - name: Check browser interactions and responsive layouts
         run: |
           python3 -m http.server 8766 > /tmp/reading-club-server.log 2>&1 &
+          node tests/diagnose-editorial.cjs
           npm run test:browser
           CHROMIUM_PATH=$(node -p "require('playwright').chromium.executablePath()") BASE_URL=http://localhost:8766/reports/plasma-lectures/index.html node tests/plasma-browser.cjs
       - name: Retain screenshots
