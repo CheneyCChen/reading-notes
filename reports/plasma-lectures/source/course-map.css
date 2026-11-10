@@ -1,0 +1,64 @@
+/* Static course map. Uses the existing paper theme; no animation or canvas. */
+.reading-course .course-map{padding:32px 0;border-bottom:1px solid var(--line);min-width:0;container-type:inline-size}
+.reading-course .course-map-heading h2{font-size:clamp(22px,2.6vw,28px);line-height:1.45;margin:10px 0 12px}
+.reading-course .course-map-heading p{font-family:var(--ui);font-size:13px;line-height:1.8;color:var(--muted);margin:0 0 24px;max-width:46em}
+.reading-course .course-map-figure{margin:0;min-width:0}
+.reading-course .course-map-network{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr) 28px minmax(0,1fr);grid-template-rows:auto 56px auto 56px auto;min-width:0}
+.reading-course .course-map-node{display:flex;flex-direction:column;justify-content:center;min-width:0;min-height:140px;padding:16px 14px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;text-decoration:none;overflow-wrap:anywhere;position:relative;z-index:1}
+.reading-course .course-map-node:hover{background:var(--soft);border-color:var(--muted)}
+.reading-course .course-map-node:focus-visible{outline:2px solid var(--ink);outline-offset:4px;background:var(--soft)}
+.reading-course .course-map-kicker{font-family:var(--ui);font-size:11px;line-height:1.6;letter-spacing:.035em;color:var(--muted)}
+.reading-course .course-map-node strong{font-size:18px;font-weight:600;line-height:1.5;margin:7px 0}
+.reading-course .course-map-topics{font-family:var(--ui);font-size:11.5px;line-height:1.8;color:var(--muted)}
+.reading-course .course-map-dependency{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.reading-course .course-map-node-1{grid-area:1 / 1}
+.reading-course .course-map-node-2{grid-area:1 / 3}
+.reading-course .course-map-node-3{grid-area:1 / 5}
+.reading-course .course-map-node-4{grid-area:3 / 1}
+.reading-course .course-map-node-5{grid-area:5 / 1}
+.reading-course .course-map-node-6{grid-area:3 / 5}
+.reading-course .course-map-node-7{grid-area:5 / 5;border-color:var(--muted)}
+.reading-course .course-map-edge{position:relative;display:flex;justify-content:center;align-items:center;color:var(--muted);min-width:0}
+.reading-course .course-map-edge::before,.reading-course .course-map-edge::after{content:"";position:absolute;display:block}
+.reading-course .course-map-edge-h::before{left:0;right:2px;top:50%;border-top:1px solid currentColor}
+.reading-course .course-map-edge-h::after{right:2px;top:calc(50% - 3px);width:6px;height:6px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.reading-course .course-map-edge-v::before{top:0;bottom:2px;left:50%;border-left:1px solid currentColor}
+.reading-course .course-map-edge-v::after{bottom:2px;left:calc(50% - 3px);width:6px;height:6px;border-bottom:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.reading-course .course-map-edge>span{position:relative;z-index:1;background:var(--bg);padding:3px 8px;font-family:var(--ui);font-size:11px;line-height:1.7;text-align:center}
+.reading-course .course-map-edge-h>span{transform:translateY(-15px)}
+.reading-course .course-map-edge-12{grid-area:1 / 2}
+.reading-course .course-map-edge-23{grid-area:1 / 4}
+.reading-course .course-map-edge-14{grid-area:2 / 1}
+.reading-course .course-map-edge-36{grid-area:2 / 5}
+.reading-course .course-map-edge-46{grid-area:3 / 2 / 4 / 5}
+.reading-course .course-map-edge-45{grid-area:4 / 1}
+.reading-course .course-map-edge-67{grid-area:4 / 5}
+.reading-course .course-map-edge-57{grid-area:5 / 2 / 6 / 5}
+.reading-course .course-map-caption{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--ui);font-size:11.5px;line-height:1.8;margin-top:24px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted)}
+.reading-course .course-map-caption>span{color:var(--ink)}
+.reading-course .course-map-caption a{display:inline-block;min-height:24px}
+/* The text order stays 01–07 at every width. Narrow views expose each connection
+   as text rather than shrinking a dense diagram or requiring horizontal pans. */
+@container(max-width:600px){
+  .reading-course .course-map-network{display:flex;flex-direction:column;gap:12px}
+  .reading-course .course-map-node{min-height:0;padding:16px 18px}
+  .reading-course .course-map-node strong{font-size:20px;margin:4px 0}
+  .reading-course .course-map-kicker,.reading-course .course-map-topics{font-size:12px}
+  .reading-course .course-map-dependency{position:static;width:auto;height:auto;margin:8px 0 0;clip:auto;white-space:normal;overflow:visible;font-family:var(--ui);font-size:12px;line-height:1.8;color:var(--muted);border-top:1px solid var(--line);padding-top:8px}
+  .reading-course .course-map-edge{display:none}
+  .reading-course .course-map-caption{gap:8px 14px;font-size:12px}
+  .reading-course .course-map-caption>span{flex-basis:100%}
+}
+@media print{
+  .reading-course .course-map{break-inside:avoid;padding:20px 0}
+  .reading-course .course-map-network{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr) 28px minmax(0,1fr);grid-template-rows:auto 44px auto 44px auto;gap:0}
+  .reading-course .course-map-node{min-height:110px;padding:10px}
+  .reading-course .course-map-node strong{font-size:14px}
+  .reading-course .course-map-kicker,.reading-course .course-map-topics{font-size:9px}
+  .reading-course .course-map-topics br{display:block}
+  .reading-course .course-map-dependency{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .reading-course .course-map-edge{display:flex}
+  .reading-course .course-map-edge>span{font-size:9px}
+  .reading-course .course-map-caption{font-size:9px;gap:5px 12px}
+  .reading-course .course-map-caption>span{flex-basis:auto}
+}

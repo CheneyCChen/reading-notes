@@ -1,7 +1,11 @@
 """Remove only the documented Lecture 7 additions for whole-page byte regression."""
-import re, json
+import re, json, sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from plasma_prose import restore_prose_edits
 
 def before_lecture7(text):
+    text = restore_prose_edits(text)
     if 'id="lecture7"' not in text:
         return text
     text=re.sub(r'<!-- PLASMA-L7:(nav|article|style):start -->[\s\S]*?<!-- PLASMA-L7:\1:end -->','',text)

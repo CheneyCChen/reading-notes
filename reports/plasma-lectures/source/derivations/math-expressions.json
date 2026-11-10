@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "supplement-l1-a",
+    "display": false,
+    "tex": "|q_s\\phi|/T_s\\ll1"
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": true,
+    "tex": "\\phi(r)=\\frac{Q}{r}e^{-r/\\lambda_D}."
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": false,
+    "tex": "r\\ll\\lambda_D"
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": true,
+    "tex": "r\\gg r_{{\\rm nl},s}\\equiv\\frac{|q_sQ|}{T_s}."
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": true,
+    "tex": "\\max_s r_{{\\rm nl},s}\\ll r\\ll\\lambda_D."
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": false,
+    "tex": "Q"
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": false,
+    "tex": "r_{\\rm nl}"
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": false,
+    "tex": "\\lambda_D"
+  },
+  {
+    "id": "supplement-l1-a",
+    "display": false,
+    "tex": "\\lambda_D^{-2}=\\sum_s4\\pi n_sq_s^2/T_s"
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": false,
+    "tex": "\\mathbf E\\times\\mathbf B"
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": false,
+    "tex": "\\mathbf E_\\omega e^{-i\\omega t}"
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": true,
+    "tex": "-i\\omega\\mathbf V_\\perp=\\frac qm\\mathbf E_\\perp+\\Omega\\mathbf V_\\perp\\times\\mathbf b."
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": true,
+    "tex": "\\mathbf V_\\perp=\\frac{q/m}{\\Omega^2-\\omega^2}\n\\left(\\Omega\\mathbf E_\\perp\\times\\mathbf b-i\\omega\\mathbf E_\\perp\\right)."
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": false,
+    "tex": "|\\omega/\\Omega|\\ll1"
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": true,
+    "tex": "\\mathbf V_\\perp=\n\\frac cB\\mathbf E_\\perp\\times\\mathbf b\n+\\frac{mc^2}{qB^2}\\partial_t\\mathbf E_\\perp\n+O\\!\\left(\\frac{\\omega^2}{\\Omega^2}V_E\\right)."
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": false,
+    "tex": "\\mathbf E\\times\\mathbf B"
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": false,
+    "tex": "|\\omega|=|\\Omega|"
+  },
+  {
+    "id": "supplement-l2-a",
+    "display": false,
+    "tex": "\\partial_t"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "\\mathbf E_{\\mathbf k}e^{i\\mathbf k\\cdot\\mathbf x}"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "\\theta"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "\\mathbf k_\\perp\\cdot\\boldsymbol\\rho=k_\\perp\\rho_L\\cos\\theta"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": true,
+    "tex": "\\langle\\mathbf E(\\mathbf X+\\boldsymbol\\rho)\\rangle\n=\\mathbf E_k e^{i\\mathbf k\\cdot\\mathbf X}\n\\frac1{2\\pi}\\int_0^{2\\pi}e^{ik_\\perp\\rho_L\\cos\\theta}\\,d\\theta\n=J_0(k_\\perp\\rho_L)\\mathbf E(\\mathbf X)."
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "\\cos\\theta"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "\\langle\\cos^2\\theta\\rangle=1/2"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "\\langle\\cos^4\\theta\\rangle=3/8"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": true,
+    "tex": "J_0(a)=1-\\frac{a^2}{4}+\\frac{a^4}{64}+\\cdots."
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "1-k_\\perp^2\\rho_L^2/4"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "a"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "J_0"
+  },
+  {
+    "id": "supplement-l2-b",
+    "display": false,
+    "tex": "J_0"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": true,
+    "tex": "H=\\frac{p^2}{2m}+\\frac{m\\omega(t)^2x^2}{2},\\qquad J=\\frac H\\omega."
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "dH/dt=\\partial H/\\partial t=m\\omega\\dot\\omega x^2"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": true,
+    "tex": "\\dot J=\\dot\\omega\\left(mx^2-\\frac H{\\omega^2}\\right)."
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "x=\\sqrt{2J/(m\\omega)}\\sin\\theta"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "H=\\omega J"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": true,
+    "tex": "\\dot J=-J\\frac{\\dot\\omega}{\\omega}\\cos2\\theta."
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "\\epsilon=|\\dot\\omega|/\\omega^2\\ll1"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "O(\\epsilon)"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "J_{\\rm gyro}=\\mu mc/|q|"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "\\mu"
+  },
+  {
+    "id": "supplement-l3-a",
+    "display": false,
+    "tex": "J"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "B(x)\\hat{\\mathbf z}"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "p_\\perp(x)"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "n\\langle\\mu\\rangle=p_\\perp/B"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": true,
+    "tex": "\\mathbf j_{{\\rm gc},\\nabla B}\n=nq\\langle\\mathbf V_{\\nabla B}\\rangle\n=\\frac{cp_\\perp}{B^2}\\mathbf b\\times\\nabla B."
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "\\mathbf M=-(p_\\perp/B)\\mathbf b"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": true,
+    "tex": "\\mathbf j_M=c\\nabla\\times\\mathbf M\n=\\frac cB\\mathbf b\\times\\nabla p_\\perp\n-\\frac{cp_\\perp}{B^2}\\mathbf b\\times\\nabla B."
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "\\nabla B"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": true,
+    "tex": "\\boxed{\\mathbf j_\\perp=\\frac cB\\mathbf b\\times\\nabla p_\\perp}."
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "B"
+  },
+  {
+    "id": "supplement-l3-b",
+    "display": false,
+    "tex": "\\nabla B"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": true,
+    "tex": "\\partial_t f+v\\partial_xf=0,\\qquad\nf(x,v,0)=F(v)[1+a\\cos kx],\\quad |a|<1."
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "x-vt=\\mathrm{const}"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": true,
+    "tex": "f(x,v,t)=F(v)[1+a\\cos k(x-vt)]."
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "F"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "v_T^2"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": true,
+    "tex": "\\delta n(x,t)=a n_0\\cos kx\\,e^{-k^2v_T^2t^2/2}."
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "\\Delta v\\sim1/(|k|t)"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "(x,v)\\mapsto(x-vt,v)"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "\\int f\\ln f\\,dx\\,dv"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "\\bar f"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": false,
+    "tex": "h(f)=f\\ln f"
+  },
+  {
+    "id": "supplement-l4-a",
+    "display": true,
+    "tex": "h(\\bar f)\\leq\\overline{h(f)},\\qquad\n-\\int\\bar f\\ln\\bar f\\,dz\\geq-\\int f\\ln f\\,dz."
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": true,
+    "tex": "\\mathcal V_f(\\eta)=\\int\\Theta(f_0(z)-\\eta)\\,dz,"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "\\eta"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "\\eta"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "\\mathcal V_f"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "V_x"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "E"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": true,
+    "tex": "\\mathcal V_E(E)=V_x\\frac{4\\pi}{3}\\left(\\frac{2E}{m}\\right)^{3/2}."
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "f"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "f_G(E_\\eta)=\\eta"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": true,
+    "tex": "\\mathcal V_E(E_\\eta)=\\mathcal V_f(\\eta)."
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "f_G"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "K_{\\min}"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "F(\\mathbf v-\\mathbf U)"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "F(\\mathbf v)"
+  },
+  {
+    "id": "supplement-l4-b",
+    "display": false,
+    "tex": "K_G=NmU^2/2"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "\\chi\\sim|b_0|/b"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "|\\Delta\\mathbf v|\\sim u\\chi"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "nu\\,2\\pi b\\,db"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "r"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": true,
+    "tex": "M_r\\sim nu^{r+1}|b_0|^r\n\\int_{b_{\\min}}^{b_{\\max}}b^{1-r}\\,db."
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "b_{\\min}\\sim|b_0|"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "r=2"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": true,
+    "tex": "M_2\\sim nu^3b_0^2\\ln\\Lambda."
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "r>2"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": true,
+    "tex": "M_r\\sim nu^{r+1}b_0^2,"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "u"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "r"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "u^{-r}"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "1/\\ln\\Lambda"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "\\chi^2"
+  },
+  {
+    "id": "supplement-l5-a",
+    "display": false,
+    "tex": "\\ln\\Lambda"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "v"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": true,
+    "tex": "f(v,\\theta,\\varphi,t)=\\sum_{\\ell,m}f_{\\ell m}(v,t)Y_{\\ell m}(\\theta,\\varphi)."
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\Delta_\\Omega Y_{\\ell m}=-\\ell(\\ell+1)Y_{\\ell m}"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "C=(\\nu(v)/2)\\Delta_\\Omega f"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": true,
+    "tex": "f_{\\ell m}(v,t)=f_{\\ell m}(v,0)\n\\exp\\!\\left[-\\frac{\\ell(\\ell+1)}2\\nu(v)t\\right]."
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\ell=0"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\ell=1"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\nu"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\ell=2"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "3\\nu"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\nu"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "v"
+  },
+  {
+    "id": "supplement-l5-b",
+    "display": false,
+    "tex": "\\nu(v)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "b"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "f_b(\\mathbf v')=\\frac{n_b}{(2\\pi\\sigma^2)^{3/2}}\ne^{-v'^2/(2\\sigma^2)},\\quad\n\\sigma^2=\\frac{T_b}{m_b},\\quad x=\\frac{v}{\\sqrt2\\sigma}."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\frac{d}{dv}(v^2\\phi_b')=-4\\pi v^2f_b(v)."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "4\\pi\\int_0^v s^2f_b(s)\\,ds=n_bF(x)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v^2\\phi_b^\\prime=-n_bF(x)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v=0"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\phi_b\\sim n_b/v"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\phi_b(v)=\\frac{n_b}{v}\\operatorname{erf}x,\\qquad\n\\phi_b'=-\\frac{n_b}{v^2}F(x),\\quad\nF(x)=\\operatorname{erf}x-\\frac{2x}{\\sqrt\\pi}e^{-x^2}."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "(v^2\\psi_b^\\prime)^\\prime=2v^2\\phi_b"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\psi_b=n_b\\left[\\left(v+\\frac{\\sigma^2}{v}\\right)\\operatorname{erf}x\n+\\sqrt{\\frac2\\pi}\\sigma e^{-x^2}\\right]."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "G(x)=F(x)/(2x^2)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\psi_b'=n_b[\\operatorname{erf}x-G(x)],\\qquad\n\\psi_b''=\\frac{2n_b}{v}G(x)."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\partial_i\\partial_j\\psi_b\n=\\psi_b''\\hat v_i\\hat v_j+\n\\frac{\\psi_b'}v(\\delta_{ij}-\\hat v_i\\hat v_j)."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\Gamma_{sb}=4\\pi q_s^2q_b^2\\ln\\Lambda_{sb}/m_s^2"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "C=-\\partial_i(A_if)+\\partial_i\\partial_j(B_{ij}f)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\mathbf A=-\\Gamma_{sb}n_b\\left(1+\\frac{m_s}{m_b}\\right)\n\\frac{F(x)}{v^3}\\mathbf v,"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\mathsf B=B_\\parallel\\hat{\\mathbf v}\\hat{\\mathbf v}\n+B_\\perp(\\mathsf I-\\hat{\\mathbf v}\\hat{\\mathbf v}),\n\\quad\nB_\\parallel=\\frac{\\Gamma_{sb}n_b}{v}G(x),\\quad\nB_\\perp=\\frac{\\Gamma_{sb}n_b}{2v}[\\operatorname{erf}x-G(x)]."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "B_\\perp"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\nu^{\\rm slow}=\\frac{\\Gamma_{sb}n_b}{v^3}\n\\left(1+\\frac{m_s}{m_b}\\right)F,\n\\quad \\nu^\\parallel=\\frac{2\\Gamma_{sb}n_b}{v^3}G,\n\\quad \\nu^\\perp=\\frac{2\\Gamma_{sb}n_b}{v^3}(\\operatorname{erf}x-G)."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v\\gg\\sigma"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "F\\to1"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "G\\sim\\sigma^2/v^2"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "B_\\parallel\\sim\\Gamma n_b\\sigma^2/v^3"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "B_\\perp\\sim\\Gamma n_b/(2v)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v\\to0"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "F\\sim4x^3/(3\\sqrt\\pi)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "G\\sim2x/(3\\sqrt\\pi)"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "B_\\parallel=B_\\perp\\longrightarrow\n\\frac{\\sqrt2\\,\\Gamma_{sb}n_b}{3\\sqrt\\pi\\,\\sigma},"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\mathbf A"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v^{-1}"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "v^{-3}"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "F"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "G"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "x"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\mathbf A"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\nabla_v\\cdot\\mathsf B=\\Gamma_{sb}\\nabla_v\\phi_b"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\mathbf V=-\\mathbf A+\\nabla_v\\cdot\\mathsf B\n=-\\Gamma_{sb}\\frac{m_s}{m_b}\\nabla_v\\phi_b,"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "m_s/m_b"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\mathbf A"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "1+m_s/m_b"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "F=2x^2G=v^2G/\\sigma^2"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": true,
+    "tex": "\\mathbf V=\\frac{m_s}{T_b}\\mathsf B\\cdot\\mathbf v."
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "T_b"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "\\mathbf V f+\\mathsf B\\cdot\\nabla_vf=0"
+  },
+  {
+    "id": "supplement-l5-c",
+    "display": false,
+    "tex": "1/2"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "H"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "H"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": true,
+    "tex": "\\mathsf U(\\mathbf v-\\mathbf v')\n[\\mathbf a_s(\\mathbf v)-\\mathbf a_{s'}(\\mathbf v')]=0,\n\\qquad \\mathbf a_s=\\frac1{m_s}\\nabla_v\\ln f_s."
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\mathbf v^\\prime=\\mathbf v+\\delta\\mathbf v"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\mathsf U"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\delta\\mathbf v"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\nabla\\mathbf a_s"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\delta\\mathbf v"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\nabla\\mathbf a_s=\\lambda_s(\\mathbf v)\\mathsf I"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\nabla\\lambda_s=0"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": true,
+    "tex": "\\mathbf a_s=\\mathbf c_s+\\lambda_s\\mathbf v,\n\\quad\n\\ln f_s=A_s+m_s\\mathbf c_s\\cdot\\mathbf v\n+\\frac{m_s\\lambda_s}2v^2."
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\lambda_s<0"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "T_s=-1/\\lambda_s"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\mathbf U_s=-\\mathbf c_s/\\lambda_s"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\lambda_s=\\lambda_{s^\\prime}"
+  },
+  {
+    "id": "supplement-l5-d",
+    "display": false,
+    "tex": "\\mathbf c_s=\\mathbf c_{s^\\prime}"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "f_1,\\phi_1\\propto e^{ikx-i\\omega t}"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": true,
+    "tex": "(-i\\omega+ikv)f_1-\\frac qm ik\\phi_1 f_0'=0,\n\\qquad\nf_1=\\frac{q\\phi_1}{m}\\frac{f_0'}{v-\\omega/k}."
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "\\operatorname{Im}\\omega>0"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "k>0"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": true,
+    "tex": "\\zeta=\\frac\\omega{\\sqrt2kv_T},\\qquad\nZ(\\zeta)=\\frac1{\\sqrt\\pi}\\int_{\\mathcal L}\n\\frac{e^{-u^2}}{u-\\zeta}\\,du."
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "f_0^\\prime=-vf_0/v_T^2"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "v/(v-\\omega/k)=1+(\\omega/k)/(v-\\omega/k)"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": true,
+    "tex": "\\boxed{\\frac{n_1}{n_0}=-\\frac{q\\phi_1}{T}[1+\\zeta Z(\\zeta)]}."
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "|\\zeta|\\gg1"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "1/(u-\\zeta)"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "\\langle u^2\\rangle=1/2"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "\\langle u^4\\rangle=3/4"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": true,
+    "tex": "1+\\zeta Z(\\zeta)\n=-\\frac1{2\\zeta^2}-\\frac3{4\\zeta^4}+\\cdots,"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": true,
+    "tex": "\\frac{n_1}{n_0}=\\frac{qk^2\\phi_1}{m\\omega^2}\n\\left(1+\\frac{3k^2v_T^2}{\\omega^2}+\\cdots\\right)."
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "\\omega^2=\\omega_p^2+3k^2v_T^2+\\cdots"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "|\\zeta|\\ll1"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "Z(\\zeta)=i\\sqrt\\pi-2\\zeta+\\cdots"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": true,
+    "tex": "\\frac{n_1}{n_0}=-\\frac{q\\phi_1}{T}\n[1+i\\sqrt\\pi\\zeta-2\\zeta^2+\\cdots]."
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "v_{Ti}\\ll|\\omega/k|\\ll v_{Te}"
+  },
+  {
+    "id": "supplement-l6-a",
+    "display": false,
+    "tex": "T_e\\gg T_i"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "\\Delta p=p_\\parallel-p_\\perp"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "\\mathsf P=p_\\perp\\mathsf I+\\Delta p\\,\\mathbf b\\mathbf b"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": true,
+    "tex": "\\nabla\\cdot\\mathsf P=\\nabla p_\\perp\n+\\mathbf b\\,\\partial_\\parallel\\Delta p\n+\\Delta p[(\\nabla\\cdot\\mathbf b)\\mathbf b+\\boldsymbol\\kappa],\n\\quad \\boldsymbol\\kappa=(\\mathbf b\\cdot\\nabla)\\mathbf b."
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "\\nabla\\cdot\\mathbf b=-\\partial_\\parallel\\ln B"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": true,
+    "tex": "\\mathbf b\\cdot\\nabla\\cdot\\mathsf P\n=\\partial_\\parallel p_\\parallel\n+(p_\\perp-p_\\parallel)\\partial_\\parallel\\ln B,"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": true,
+    "tex": "(\\nabla\\cdot\\mathsf P)_\\perp\n=\\nabla_\\perp p_\\perp+(p_\\parallel-p_\\perp)\\boldsymbol\\kappa."
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "-\\nabla\\cdot\\mathsf P"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "\\nabla p"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "p_\\parallel"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": true,
+    "tex": "-\\frac{p_\\perp}{n}\\partial_\\parallel\\ln B\n=-\\langle\\mu\\rangle\\partial_\\parallel B,"
+  },
+  {
+    "id": "supplement-l6-b",
+    "display": false,
+    "tex": "\\mathbf b"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "a=v_T^2=T/m"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\langle h\\rangle=n^{-1}\\int hg_0\\,d^3w"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "A_{ij}=w_iw_j-\\delta_{ij}w^2/3"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\widetilde g=-\\frac{g_0}{\\nu}\n\\left[\\left(\\frac{w^2}{2a}-\\frac52\\right)\n\\frac{w_k\\partial_kT}{T}\n+\\frac{A_{kl}}a\\partial_lU_k\\right]."
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\begin{aligned}\nI_{2r}\\equiv\\frac1{\\sqrt{2\\pi a}}\\int_{-\\infty}^{\\infty}\ny^{2r}e^{-y^2/(2a)}\\,dy\n&=-\\frac{a}{\\sqrt{2\\pi a}}\\int_{-\\infty}^{\\infty}\ny^{2r-1}\\frac d{dy}e^{-y^2/(2a)}\\,dy\\\\\n&=a(2r-1)I_{2r-2},\\qquad I_0=1.\n\\end{aligned}"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "a"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "3a^2"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "15a^3"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\langle w_iw_jw_kw_l\\rangle\n=a^2(\\delta_{ij}\\delta_{kl}+\\delta_{ik}\\delta_{jl}\n+\\delta_{il}\\delta_{jk})."
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "w^2=w_1^2+w_2^2+w_3^2"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\begin{aligned}\n\\langle w^4\\rangle\n&=3(3a^2)+2\\binom32a^2=15a^2,\\\\\n\\langle w^6\\rangle\n&=3(15a^3)+3(3\\cdot2)(3a^3)+6a^3=105a^3,\\\\\n\\langle w_iw_jw^2\\rangle&=5a^2\\delta_{ij}.\n\\end{aligned}"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\delta_{ij}\\delta_{kl}"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "1-5/3-5/3+15/9=-2/3"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\begin{aligned}\n\\langle A_{ij}A_{kl}\\rangle\n&=\\langle w_iw_jw_kw_l\\rangle\n-\\frac{\\delta_{ij}}3\\langle w^2w_kw_l\\rangle\n-\\frac{\\delta_{kl}}3\\langle w_iw_jw^2\\rangle\n+\\frac{\\delta_{ij}\\delta_{kl}}9\\langle w^4\\rangle.\n\\end{aligned}"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\Pi_{ij}"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\langle A_{ij}A_{kl}\\rangle\n=a^2\\left(\\delta_{ik}\\delta_{jl}+\\delta_{il}\\delta_{jk}\n-\\frac23\\delta_{ij}\\delta_{kl}\\right)."
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\Pi_{ij}=-\\frac{mn}{\\nu a}\\langle A_{ij}A_{kl}\\rangle\\partial_lU_k\n=-\\frac{P}{\\nu}\n\\left(\\partial_jU_i+\\partial_iU_j-\\frac23\\delta_{ij}\\nabla\\cdot\\mathbf U\\right)."
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "Q_i"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\langle w_iw_jF(w^2)\\rangle=\\delta_{ij}\\langle w^2F(w^2)\\rangle/3"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\begin{aligned}\nQ_i&=-\\frac{mn}{2\\nu T}\\partial_jT\n\\left\\langle w_iw_jw^2\\left(\\frac{w^2}{2a}-\\frac52\\right)\\right\\rangle\\\\\n&=-\\frac{mn}{6\\nu T}\\partial_iT\n\\left[\\frac{\\langle w^6\\rangle}{2a}-\\frac52\\langle w^4\\rangle\\right].\n\\end{aligned}"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\langle w^4\\rangle=15a^2"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\langle w^6\\rangle=105a^3"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "15a^2"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": true,
+    "tex": "\\boxed{\\mathbf Q=-\\frac{5mn a^2}{2\\nu T}\\nabla T\n=-\\frac{5P}{2m\\nu}\\nabla T}."
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\eta=P/\\nu"
+  },
+  {
+    "id": "supplement-l7-a",
+    "display": false,
+    "tex": "\\kappa=5P/(2m\\nu)"
+  },
+  {
+    "id": "supplement-l7-b",
+    "display": false,
+    "tex": "\\widehat C\\widetilde g=\\text{源项}"
+  },
+  {
+    "id": "supplement-l7-b",
+    "display": false,
+    "tex": "\\int\\widetilde g\\{1,\\mathbf w,w^2\\}\\,d^3w=0"
+  },
+  {
+    "id": "supplement-l7-b",
+    "display": false,
+    "tex": "\\langle A_{ij}\\rangle=0"
+  },
+  {
+    "id": "supplement-l7-b",
+    "display": true,
+    "tex": "\\langle w^2w_iw_j\\rangle=5a^2\\delta_{ij},\\qquad\n\\frac{\\delta_{ij}}3\\langle w^4\\rangle=5a^2\\delta_{ij}"
+  },
+  {
+    "id": "supplement-l7-b",
+    "display": true,
+    "tex": "\\left\\langle w_iw_j\\left(\\frac{w^2}{2a}-\\frac52\\right)\\right\\rangle\n=\\left(\\frac{5a^2}{2a}-\\frac52a\\right)\\delta_{ij}=0."
+  },
+  {
+    "id": "supplement-l7-b",
+    "display": false,
+    "tex": "5/2"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": true,
+    "tex": "\\frac32nD_tT+P\\nabla\\cdot\\mathbf U\n=-\\nabla\\cdot\\mathbf Q-\\boldsymbol\\Pi:\\nabla\\mathbf U."
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "s=(3/2)\\ln T-\\ln n+\\mathrm{const}"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "D_tn"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "nT D_ts=-\\nabla\\cdot\\mathbf Q-\\boldsymbol\\Pi:\\nabla\\mathbf U"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "T"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": true,
+    "tex": "\\partial_t(ns)+\\nabla\\cdot\\left(ns\\mathbf U+\\frac{\\mathbf Q}{T}\\right)\n=-\\frac{\\mathbf Q\\cdot\\nabla T}{T^2}\n-\\frac{\\boldsymbol\\Pi:\\nabla\\mathbf U}{T}."
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\mathbf Q=-\\kappa\\nabla T"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\boldsymbol\\Pi=-\\eta\\mathsf W"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\mathsf W=\\nabla\\mathbf U+(\\nabla\\mathbf U)^{\\mathsf T}-(2/3)\\mathsf I\\nabla\\cdot\\mathbf U"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\mathsf W"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\mathsf W:\\nabla\\mathbf U=\\mathsf W:\\mathsf W/2"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": true,
+    "tex": "\\boxed{\\sigma_{\\rm entropy}=\\frac{\\kappa|\\nabla T|^2}{T^2}\n+\\frac{\\eta}{2T}W:W\\geq0}."
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\mathbf Q_\\times\\propto\\mathbf b\\times\\nabla T"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\nabla T"
+  },
+  {
+    "id": "supplement-l7-c",
+    "display": false,
+    "tex": "\\mathbf E\\cdot\\mathbf j_H=0"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": true,
+    "tex": "\\int\\frac{m_sv^2}{2}C_s\\,d^3v\n=S_s+\\mathbf U_s\\cdot\\mathbf R_s,"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\mathbf v=\\mathbf U_s+\\mathbf w"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\mathbf U_s\\cdot\\mathbf R_s"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "a,b"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": true,
+    "tex": "\\mathbf R_a+\\mathbf R_b=0,\n\\qquad\nS_a+S_b+\\mathbf R_a\\cdot(\\mathbf U_a-\\mathbf U_b)=0."
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "a=e"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "b=i"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": true,
+    "tex": "S_{ei}=-S_{ie}+\\mathbf R_{ei}\\cdot(\\mathbf U_i-\\mathbf U_e),"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\mathbf R_e=\\alpha(\\mathbf U_i-\\mathbf U_e)"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\alpha>0"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\alpha|\\mathbf U_i-\\mathbf U_e|^2"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\mathbf R_e\\propto-\\nabla T_e"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\mathbf R_e\\cdot(\\mathbf U_i-\\mathbf U_e)"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "n_e=n_i=n"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": true,
+    "tex": "\\dot T_i=2\\frac{m_e}{m_i}\\nu_{ei}(T_e-T_i),\\qquad\n\\dot T_e=-2\\frac{m_e}{m_i}\\nu_{ei}(T_e-T_i)."
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": true,
+    "tex": "\\frac d{dt}(T_e-T_i)=-4\\frac{m_e}{m_i}\\nu_{ei}(T_e-T_i)."
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "m_i/m_e"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "T_e=T_i"
+  },
+  {
+    "id": "supplement-l7-d",
+    "display": false,
+    "tex": "\\nu_{ei}"
+  }
+]

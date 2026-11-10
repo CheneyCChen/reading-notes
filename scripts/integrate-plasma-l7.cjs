@@ -63,6 +63,8 @@ for(let i=1;i<=6;i++) {
 }
 assert.deepEqual(pdfs.slice(0,6),originalPDFs.slice(0,6));
 fs.writeFileSync(target,text);
+// Preserve the reviewed website prose while retaining the unabridged TeX source.
+require("node:child_process").execFileSync("python3", [path.join(root,"scripts/plasma_prose.py")]);
 // Metadata edits deliberately target only the existing Plasma entry.
 const libraryPath=path.join(root,'assets/library.js');
 let library=fs.readFileSync(libraryPath,'utf8');

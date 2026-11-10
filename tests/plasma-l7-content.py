@@ -2,11 +2,13 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import re, json, base64, hashlib, subprocess
+from plasma_baseline import restore_prose_edits
+from plasma_prose import strip_supplements
 
 ROOT=Path(__file__).resolve().parents[1]
 COURSE=ROOT/'reports/plasma-lectures'
 text=(COURSE/'index.html').read_text()
-article=re.search(r'<article id="lecture7"[\s\S]*?</article>',text)[0]
+article=strip_supplements(re.search(r'<article id="lecture7"[\s\S]*?</article>',text)[0])
 source='\n'.join((COURSE/'source'/f'lecture07-part{i}.tex').read_text() for i in (1,2))
 expected_tags=re.findall(r'\\tag\{([^}]+)\}',source)
 actual_tags=re.findall(r'data-equation="([^\"]+)"',article)
@@ -40,9 +42,9 @@ assert hashlib.sha256(bytes7).hexdigest()==pdfs[6]['sha256']=='f8e1fd0bea5479bdd
 
 # This independent baseline predates both the demonstration additions and L7.
 original=subprocess.check_output(['git','show','2089306bf1347d46a534e9ea8eecde1be17d43ce:reports/plasma-lectures/index.html'],cwd=ROOT).decode()
-without_visuals=re.sub(r'<!-- PLASMA-VISUALS:[\s\S]*?<!-- /PLASMA-VISUALS -->','',text)
+without_visuals=re.sub(r'<!-- PLASMA-VISUALS:[\s\S]*?<!-- /PLASMA-VISUALS -->','',restore_prose_edits(text))
 for lecture in range(1,7):
     pattern=rf'<article id="lecture{lecture}"[\s\S]*?</article>'
     assert re.search(pattern,without_visuals)[0]==re.search(pattern,original)[0],f'Lecture {lecture} changed'
 assert pdfs[:6]==json.loads(re.search(pdf_pattern,original)[1])
-print('PASS: L7 has 19 units, 73 original equation tags, 14 answered source questions, 5 footnotes, 11 corrections, 441 offline math nodes; 7 exact PDFs, 81 pages, all first-six lecture articles unchanged; unique IDs and valid internal links.')
+print('PASS: L7 has 19 units, 73 original equation tags, 14 answered source questions, 5 footnotes, 11 corrections, 441 offline math nodes; 7 exact PDFs, 81 pages, all first-six lecture articles unchanged outside audited prose edits; unique IDs and valid internal links.')

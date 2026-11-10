@@ -1,0 +1,14 @@
+/* Add alongside the existing course styles. All rules stay within supplements. */
+.reading-course .derivation-supplement{border-top:1px solid var(--line);margin-top:1.75em;padding-top:1em;min-width:0;scroll-margin-top:90px}
+.reading-course .derivation-supplement h4{font-size:1.08em;line-height:1.65;margin:.2em 0 .65em}
+.reading-course .derivation-label{font-weight:700}
+.reading-course .derivation-source{font-family:var(--ui);font-size:.78em;color:var(--muted);line-height:1.7}
+.reading-course .derivation-details{margin:.8em 0;border:1px solid var(--line);padding:.75em 1em;border-radius:3px}
+.reading-course .derivation-details>summary{cursor:pointer;font-weight:600;line-height:1.75}
+.reading-course .derivation-details[open]>summary{margin-bottom:1em}
+.reading-course .derivation-equation{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:.15em 0}
+.reading-course .derivation-equation .katex-display{overflow:visible;margin:.65em 0;padding:.3em 0}
+.reading-course .derivation-inline-math{display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding:.1em 0}
+.reading-course .derivation-supplement .katex-mathml{contain:strict;clip-path:inset(50%)}
+@media(max-width:600px){.reading-course .derivation-details{padding:.65em .55em}.reading-course .derivation-supplement h4{font-size:1em}}
+@media print{.reading-course .derivation-equation{overflow:visible}.reading-course .derivation-inline-math{display:inline;overflow:visible}.reading-course .derivation-details{border:0;padding:0}}

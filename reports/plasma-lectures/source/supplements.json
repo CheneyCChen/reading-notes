@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "id": "mirror-direction",
+      "lecture": 2,
+      "anchor": "\n<p>原稿第 7 页解释段落中把",
+      "placement": "before-anchor",
+      "html": "<div class=\"learning-note\" id=\"mirror-direction-correction\"><h4>方向条件纠正：沿轨道判断磁场增强</h4><p>只考虑镜力，对平行动能求导：<span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mo>∥</mo><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo fence=\"true\">∣</mo></mrow><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi></mrow></msub><mo>=</mo><mi>m</mi><msub><mi>v</mi><mo>∥</mo></msub><msub><mover accent=\"true\"><mi>v</mi><mo>˙</mo></mover><mo>∥</mo></msub><mo>=</mo><mo>−</mo><mi>μ</mi><msub><mi>v</mi><mo>∥</mo></msub><msub><mi mathvariant=\"normal\">∂</mi><mo>∥</mo></msub><mi>B</mi><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">\\left.\\frac{d}{dt}\\frac{m v_\\parallel^2}{2}\\right|_{\\rm mirror}=m v_\\parallel\\dot v_\\parallel=-\\mu v_\\parallel\\partial_\\parallel B.</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:3.0497em;vertical-align:-1.2997em;\"></span><span class=\"minner\"><span class=\"minner\"><span class=\"mopen nulldelimiter\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">t</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">d</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.7011em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.887em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-2.378em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.497em;\"><span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.686em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mclose\"><span class=\"delimsizing mult\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.75em;\"><span style=\"top:-3.75em;\"><span class=\"pstrut\" style=\"height:5em;\"></span><span style=\"width:0.333em;height:3.000em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"0.333em\" height=\"3.000em\" viewBox=\"0 0 333 3000\"><path d=\"M145 15 v585 v1800 v585 c2.667,10,9.667,15,21,15\nc10,0,16.667,-5,20,-15 v-585 v-1800 v-585 c-2.667,-10,-9.667,-15,-21,-15\nc-10,0,-16.667,5,-20,15z M188 15 H145 v585 v1800 v585 h43z\"/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.25em;\"><span></span></span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:-0.8322em;\"><span style=\"top:-1.4003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">mirror</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.2997em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0231em;vertical-align:-0.3552em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6679em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"accent-body\" style=\"left:-0.1111em;\"><span class=\"mord\">˙</span></span></span></span></span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0496em;vertical-align:-0.3552em;\"></span><span class=\"mord\">−</span><span class=\"mord mathnormal\">μ</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord\" style=\"margin-right:0.05556em;\">∂</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0556em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mord\">.</span></span></span></span></span>因此，粒子进入较强磁场，即 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mo>∥</mo></msub><msub><mi mathvariant=\"normal\">∂</mi><mo>∥</mo></msub><mi>B</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">v_\\parallel\\partial_\\parallel B&gt;0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0496em;vertical-align:-0.3552em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord\" style=\"margin-right:0.05556em;\">∂</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0556em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> 时，平行动能减小。只有另取 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>v</mi><mo>∥</mo></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">v_\\parallel&gt;0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8943em;vertical-align:-0.3552em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:-0.0359em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mrel mtight\">∥</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>，才能把这一条件简写为前文的正平行梯度条件。负平行速度的粒子进入较强磁场时，镜力使其速度趋向零，速率仍减小，不能只看速度分量数值的增减。</p></div>",
+      "reason": "Correct the hidden positive-parallel-velocity assumption and supply the mirror-work derivation.",
+      "rendered_math_expressions": 3
+    },
+    {
+      "id": "supplement-l1-a",
+      "lecture": 1,
+      "target_section": "lecture1-s5",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture1-s5\">",
+      "html_file": "derivations/supplement-l1-a.html",
+      "rendered_math_expressions": 9,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l2-a",
+      "lecture": 2,
+      "target_section": "lecture2-s11",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture2-s11\">",
+      "html_file": "derivations/supplement-l2-a.html",
+      "rendered_math_expressions": 9,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l2-b",
+      "lecture": 2,
+      "target_section": "lecture2-s12",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture2-s12\">",
+      "html_file": "derivations/supplement-l2-b.html",
+      "rendered_math_expressions": 12,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l3-a",
+      "lecture": 3,
+      "target_section": "lecture3-s4",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture3-s4\">",
+      "html_file": "derivations/supplement-l3-a.html",
+      "rendered_math_expressions": 11,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l3-b",
+      "lecture": 3,
+      "target_section": "lecture3-s7",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture3-s7\">",
+      "html_file": "derivations/supplement-l3-b.html",
+      "rendered_math_expressions": 10,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l4-a",
+      "lecture": 4,
+      "target_section": "lecture4-s9",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture4-s9\">",
+      "html_file": "derivations/supplement-l4-a.html",
+      "rendered_math_expressions": 12,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l4-b",
+      "lecture": 4,
+      "target_section": "lecture4-s10",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture4-s10\">",
+      "html_file": "derivations/supplement-l4-b.html",
+      "rendered_math_expressions": 15,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l5-a",
+      "lecture": 5,
+      "target_section": "lecture5-s9",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture5-s9\">",
+      "html_file": "derivations/supplement-l5-a.html",
+      "rendered_math_expressions": 16,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l5-b",
+      "lecture": 5,
+      "target_section": "lecture5-s12",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture5-s12\">",
+      "html_file": "derivations/supplement-l5-b.html",
+      "rendered_math_expressions": 13,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l5-c",
+      "lecture": 5,
+      "target_section": "lecture5-s15",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture5-s15\">",
+      "html_file": "derivations/supplement-l5-c.html",
+      "rendered_math_expressions": 46,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l5-d",
+      "lecture": 5,
+      "target_section": "lecture5-s16",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture5-s16\">",
+      "html_file": "derivations/supplement-l5-d.html",
+      "rendered_math_expressions": 16,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l6-a",
+      "lecture": 6,
+      "target_section": "lecture6-s10",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture6-s10\">",
+      "html_file": "derivations/supplement-l6-a.html",
+      "rendered_math_expressions": 20,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l6-b",
+      "lecture": 6,
+      "target_section": "lecture6-s15",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture6-s15\">",
+      "html_file": "derivations/supplement-l6-b.html",
+      "rendered_math_expressions": 11,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l7-a",
+      "lecture": 7,
+      "target_section": "lecture7-s14",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s14\">",
+      "html_file": "derivations/supplement-l7-a.html",
+      "rendered_math_expressions": 26,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l7-b",
+      "lecture": 7,
+      "target_section": "lecture7-s12",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s12\">",
+      "html_file": "derivations/supplement-l7-b.html",
+      "rendered_math_expressions": 6,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l7-c",
+      "lecture": 7,
+      "target_section": "lecture7-s10",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s10\">",
+      "html_file": "derivations/supplement-l7-c.html",
+      "rendered_math_expressions": 15,
+      "kind": "derivation"
+    },
+    {
+      "id": "supplement-l7-d",
+      "lecture": 7,
+      "target_section": "lecture7-s19",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s19\">",
+      "html_file": "derivations/supplement-l7-d.html",
+      "rendered_math_expressions": 19,
+      "kind": "derivation"
+    },
+    {
+      "id": "crosslink-1",
+      "lecture": 1,
+      "target_section": "lecture1-s5",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture1-s5\">",
+      "html": "<p class=\"supplement-crosslinks\"><a href=\"#supplement-l6-a\">进一步看电子和离子的动态响应时间排序 →</a></p>",
+      "rendered_math_expressions": 0,
+      "kind": "crosslink"
+    },
+    {
+      "id": "crosslink-2",
+      "lecture": 2,
+      "target_section": "lecture2-s13",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture2-s13\">",
+      "html": "<p class=\"supplement-crosslinks\"><a href=\"#supplement-l3-b\">推导补充：导心电流与磁化电流怎样组成抗磁电流 →</a></p>",
+      "rendered_math_expressions": 0,
+      "kind": "crosslink"
+    },
+    {
+      "id": "crosslink-3",
+      "lecture": 7,
+      "target_section": "lecture7-s9",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s9\">",
+      "html": "<p class=\"supplement-crosslinks\"><a href=\"#supplement-l5-d\">推导补充：从 H 定理等号条件推出局域 Maxwell 分布 →</a></p>",
+      "rendered_math_expressions": 0,
+      "kind": "crosslink"
+    },
+    {
+      "id": "crosslink-4",
+      "lecture": 6,
+      "target_section": "lecture6-s11",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture6-s11\">",
+      "html": "<p class=\"supplement-crosslinks\"><a href=\"#supplement-l6-a\">推导补充：用同一 Vlasov 响应比较高、低相速度极限 →</a></p>",
+      "rendered_math_expressions": 0,
+      "kind": "crosslink"
+    },
+    {
+      "id": "crosslink-5",
+      "lecture": 7,
+      "target_section": "lecture7-s14",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s14\">",
+      "html": "<p class=\"supplement-crosslinks\"><a href=\"#supplement-l7-c\">推导补充：用熵产生检查黏性与热流的符号 →</a></p>",
+      "rendered_math_expressions": 0,
+      "kind": "crosslink"
+    },
+    {
+      "id": "crosslink-6",
+      "lecture": 7,
+      "target_section": "lecture7-s12",
+      "anchor": "</div><label class=\"done\"><input type=\"checkbox\" data-done=\"lecture7-s12\">",
+      "html": "<p class=\"supplement-crosslinks\"><a href=\"#supplement-l7-a\">推导补充：BGK 高斯矩积分与输运系数 →</a></p>",
+      "rendered_math_expressions": 0,
+      "kind": "crosslink"
+    }
+  ]
+}

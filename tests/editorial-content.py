@@ -4,8 +4,10 @@ import re, subprocess
 from plasma_baseline import before_lecture7
 ROOT=Path(__file__).resolve().parents[1]
 BASE='2d15a58a85d5be0266fb5e49856dfe99dc9beaf8'
-for page in (ROOT/'reports').rglob('*.html'):
-    rel=page.relative_to(ROOT)
+# Test every historical report, not new HTML source fragments used by builds.
+original_paths=subprocess.check_output(['git','ls-tree','-r','--name-only',BASE,'reports'],cwd=ROOT).decode().splitlines()
+for rel in [Path(p) for p in original_paths if p.endswith('.html')]:
+    page=ROOT/rel
     original=subprocess.check_output(['git','show',f'{BASE}:{rel}'],cwd=ROOT).decode()
     current=page.read_text()
     assert current.count('<!-- READING-THEME:start -->')==1,rel
@@ -23,4 +25,4 @@ for page in (ROOT/'reports').rglob('*.html'):
     # The new local font URL is relative to each page, including nested appendices.
     font=re.search(r'url\("([^"]*newsreader.ttf)"\)',current).group(1)
     assert (page.parent/font).is_file(),rel
-print('PASS: all 17 original report bodies, PDFs, formulas, images and scripts are byte-for-byte intact outside presentation changes and documented L7 additions.')
+print('PASS: all 17 original report bodies, PDFs, formulas, images and scripts are byte-for-byte intact outside presentation changes, documented L7 additions and audited prose edits.')

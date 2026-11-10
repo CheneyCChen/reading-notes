@@ -9,8 +9,8 @@ const courseUrl=base.endsWith('.html')?base:base.replace(/\/$/,'')+'/reports/pla
  await page.goto(courseUrl);await page.locator('#lecture1-s1').waitFor();
  assert.equal(await page.locator('.study-visual,canvas,#plasma-visual-coverage').count(),0);
  assert.equal(await page.locator('[data-done]').count(),108);
- assert.equal(await page.locator('details').count(),63);
- assert.equal(await page.locator('.katex').count(),1853);
+ assert.equal(await page.locator('.quiz details').count(),63);
+ assert.equal(await page.locator('.katex').count(),2122);
  const brokenImages=await page.locator('img').evaluateAll(async images=>{
    images.forEach(img=>img.loading='eager');
    await Promise.race([
@@ -74,7 +74,7 @@ const courseUrl=base.endsWith('.html')?base:base.replace(/\/$/,'')+'/reports/pla
    await page.screenshot({path:`/tmp/plasma-lecture7-transport-${width}.png`});
  }
  await page.emulateMedia({media:'print'});assert.equal(await page.evaluate(()=>getComputedStyle(document.body).backgroundColor),'rgb(255, 255, 255)');
- const nojs=await browser.newPage({javaScriptEnabled:false,viewport:{width:390,height:844}});await nojs.goto(courseUrl);assert(await nojs.locator('h1').isVisible());assert.equal(await nojs.locator('.katex').count(),1853);
+ const nojs=await browser.newPage({javaScriptEnabled:false,viewport:{width:390,height:844}});await nojs.goto(courseUrl);assert(await nojs.locator('h1').isVisible());assert.equal(await nojs.locator('.katex').count(),2122);
  assert.deepEqual(errors,[]);await browser.close();
  console.log('PASS: no visual demos; original lessons, formulas, images, seven PDFs, saved progress, filters, self-tests, themes, mobile navigation, print and no-JS reading.');
 })().catch(error=>{console.error(error);process.exit(1)});

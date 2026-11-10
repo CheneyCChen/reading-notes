@@ -1,0 +1,8 @@
+[
+  {"from_section":"lecture1-s5","target":"#supplement-l6-a","label":"进一步看电子和离子的动态响应时间排序"},
+  {"from_section":"lecture2-s13","target":"#supplement-l3-b","label":"推导补充：导心电流与磁化电流怎样组成抗磁电流"},
+  {"from_section":"lecture7-s9","target":"#supplement-l5-d","label":"推导补充：从 H 定理等号条件推出局域 Maxwell 分布"},
+  {"from_section":"lecture6-s11","target":"#supplement-l6-a","label":"推导补充：用同一 Vlasov 响应比较高、低相速度极限"},
+  {"from_section":"lecture7-s14","target":"#supplement-l7-c","label":"推导补充：用熵产生检查黏性与热流的符号"},
+  {"from_section":"lecture7-s12","target":"#supplement-l7-a","label":"推导补充：BGK 高斯矩积分与输运系数"}
+]

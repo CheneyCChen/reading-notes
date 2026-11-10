@@ -35,11 +35,11 @@ original = subprocess.check_output([
     'git', 'show',
     '2089306bf1347d46a534e9ea8eecde1be17d43ce:reports/plasma-lectures/index.html',
 ], cwd=ROOT).decode()
-assert restored == original, 'Original lesson, formula, image or PDF bytes changed'
+assert restored == original, 'Unreviewed lesson, formula, image or PDF bytes changed'
 assert len(re.findall(r'id="lecture\d+-s\d+"', text)) == 108
 assert text.count('<details>') == 63
 pdfs = json.loads(re.search(r'<script id="pdf-data"[^>]*>([\s\S]*?)</script>', text)[1])
 assert len(pdfs) == 7
 for pdf in pdfs:
     assert base64.b64decode(pdf['base64'], validate=True).startswith(b'%PDF-'), pdf['name']
-print('PASS: visual demos remain removed; original six-lecture page is byte-for-byte intact after removing documented L7 additions; 108 lessons, 63 self-tests and seven PDFs.')
+print('PASS: visual demos remain removed; original six-lecture page is byte-for-byte intact after reversing audited prose edits and removing documented L7 additions; 108 lessons, 63 self-tests and seven PDFs.')
