@@ -9,6 +9,8 @@ from plasma_baseline import before_lecture7
 ROOT = Path(__file__).resolve().parents[1]
 page = ROOT / 'reports/plasma-lectures/index.html'
 text = page.read_text()
+from plasma_l8_baseline import before_lecture8
+text=before_lecture8(text)
 removed_files = [
     'assets/plasma-l12.js', 'assets/plasma-l34.js', 'assets/plasma-l5.js',
     'assets/plasma-l6.js', 'assets/plasma-visuals.js', 'assets/plasma-visuals.css',

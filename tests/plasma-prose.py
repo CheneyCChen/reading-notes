@@ -16,6 +16,8 @@ from plasma_prose import ProseNodes, transform, restore_prose_edits, strip_suppl
 
 manifest = json.loads((ROOT / 'reports/plasma-lectures/source/prose-edits.json').read_text())
 current = (ROOT / 'reports/plasma-lectures/index.html').read_text()
+from plasma_l8_baseline import before_lecture8
+current=before_lecture8(current)
 baseline = subprocess.check_output(['git', 'show', manifest['baseline_commit'] + ':reports/plasma-lectures/index.html'], cwd=ROOT).decode()
 assert hashlib.sha256(baseline.encode()).hexdigest() == manifest['baseline_sha256']
 assert restore_prose_edits(current) == baseline, 'Change outside reviewed prose text nodes'

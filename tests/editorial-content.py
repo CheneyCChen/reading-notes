@@ -10,6 +10,8 @@ for rel in [Path(p) for p in original_paths if p.endswith('.html')]:
     page=ROOT/rel
     original=subprocess.check_output(['git','show',f'{BASE}:{rel}'],cwd=ROOT).decode()
     current=page.read_text()
+    from plasma_l8_baseline import before_lecture8
+    current=before_lecture8(current)
     assert current.count('<!-- READING-THEME:start -->')==1,rel
     restored=re.sub(r'<!-- READING-THEME:start -->.*?<!-- READING-THEME:end -->','',before_lecture7(current) if page.parent.name=='plasma-lectures' else current,flags=re.S)
     restored=re.sub(r'<!-- READING-NAV:start -->.*?<!-- READING-NAV:end -->','',restored,flags=re.S)

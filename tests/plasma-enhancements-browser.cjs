@@ -20,19 +20,19 @@ async function waitForScrollIdle(page){
  const page=await browser.newPage({viewport:{width:1440,height:1100}}),errors=[],external=[];
  page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url())&&!r.url().startsWith(base))external.push(r.url())});
  await page.goto(courseUrl);await page.evaluate(()=>document.fonts.ready);
- assert.equal(await page.locator('.course-map-node').count(),7);
+ assert.equal(await page.locator('.course-map-node').count(),8);
  assert.equal(await page.locator('.course-map-edge').count(),8);
  assert.equal(await page.locator('.derivation-supplement').count(),17);
  assert.equal(await page.locator('.derivation-details').count(),3);
  assert.equal(await page.locator('.derivation-supplement .katex').count(),266);
  assert.equal(await page.locator('.katex-error').count(),0);
- assert.equal(await page.locator('.quiz details').count(),63);
+ assert.equal(await page.locator('.quiz details').count(),75);
  await page.locator('#course-map').screenshot({style:captureStyle,path:path.join(output,'plasma-map-desktop.png')});
  // The native link clears stale filters/search before scrolling to its target.
  await page.locator('[data-filter="2"]').click();await page.locator('#search').fill('no-such-term-00');
  await page.locator('.course-map-node-7').click();
  assert.equal(new URL(page.url()).hash,'#lecture7');assert.equal(await page.locator('#search').inputValue(),'');
- assert.equal(await page.locator('.lecture:visible').count(),7);
+ assert.equal(await page.locator('.lecture:visible').count(),8);
  await page.goBack();await page.goForward();assert.equal(new URL(page.url()).hash,'#lecture7');
  // Keyboard activation retains browser-native fragment navigation.
  await page.locator('.course-map-node-3').focus();await page.keyboard.press('Enter');
@@ -43,7 +43,7 @@ async function waitForScrollIdle(page){
   const target=await link.getAttribute('href');
   await page.locator(`[data-filter="${origin}"]`).click();await link.click();
   assert.equal(new URL(page.url()).hash,target);assert(await page.locator(target).isVisible());
-  assert.equal(await page.locator('.lecture:visible').count(),7);
+  assert.equal(await page.locator('.lecture:visible').count(),8);
  }
  console.log('PASS: map/filter/history/keyboard and all six cross-links.');
  // Every native disclosure can repeatedly open and close; all derivation steps remain.
@@ -94,5 +94,5 @@ async function waitForScrollIdle(page){
  await nojs.keyboard.press('Enter');assert(await detail.evaluate(el=>el.open));
  await nojs.screenshot({path:path.join(output,'plasma-nojs-390.png')});
  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
- await browser.close();console.log('PASS: seven-node map, stale filters, six cross-links, keyboard/Back/Forward, repeated disclosures, 17 derivations and 266 offline formulas at 1440/390/320px, dark/print/no-JS, no page errors or remote requests.');
+ await browser.close();console.log('PASS: eight-node map, stale filters, six cross-links, keyboard/Back/Forward, repeated disclosures, 17 derivations and 266 offline formulas at 1440/390/320px, dark/print/no-JS, no page errors or remote requests.');
 })().catch(e=>{console.error(e);process.exit(1)});

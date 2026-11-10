@@ -8,6 +8,8 @@ from plasma_prose import strip_supplements
 ROOT=Path(__file__).resolve().parents[1]
 COURSE=ROOT/'reports/plasma-lectures'
 text=(COURSE/'index.html').read_text()
+from plasma_l8_baseline import before_lecture8
+text=before_lecture8(text)
 article=strip_supplements(re.search(r'<article id="lecture7"[\s\S]*?</article>',text)[0])
 source='\n'.join((COURSE/'source'/f'lecture07-part{i}.tex').read_text() for i in (1,2))
 expected_tags=re.findall(r'\\tag\{([^}]+)\}',source)

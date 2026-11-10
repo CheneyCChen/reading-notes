@@ -7,6 +7,8 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from plasma_prose import supplement_html
 SOURCE=ROOT/'reports/plasma-lectures/source'
 page=(SOURCE.parent/'index.html').read_text()
+from plasma_l8_baseline import before_lecture8
+page=before_lecture8(page)
 blocks=json.loads((SOURCE/'supplements.json').read_text())['blocks']
 index=json.loads((SOURCE/'derivations/index.json').read_text())
 expr=json.loads((SOURCE/'derivations/math-expressions.json').read_text())

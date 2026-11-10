@@ -2,7 +2,7 @@
   "name": "reading-club",
   "private": true,
   "scripts": {
-    "test:content": "python3 tests/plasma-prose.py && python3 tests/editorial-content.py && python3 tests/plasma-content.py && python3 tests/plasma-l7-content.py && python3 tests/plasma-enhancements.py && python3 tests/plasma-physics.py && node tests/plasma-map.cjs",
+    "test:content": "python3 tests/plasma-prose.py && python3 tests/editorial-content.py && python3 tests/plasma-content.py && python3 tests/plasma-l7-content.py && python3 tests/plasma-enhancements.py && python3 tests/plasma-physics.py && node tests/plasma-map.cjs && python3 tests/plasma-l8-content.py",
     "test:browser": "node tests/editorial-browser.cjs && node tests/plasma-browser.cjs && node tests/plasma-enhancements-browser.cjs"
   },
   "devDependencies": {
