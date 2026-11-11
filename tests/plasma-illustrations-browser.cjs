@@ -18,6 +18,13 @@ for(const theme of ['light','dark']){
    assert(await fig.locator('svg').isVisible());
    const problems=await fig.locator('svg').evaluate(svg=>[...svg.querySelectorAll('text')].filter(t=>{let b=t.getBBox();return b.x<0||b.y<0||b.x+b.width>600||b.y+b.height>330}).map(t=>t.textContent));
    assert.deepEqual(problems,[]);
+   const clearLabels=await fig.locator('svg').evaluate(svg=>[...svg.querySelectorAll('text')].every(t=>{
+    const b=t.getBBox();
+    if(t.textContent==='αLC')return b.y>165-(b.x-300)*105/225+3;
+    if(t.textContent==='平行方向')return b.y+b.height<232;
+    return true;
+   }));
+   assert(clearLabels,'Collision/loss-cone label touches its diagram line');
    if(width===1440)await fig.screenshot({path:path.join(process.env.QA_DIR||'/tmp',`plasma-lecture-diagram-${await fig.getAttribute('id')}-${theme}.png`)});
   }
  }

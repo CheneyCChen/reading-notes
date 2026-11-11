@@ -34,7 +34,7 @@ add('gyromotion','lecture2-s3','回旋运动中的速度与洛伦兹力','正电
 # 3 loss cone in meridional velocity plane
 b=poly([(300,165),(525,60),(525,270)],'var(--soft, #e8e4d9)')+poly([(300,165),(75,60),(75,270)],'var(--soft, #e8e4d9)')
 b+=line(45,165,560,165,True)+line(300,290,300,40,True)+txt(562,193,'v∥')+txt(300,24,'v⊥（有符号截面）',17)+txt(455,153,'逃逸')+txt(140,153,'逃逸')+txt(300,75,'俘获')+txt(300,260,'俘获')
-b+=path('M354,165 A54,54 0 0 0 349,142')+txt(375,133,'αLC',17)+txt(300,315,'sin² αLC = Bmin / Bmax',21)
+b+=path('M354,165 A54,54 0 0 0 349,142')+txt(388,157,'αLC',17)+txt(300,315,'sin² αLC = Bmin / Bmax',21)
 add('loss-cone','lecture3-s8','磁镜中面速度空间中的双向损失锥','在磁场最弱处画速度空间截面。靠近平行轴的双锥为可逃逸区域，锥外为反射俘获区域；没有电势或碰撞。',b,'图 3 · 在 Bmin 处定义俯仰角 α。无电势、无碰撞且磁矩近似守恒时，sin²α < Bmin/Bmax 的粒子可越过镜喉；等号为临界轨道。阴影是三维双锥的一个二维截面，纵轴有正负号仅用于显示该截面。')
 # 4 free particle canonical shear exact determinant1
 b=line(40,240,260,240,True)+line(55,255,55,50,True)+txt(260,267,'q')+txt(35,48,'p')+poly([(90,190),(170,190),(170,100),(90,100)],'var(--soft, #e8e4d9)')+txt(132,153,'S')
@@ -43,7 +43,7 @@ b+=txt(300,30,'自由粒子 Hamilton 流：平移 + 剪切')+txt(300,296,'q(t) =
 add('liouville-shear','lecture4-s2','Liouville 定理：相空间剪切保持面积','自由粒子的正则相空间小矩形随时间剪切成平行四边形。两形状底边和高度相同，因此面积相等。',b,'图 4 · 对 H = p²/(2m)，相空间映射的 Jacobian 行列式等于 1。这里两块阴影面积相等而形状不同，说明 Liouville 不可压缩性指相空间体积，并不要求真实空间密度不变。')
 # 5 small-angle scattering speed sphere
 O=(100,240);u=300;theta=.42;x=O[0]+u*math.cos(theta);y=O[1]-u*math.sin(theta)
-b=line(75,240,490,240,True)+txt(505,249,'平行方向')+line(100,265,100,45,True)+txt(100,30,'横向')+line(100,240,400,240,True)+line(100,240,round(x,2),round(y,2),True)+txt(290,218,'u')+txt(260,150,'u′')+line(400,240,x,y,True)+txt(432,170,'Δu')+line(x,240,x,y,False,True)+path('M160,240 A60,60 0 0 0 155,216')+txt(183,221,'θ')+txt(300,290,'|u′| = |u|：仅相对速度方向改变',19)+txt(300,319,'Δu⊥ ~ uθ；Δu∥ ~ −uθ²/2',19)
+b=line(75,240,490,240,True)+txt(510,220,'平行方向',17)+line(100,265,100,45,True)+txt(100,30,'横向')+line(100,240,400,240,True)+line(100,240,round(x,2),round(y,2),True)+txt(290,218,'u')+txt(260,150,'u′')+line(400,240,x,y,True)+txt(432,170,'Δu')+line(x,240,x,y,False,True)+path('M160,240 A60,60 0 0 0 155,216')+txt(183,221,'θ')+txt(300,290,'|u′| = |u|：仅相对速度方向改变',19)+txt(300,319,'Δu⊥ ~ uθ；Δu∥ ~ −uθ²/2',19)
 add('small-angle-collision','lecture5-s11','小角散射的横向与纵向速度增量','两体弹性碰撞的相对速度在碰撞前后模长不变。横向增量为一阶角度，纵向增量为负的二阶角度。',b,'图 5 · u 是两粒子的相对速度，不是一般实验室系中某一物种的速度。小角极限下，横向扩散与二阶纵向漂移必须配合；沿初速度方向的平均分量减小，不等于相对动能损失。')
 # 6 CGL two separate compressions rectangular flux tubes
 b=txt(150,30,'横向压缩')+txt(450,30,'平行压缩')
