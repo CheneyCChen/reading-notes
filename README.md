@@ -53,3 +53,20 @@
 - 内容完整性回归：`npm run test:content`。
 - 浏览器回归：`npm ci`、`npx playwright install chromium`，启动 `python3 -m http.server 8766` 后运行 `npm run test:browser`。
 - GitHub Actions 检查桌面与 390/320 像素布局、筛选收藏、主题切换、原图公式、课程导航、自测、阅读进度与原 PDF；确认已移除交互可视化及其专用资源。
+
+### Plasma scientific illustrations
+
+Eight static, accessible SVG diagrams supplement Lectures 1–8: Debye shielding,
+gyromotion, loss cone, Liouville shear, small-angle scattering, CGL compression,
+magnetized diffusion, and shear Alfvén polarization. They match the existing
+light/dark reading theme and scroll locally on narrow screens. Each caption
+states the physical assumptions and distinguishes schematic geometry from an
+actual trajectory.
+
+Regenerate inline and standalone diagrams with
+`python3 scripts/build-plasma-illustrations.py`. Sources and editable SVG files
+are kept in the repository; no TeX installation or external image service is
+required. Original lecture prose, equations, figures, PDFs and interactions are
+unchanged. `npm run test:content` verifies reversible byte preservation against
+commit `c8a831f`; `npm run test:browser` covers the new diagrams at 1440, 390 and
+320 pixels in both themes. Set `QA_DIR` to choose a screenshot directory.

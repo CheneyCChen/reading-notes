@@ -3,8 +3,9 @@ from pathlib import Path
 from html.parser import HTMLParser
 import re,json,hashlib,base64,subprocess
 from plasma_l8_baseline import before_lecture8
+from plasma_illustration_baseline import before_illustrations
 ROOT=Path(__file__).resolve().parents[1]
-s=(ROOT/'reports/plasma-lectures/index.html').read_text()
+s=before_illustrations((ROOT/'reports/plasma-lectures/index.html').read_text())
 old=subprocess.check_output(['git','show','a51309d004c52408f643d7069ef3d08e47bee96d:reports/plasma-lectures/index.html'],cwd=ROOT).decode()
 assert before_lecture8(s)==old,'L8 reversal must reproduce exact published L1–7 page'
 a=re.search(r'<article class="lecture" data-lecture="8" id="lecture8">[\s\S]*?</article>',s)[0]
