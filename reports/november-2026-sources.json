@@ -1,0 +1,58 @@
+[
+  {
+    "id": "geometric-proxies-2026",
+    "source": "https://arxiv.org/abs/2610.17974",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "2306c8c126a6bf1d3251ccda8ae16855cd28f8a732b36d9abdb21bca7d8a9a07",
+    "bytes": 1628168,
+    "report": "reports/geometric-proxies-2026-reading/report.html"
+  },
+  {
+    "id": "dynamic-gyrokinetic-optimization",
+    "source": "https://arxiv.org/abs/2610.17496",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "d3645a1e0579063a34f59e8250596e9d186433a10fba437266599760e73e74a5",
+    "bytes": 2126539,
+    "report": "reports/dynamic-gyrokinetic-optimization-reading/report.html"
+  },
+  {
+    "id": "differentiable-reactor-mdao",
+    "source": "https://arxiv.org/abs/2610.22687",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "c0f50fb897397056dcc1ce032d6e2cb88e4f22f945808e93cd0b1e8bfbf6ebbd",
+    "bytes": 3220293,
+    "report": "reports/differentiable-reactor-mdao-reading/report.html"
+  },
+  {
+    "id": "yancc-neoclassical",
+    "source": "https://doi.org/10.1088/1361-6587/aeb628",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "d0e9545de031e5703889bd29795492a12c2674a860cdbdc1b2939aed19d608c3",
+    "bytes": 1127783,
+    "report": "reports/yancc-neoclassical-reading/report.html"
+  },
+  {
+    "id": "fusion-digital-twins",
+    "source": "https://doi.org/10.1038/s41567-026-03485-z",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "d63c0de3ddc4cc06f52381bf39478c66a939010260ba68005f1430f1883e0fd7",
+    "bytes": 674735,
+    "report": "reports/fusion-digital-twins-reading/report.html"
+  },
+  {
+    "id": "hybrid-dipole-coil-array",
+    "source": "https://doi.org/10.1088/1741-4326/aeacfa",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "782e6e94b90669e8cd7889f2147fa1b1b21b2d23b6ed0f71ba103c918d2cc075",
+    "bytes": 2555592,
+    "report": "reports/hybrid-dipole-coil-array-reading/report.html"
+  },
+  {
+    "id": "reversed-toroidal-field-coils",
+    "source": "https://arxiv.org/abs/2610.14396",
+    "version": "用户提供 PDF，2026-11-12 整理",
+    "sha256": "c7563ef8d2f32ec094aa48dac5d35ff1b6ec6e61fc412760d8927c499db80a3c",
+    "bytes": 1563845,
+    "report": "reports/reversed-toroidal-field-coils-reading/report.html"
+  }
+]
