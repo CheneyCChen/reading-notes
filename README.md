@@ -8,6 +8,19 @@
 
 ## 内容
 
+### 2026-11-12 新增七篇精读
+
+- [几何代理的实验检验：负三角形与拉长比](reports/geometric-proxies-2026-reading/report.html)：TCV、跨装置回旋动理学与几何代理：区分相关指标、真实输运和可迁移性的证据。
+- [CGYRO 动态优化：在非光滑谱上寻找低输运塑形](reports/dynamic-gyrokinetic-optimization-reading/report.html)：解析 libEnsemble 与流形采样如何处理增长率谱的分支切换，以及线性优化与非线性验证的差距。
+- [可微反应堆设计：用计算图拆解 PROCESS](reports/differentiable-reactor-mdao-reading/report.html)：拆解 cottax 的依赖图、耦合环和自动微分，区分模型执行提速与完整设计优化收益。
+- [yancc：GPU 上的可微新经典输运](reports/yancc-neoclassical-reading/report.html)：解析漂移动理学离散、求解器和导数，以及 tokamak/stellarator 基准与性能边界。
+- [不完美模型如何构成聚变数字孪生](reports/fusion-digital-twins-reading/report.html)：Nature Physics 评论精读：模型与实验的双向更新、多保真和不确定性；区分愿景与已经验证的结果。
+- [轴对称偶极线圈阵列：混合托卡马克–仿星器可行性](reports/hybrid-dipole-coil-array-reading/report.html)：逐步解释混合实验的线圈布局、三维场自由度、平衡与工程约束，辨认可行性证据与未验证之处。
+- [反向环向场线圈：解耦模块线圈电流与净环向场](reports/reversed-toroidal-field-coils-reading/report.html)：解析 RTF 补偿电流的新自由度、线圈–等离子体间距收益与案例依赖，连接仿星器线圈优化研究。
+
+新增条目沿用原有主题、导航和离线公式；关键原图精选及页码见各报告。输入版本 SHA256 见 `reports/november-2026-sources.json`。不重新发布带个人下载信息的出版商封面。
+
+
 - [等离子体物理 Lectures 1–7 自学手册](reports/plasma-lectures/index.html)：81 页原讲义、108 个学习单元、63 道带答案自测；新增第七讲迁移率、双极扩散、Chapman–Enskog 展开和 Braginskii 输运，保留 73 个编号公式标签、5 条脚注及原稿校注；七份原 PDF 与离线公式完整内嵌（2026-11-09）。
 
 - cuGMEC / CUDA 回旋动理学–MHD：Liu–Jiang–Fu 2026 CPC 正式版，全部 16 页、16 幅原图、3 张原表；解析压力耦合、δf PIC、电子闭合与 GPU 加速，固定源码版本核查顺序耦合，评估模型局限和可验证研究路线；离线公式与资源静态检查通过，浏览器渲染检查未完成（2026-10-19）。
