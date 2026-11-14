@@ -8,6 +8,8 @@
 
 ## 内容
 
+- [弱基线与报告偏差](reports/weak-baselines-ml-pde-reading/report.html)：McGreivy–Hakim 2024 Nature Machine Intelligence；基于 arXiv v1 的系统综述与复现分析，含原图 1、明确统计分母、成本回本公式与科研基准清单（2026-11-14）。
+
 ### 2026-11-12 新增七篇精读
 
 - [几何代理的实验检验：负三角形与拉长比](reports/geometric-proxies-2026-reading/report.html)：TCV、跨装置回旋动理学与几何代理：区分相关指标、真实输运和可迁移性的证据。
