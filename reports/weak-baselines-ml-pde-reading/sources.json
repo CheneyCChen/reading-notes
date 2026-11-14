@@ -1,0 +1,15 @@
+{
+  "title": "Weak baselines and reporting biases lead to overoptimism in machine learning for fluid-related partial differential equations",
+  "authors": [
+    "Nick McGreivy",
+    "Ammar Hakim"
+  ],
+  "article_version": "arXiv:2407.07218v1",
+  "full_text": "https://arxiv.org/html/2407.07218v1",
+  "publication": "https://doi.org/10.1038/s42256-024-00897-5",
+  "figure_license": "CC BY 4.0",
+  "figure_source": "https://arxiv.org/html/2407.07218v1/figure1.png",
+  "figure_sha256": "9323854b6c6422aa2fd4427949a52d8378b36313008545070d17a1d05f4af8e4",
+  "report_date": "2026-11-14",
+  "reproduced_experiments": false
+}

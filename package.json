@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "test:content": "python3 tests/plasma-prose.py && python3 tests/editorial-content.py && python3 tests/plasma-content.py && python3 tests/plasma-l7-content.py && python3 tests/plasma-enhancements.py && python3 tests/plasma-physics.py && node tests/plasma-map.cjs && python3 tests/plasma-l8-content.py && python3 tests/plasma-illustrations.py",
-    "test:browser": "node tests/editorial-browser.cjs && node tests/plasma-browser.cjs && node tests/plasma-enhancements-browser.cjs && node tests/plasma-illustrations-browser.cjs && node tests/new-papers.cjs"
+    "test:browser": "node tests/editorial-browser.cjs && node tests/plasma-browser.cjs && node tests/plasma-enhancements-browser.cjs && node tests/plasma-illustrations-browser.cjs && node tests/new-papers.cjs && node tests/weak-baselines.cjs"
   },
   "devDependencies": {
     "playwright": "1.56.1"
