@@ -85,3 +85,12 @@ Gaussian contractions and limiting cases for all 17 bridges and the mirror sign.
 `tests/plasma-enhancements-browser.cjs` exercises the new map and disclosures,
 narrow-screen overflow, offline rendering, dark mode, print and no-JS behavior.
 These checks complement, rather than replace, the original course tests.
+
+## Scientific review and recovery
+
+The 26-passage scientific review was recovered from the original November 12
+review records on November 15 against current main. See
+[scientific-audit/README.md](scientific-audit/README.md) for exact replacements,
+per-section evidence, recovery limits and tests. Apply
+`python3 scripts/plasma_scientific_audit.py` last after historical generators;
+reverse the layer before running an older generator. Original PDFs are unchanged.

@@ -1,0 +1,216 @@
+{
+  "baseline_commit": "df7a5be19ae8ee82019b515f5f09f105db89d45f",
+  "baseline_sha256": "74f37bf49e9c727275d01c7fafc82e2afb013f0cd5fb82ffb8dda0457246bc62",
+  "review_date": "2026-11-12",
+  "recovery_date": "2026-11-15",
+  "edits": [
+    {
+      "lecture": 1,
+      "section_id": "lecture1-s6",
+      "old": "该尺度估计补充原稿的物理解释，不能替代完整边界值问题。",
+      "new": "该估计约束电荷不平衡的幅度，并不保证可在动力学方程中删去电荷分离。还须检查响应时间：例如长波朗缪尔振荡即使相对密度扰动很小，恢复力仍来自电荷分离，不能用严格准中性模型描述。此尺度估计也不能替代完整边界值问题。",
+      "reason": "区分小电荷幅度与可忽略电荷动力学；长度条件本身不是过滤等离子体振荡的充分条件。",
+      "source": "Lecture01 p.6 §2.2–2.3；本页 s6 Poisson 尺度式与 s7 冷电子振荡方程交叉检验。"
+    },
+    {
+      "lecture": 2,
+      "section_id": "lecture2-s3",
+      "old": "成正比；固定横向能量时",
+      "new": "成正比；非相对论且固定横向动能时",
+      "reason": "半径随质量平方根的标度只在非相对论动能关系下成立；本节之前允许相对论。",
+      "source": "Lecture02 p.3 Table 1 明确注明 nonrelativistic；由 p⊥²=2mE⊥ 验算。"
+    },
+    {
+      "lecture": 2,
+      "section_id": "lecture2-s6",
+      "old": "以下点号表示沿导心的全导数",
+      "new": "这里还隐含沿导心运动看到的场变化也远慢于回旋。当平行速度或 E×B 速度远大于回旋速度时，仅检查回旋半径与空间尺度之比不够，还须检查一周期内导心经过的场强、方向和漂移速度变化。以下作用于导心场量的点号表示沿导心的全导数",
+      "reason": "补足强各向异性/大漂移时的导心排序；同时避免将快回旋位移的点号也误解为仅对场量的对流导数。",
+      "source": "Lecture02 p.5 §3.1 首段“do not change significantly on one gyroperiod”；p.8 dot b=partial_t b+(V0·grad)b。"
+    },
+    {
+      "lecture": 2,
+      "section_id": "lecture2-s6",
+      "old": "导心平行速度与粒子瞬时平行速度相差高阶项，按本阶精度使用同一记号。",
+      "new": "导心平行速度与粒子瞬时平行速度相差一级修正；这里只在已乘一级小量的项中以零阶值替换，平均平行运动方程的未知量仍指导心平行速度。",
+      "reason": "原网页“高阶项，按本阶精度使用同一记号”容易暗示差为二阶；原稿明示 O(ε)，第一阶动力学应区分平均量和瞬时量。",
+      "source": "Lecture02 p.5 Eq.(3.2) 后“V∥ coincides ... up to O(ε)”及快速振荡归入 rho。"
+    },
+    {
+      "lecture": 2,
+      "section_id": "lecture2-s10",
+      "old": "并非任意磁场都适用。原稿由",
+      "new": "并非任意磁场都适用。低压本身不够：若压力梯度尺度远短于磁场尺度，压力虽小，其梯度仍可能不可忽略；真正需要的是压力梯度相对磁张力足够小。原稿由",
+      "reason": "低 beta 不自动推出近力自由，需梯度尺度排序；防止短尺度压力梯度错误使用合并漂移式。",
+      "source": "Lecture02 p.8 Eq.(3.17)–(3.19)；由 ∇P=j×B/c 和磁力恒等式直接比较项的量级。"
+    },
+    {
+      "lecture": 2,
+      "section_id": "lecture2-s13",
+      "old": "因此，等温、等电荷大小的离子与电子虽质量悬殊，磁漂移速度仍可同阶。",
+      "new": "这里用单个典型速度估算，隐含平行速度与回旋速度同阶；强各向异性时应分别估算曲率漂移的平行动能项与梯度漂移的垂直动能项。等温、等电荷大小时，离子与电子的磁漂移速度仍可同阶。",
+      "reason": "v²/ΩL≈(ρ/L)v 在 vparallel≫vperp 时不能用实际回旋半径解释。",
+      "source": "Lecture02 p.8 Eq.(3.14a),(3.16) 与 p.10 热标度；对照 s7 中 rhoL=vperp′/|Omega|。"
+    },
+    {
+      "lecture": 2,
+      "section_id": "lecture2-s13",
+      "old": "它可比 E×B 小一个慢变参量，但其电流仍很重要。",
+      "new": "此处时间尺度须包括沿导心运动引起的对流变化，不能只取实验室中的显式时变尺度；静态但非均匀的电场也可能产生极化漂移。极化漂移虽比 E×B 小一个慢变参量，其电流仍很重要。",
+      "reason": "使极化漂移量级与前文全导数一致，避免静态场被误判为零极化漂移。",
+      "source": "Lecture02 p.8 Eq.(3.20) 点号为沿轨道导数；本页 s11 已明确全导数。"
+    },
+    {
+      "lecture": 3,
+      "section_id": "lecture3-s6",
+      "old": "这就是平均粒子能量中的回旋项，也是镜力势能的来源。",
+      "new": "这就是平均粒子能量中的回旋项；固定绝热磁矩后，它充当沿场运动的有效势能，不应再作为额外能量加到粒子总动能上。",
+      "reason": "澄清回旋动能与约化镜力势能是同一项，防止把磁偶极相互作用能重复计入总能量；不改公式。",
+      "source": "Lecture03.pdf p.5 Eq.(19), p.6 Eq.(25)–(26)；由总动能的平行/垂直分解直接核验。"
+    },
+    {
+      "lecture": 3,
+      "section_id": "lecture3-s11",
+      "old": "<strong>起点：</strong>对轴对称电磁场，方位角",
+      "new": "<strong>起点：</strong>对轴对称电磁场，选取同样轴对称的标势和矢势后，方位角",
+      "reason": "正则动量的具体表达依赖规范；循环坐标论证须声明势保持轴对称，不能仅由场对称推出任意规范下该正则动量都守恒。",
+      "source": "Lecture03.pdf p.9 Eq.(38)；Lagrangian 的 ∂L/∂θ=0 条件。"
+    },
+    {
+      "lecture": 4,
+      "section_id": "lecture4-s4",
+      "old": "和实的相空间流速，因此该 Liouvillian 在合适定义域上具有 Hermitian 性。",
+      "new": "和实的相空间流速，因此此分部积分证明了 Liouvillian 的形式 Hermitian 性（对称性）；严格自伴性还须检查算符定义域与边界条件。",
+      "reason": "分部积分只证明对称，不能单凭该等式声称无界微分算符自伴；保留原稿教学结论但标明证明范围。",
+      "source": "Lecture04(1).pdf p.3 Eq.(13)–(14)；本节已有分部积分恒等式。"
+    },
+    {
+      "lecture": 4,
+      "section_id": "lecture4-s5",
+      "old": "导引中心等非正则变量的 Jacobian 若随相空间位置变化，须追踪不变测度，不能照搬",
+      "new": "这里的分布函数是相对于普通坐标体积的密度。导引中心等非正则变量的 Jacobian 若随位置变化，须追踪不变测度；不能对这一密度照搬",
+      "reason": "导引中心文献常把标量分布相对于不变测度定义并写df/dt=0；原句易使读者误以为与标准导引中心动理学矛盾。显式限定本文f定义。",
+      "source": "Lecture04(1).pdf p.3 Eq.(15)–(16)：dN=f dz=F dZ。"
+    },
+    {
+      "lecture": 4,
+      "section_id": "lecture4-s7",
+      "old": "<strong>近似前提：</strong>平均单元须小于关注的宏观相空间结构，又包含足够多粒子。原稿在此尺度分离下作局部平均，并将平均与所用导数交换。记",
+      "new": "<strong>平均化前提：</strong>以下代数采用可与导数交换的系综平均，平均场可从涨落平均中提出。原稿用局部相空间平均作直观说明：单元须足够小以分辨宏观结构，又含足够多粒子。有限宽度的局部滤波通常不严格满足这些平均规则，尤其不能把速度乘积分解视为恒等式；把它用于下式时须另取尺度分离近似。记",
+      "reason": "原版仅声明平均与导数交换，不足以消去交叉项或把⟨v·∇f⟩写成v·∇fm；一般有限滤波非幂等、宏观量不严格可提出。使用系综平均使现有公式严谨，同时保留原文局部平均的近似性质。",
+      "source": "Lecture04(1).pdf p.4 Eq.(21)–(22)；本节乘积展开与平均步骤的数学前提。"
+    },
+    {
+      "lecture": 5,
+      "section_id": "lecture5-s1",
+      "old": "本讲先介绍简化模型，再由两体散射求速度增量统计，构造 Fokker–Planck 与 Landau 算子。",
+      "new": "本讲先介绍简化模型，再由两体散射求速度增量统计，构造 Fokker–Planck 与 Landau 算子。两体轨道只负责给出一次遭遇的速度增量；再按遭遇率和背景速度分布加权，得到速度空间漂移、扩散系数，最后作用到分布函数上。因此粒子视角是在计算碰撞算子的系数，并未替代分布函数的演化问题。",
+      "reason": "补足分布函数→两体散射→统计矩→碰撞算子的桥梁，避免把中途换视角当成不同理论。",
+      "source": "Lecture05-2.pdf pp.6–10, Eqs.(22)–(40)"
+    },
+    {
+      "lecture": 5,
+      "section_id": "lecture5-s15",
+      "old": "以下展开新版式 (36a)–(40) 的代数，并非从精确多体动力学完整导出算子。",
+      "new": "以下展开新版式 (36a)–(40) 的代数，并非从精确多体动力学完整导出算子。这里将每一物种对的库仑对数视为与积分速度、求导速度无关的给定参数，可缓慢依赖位置和时间；若把速度相关的截断直接放入系数，就不能照搬下面的势形式换算。",
+      "reason": "Rosenbluth 势与通量重排把 Γ 移出速度导数及积分；需明确速度独立，避免错误推广。",
+      "source": "Lecture05-2.pdf p.9 Eqs.(36)–(39); differentiation of Γ(v) produces additional terms"
+    },
+    {
+      "lecture": 5,
+      "section_id": "lecture5-s15",
+      "old": "例如背景静止时",
+      "new": "例如背景粒子全部静止（冷背景）时",
+      "reason": "零平均流速并不意味着所有背景粒子 v′=0；φ=n/v 仅为冷 delta 背景。",
+      "source": "Lecture05-2.pdf Eq.(37); direct substitution f_b=n_b δ(v′)"
+    },
+    {
+      "lecture": 5,
+      "section_id": "lecture5-s15",
+      "old": "<p>设背景物种 <span class=\"derivation-inline-math\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span></span> 静止、各向同性，",
+      "new": "<p>设背景物种 <span class=\"derivation-inline-math\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span></span> 平均流速为零、各向同性，",
+      "reason": "明确 Maxwell 背景“静止”指无整体漂移，仍含有限热速度；与前述冷背景区分。",
+      "source": "Lecture05-2.pdf p.8 isotropic background assumption and Eq.(37) Maxwell integral"
+    },
+    {
+      "lecture": 6,
+      "section_id": "lecture6-s4",
+      "old": "两种拆法不可混用。在各向同性、不可压缩、常黏度的情形，",
+      "new": "两种拆法不可混用。下面黏性示例中的应力符号改指后一种完整无迹偏应力：它一般也有对角分量，而非只取非对角元。在各向同性本构、不可压缩、常黏度的情形，",
+      "reason": "原段先把 Π 定义为仅非对角部分，随后写完整 Newton 黏性张量：对角应变一般非零，符号需显式重定义。各向同性指本构而非有黏性时的压力张量。",
+      "source": "Lecture06.pdf p.4 Eq.(17), footnote2; incompressible strain tensor has generally nonzero diagonal components"
+    },
+    {
+      "lecture": 6,
+      "section_id": "lecture6-s14",
+      "old": "离子温度的首阶修正为",
+      "new": "再忽略有限 Debye 长度修正后，离子温度的首阶修正为",
+      "reason": "原语句易被读成完整色散式的统一首阶展开；有限 Debye 修正与离子温度修正有不同小参数。",
+      "source": "Lecture06.pdf pp.10–11 Eq.(52), warm-ion linear pressure closure"
+    },
+    {
+      "lecture": 6,
+      "section_id": "lecture6-s14",
+      "old": "不能沿此支任意增大",
+      "new": "有限 Debye 长度修正与离子热修正的相对大小还须分别检查，不能沿此支任意增大",
+      "reason": "前一修正约为 −ωpi²/(kλDe)²，后一修正 +3k²vTi²；未规定两小参数相对量级。",
+      "source": "Lecture06.pdf Eq.(52) short-wave expansion and finite-temperature moment correction"
+    },
+    {
+      "lecture": 7,
+      "section_id": "lecture7-s3",
+      "old": "更长。这里假定时间足够长，电子也已热化，以建立这一简化模型。",
+      "new": "更长。本模型还要求外场持续加热可忽略，或有足够的热浴散热，才能令电子温度接近中性气体温度；等待足够长本身并不保证热平衡。",
+      "reason": "持续电场下电子可在稳态保持高于中性粒子的温度，长时间不能替代能量平衡条件。",
+      "source": "Lecture07 p.1–2 BGK及电子能量交换假设；能量矩平衡。"
+    },
+    {
+      "lecture": 7,
+      "section_id": "lecture7-s6",
+      "old": "<p>这些局域性假设已隐含于摩擦力 <span class=\"l7-inline-math\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"bold-italic\">R</mi><mi>s</mi></msub><mo>=</mo><mo>−</mo><msub><mi>m</mi><mi>s</mi></msub><msub><mi>ν</mi><mi>s</mi></msub><msub><mi>n</mi><mi>s</mi></msub><msub><mi mathvariant=\"bold-italic\">U</mi><mi>s</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol\nR_s=-m_s\\nu_sn_s\\boldsymbol U_s</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8361em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.00421em;\">R</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8361em;vertical-align:-0.15em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord mathnormal\">m</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.06366em;\">ν</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0637em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.11424em;\">U</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span>\n及碰撞算子 (L7-6)\n中；非局域输运不能沿用这一简单摩擦模型。</p>",
+      "new": "<p>上述尺度条件限制的是局域扩散闭合。对于常频率 BGK 算子，摩擦力 <span class=\"l7-inline-math\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"bold-italic\">R</mi><mi>s</mi></msub><mo>=</mo><mo>−</mo><msub><mi>m</mi><mi>s</mi></msub><msub><mi>ν</mi><mi>s</mi></msub><msub><mi>n</mi><mi>s</mi></msub><msub><mi mathvariant=\"bold-italic\">U</mi><mi>s</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol\nR_s=-m_s\\nu_sn_s\\boldsymbol U_s</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8361em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.00421em;\">R</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8361em;vertical-align:-0.15em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord mathnormal\">m</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.06366em;\">ν</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0637em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.11424em;\">U</span></span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">s</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span>\n直接由式 (L7-6) 的一阶速度矩得到，并不单独要求平均自由程很短。非局域时不能沿用的是忽略惯性、采用局域等温压强而得到的 Fick 闭合；应保留动理学演化。</p>",
+      "reason": "区分局域碰撞算子与非局域输运：BGK力矩恒等式不以Kn小为前提。",
+      "source": "Lecture07 (6)–(16)，直接积分常ν BGK算子。"
+    },
+    {
+      "lecture": 7,
+      "section_id": "lecture7-s8",
+      "old": "磁化后，电子沿场扩散较强，离子跨场扩散较强，各方向通量未必分别双极：",
+      "new": "在两物种均强磁化、温度和中性碰撞截面同阶的本节估计下，电子沿场扩散较强，离子跨场扩散较强。改变磁化程度或截面后，这一比较须重算。各方向通量未必分别双极：",
+      "reason": "D⊥排序不是仅由存在磁场保证，适用条件应紧邻结论。",
+      "source": "Lecture07 (9)、(13)–(14)、p.5；D⊥=vT²ν/(ν²+Ω²)。"
+    },
+    {
+      "lecture": 7,
+      "section_id": "lecture7-s12",
+      "old": "。它有非平凡核，不能在全空间直接求逆。施加以下约束后，式 (L7-35)\n可唯一确定",
+      "new": "。守恒模使碰撞算子不能在全空间直接求逆。对这里的标准自碰撞模型，还需满足源项可解性，并确认去掉流体模后的算子可逆；不能仅凭守恒就断言任意碰撞模型有唯一解。施加以下零矩条件，固定式 (L7-35) 中的",
+      "reason": "守恒性是必要而非充分唯一性条件，磁回旋还改变动量零模。",
+      "source": "Lecture07 (35)–(36)；Fredholm可解性及本节补充。"
+    },
+    {
+      "lecture": 7,
+      "section_id": "lecture7-s17",
+      "old": "因此可将其视为微扰。这给出以下电子方程：",
+      "new": "这里摩擦与压强梯度同阶，而相对于更大的垂直电磁主项是修正；“微扰”不表示可以从平行动量平衡中删去摩擦。以下列出电子输运式：",
+      "reason": "原文R~P/L不能解释为小于压力梯度，平行热力/电阻必须保留。",
+      "source": "Lecture07 (47)–(51)。"
+    },
+    {
+      "lecture": 8,
+      "section_id": "lecture8-s12",
+      "old": "<p>上式保留原式(29)的 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi mathvariant=\"bold\">Π</mi></mrow><annotation encoding=\"application/x-tex\">2\\boldsymbol\\Pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">2</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Π</span></span></span></span></span></span> 记法；若 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold-italic\">π</mi></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol\\pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.03704em;\">π</span></span></span></span></span></span> 定义为两物种总非标量应力，标准项是 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mi mathvariant=\"bold-italic\">π</mi><mo>:</mo><mi mathvariant=\"normal\">∇</mi><mi mathvariant=\"bold\">U</mi></mrow><annotation encoding=\"application/x-tex\">-\\boldsymbol\\pi:\\nabla\\mathbf U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.03704em;\">π</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">∇</span><span class=\"mord mathbf\">U</span></span></span></span>，此处须识别 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold-italic\">π</mi><mo>=</mo><mn>2</mn><mi mathvariant=\"bold\">Π</mi></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol\\pi=2\\boldsymbol\\Pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.03704em;\">π</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">2</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Π</span></span></span></span></span></span>，不能把两种约定混用。温度无需人为重定义：同温时总压强就是 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>n</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">2nT</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>。</p>",
+      "new": "<p>上式保留原式(29)的 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi mathvariant=\"bold\">Π</mi></mrow><annotation encoding=\"application/x-tex\">2\\boldsymbol\\Pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">2</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Π</span></span></span></span></span></span> 原文写法。Lecture 7 已用压强张量的无迹部分定义应力，并指出其温度方程多出的系数 2；原件并未在这里重新定义应力。若 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold-italic\">π</mi></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol\\pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.03704em;\">π</span></span></span></span></span></span> 定义为两物种总非标量应力，标准项是 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mi mathvariant=\"bold-italic\">π</mi><mo>:</mo><mi mathvariant=\"normal\">∇</mi><mi mathvariant=\"bold\">U</mi></mrow><annotation encoding=\"application/x-tex\">-\\boldsymbol\\pi:\\nabla\\mathbf U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">−</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.03704em;\">π</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">∇</span><span class=\"mord mathbf\">U</span></span></span></span>。只有另外明确定义 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold-italic\">π</mi><mo>=</mo><mn>2</mn><mi mathvariant=\"bold\">Π</mi></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol\\pi=2\\boldsymbol\\Pi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4444em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord boldsymbol\" style=\"margin-right:0.03704em;\">π</span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">2</span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\">Π</span></span></span></span></span></span>，原式才可成立，不能把这种重定义当成原文已经给出的约定。按前讲同一应力定义，实际使用时应去掉式 (L8-29) 黏性项前多余的 2。温度无需人为重定义：同温时总压强就是 <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>n</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">2nT</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>。</p>",
+      "reason": "原文Pi定义延续Lecture7，不能用未经来源支持的Pi=pi/2替作者消解错误。保留原式但明确修正使用规则。",
+      "source": "Lecture07 (25)–(30)及Pab=Pδab+Πab；Lecture08 (29)。"
+    },
+    {
+      "lecture": 8,
+      "section_id": "lecture8-s21",
+      "old": "（冷等离子体）极限，背景静止且均匀。",
+      "new": "（冷等离子体）极限，背景静止且均匀。此时离子惯性长度不再与回旋半径同阶，还须要求波长远大于离子惯性长度，避免 Hall 修正；仅有回旋半径远小于波长不够。",
+      "reason": "低β时δi/ρi~β^-1/2大，需独立检验kδi≪1以使用理想MHD波。",
+      "source": "Lecture08 (2)–(3)、(20)、(46)–(55)；Hall/ideal项之比~kδi。"
+    }
+  ]
+}
